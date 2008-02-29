@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\title{Adaptive parsing research project proposal}
+\author{Adrian Sampson}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+I propose to further the work I started for CS152, Neural Networks, in the area of adaptive parsing. The project will consist of increasing the applicability of the adaptive parsing technique by accounting for more variation in markup schemes. I will prototype the designs I propose in Python to test them against synthesized and real-world datasets.
+
+I also intend to take sufficient time to write up the theory and results of the project. Because I'm unfamiliar with the techniques and conventions for expressing machine learning and neural network research in prose, this may be the area that will take the most effort.
+
+In approximate order, the tasks I'd undertake in this project would be:
+
+\begin{enumerate}
+
+\item I will implement the competitive learning algorithm in C or Python. The implementation will take strings, rather than generic vectors, as input. In particular, it will offer two optimizations:
+\begin{enumerate}
+\item The distance function will consider all characters equidistant from one another (independent of ASCII code).
+\item Insertions and deletions will be considered by the distance function (a project in itself).
+\end{enumerate}
+
+\item A system for varying and optimizing the selection of the parameter $w$ will be investigated. It's possible that no such system will be found, but I'd like to explore its feasibility regardless.
+
+\item Once effective parsing can be achieved, I'd like to work on optimizing the runtime of the algorithms. Aside from typical algorithmic optimization, I'd like to investigate a system in which training data for a dataset could be preserved and reapplied usefully to the same dataset under small modifications (i.e., additions or modifications or records).
+
+\item If time allows, I will research sequence clustering techniques that are used in bioinformatics. A technique may prove relevant to the clustering step of the algorithm.
+
+\item I will write a paper that rigorously formulates the adaptive parsing algorithm. The paper will outline and evaluate the prototype technique. Whether the paper will be significant enough to be publishable remains to be seen.
+
+\end{enumerate}
+
+\end{document}
