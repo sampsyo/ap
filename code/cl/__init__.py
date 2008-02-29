@@ -74,7 +74,7 @@ class CompetitiveLearner:
         self.learn(neurdist[0][0], stimulus, progress)
     
     def train(self, stimuli, epochs, debug_afterepoch=None):
-        """ Execute the Competitive Learning Algorithm.
+        """Execute the Competitive Learning Algorithm.
         
 		stimuli: a list of stimuli that make up the training set
 		
@@ -94,3 +94,39 @@ class CompetitiveLearner:
             # invoke per-epoch debug callback
             if debug_afterepoch is not None:
                 debug_afterepoch(self.neurons, stimuli)
+    
+    def quantize(self, stimulus):
+        """Return the index of a neuron nearest (by the provided distance
+        metric) to stimulus.
+        
+        If two neurons have equal distance to stimulus, the first is returned.
+        If no neurons are present, -1 is returned. This function is only
+        meaningful after train() has been run.
+        """
+        min_dist = None # i.e., infinity
+        nearest = -1
+        for i in range(len(self.neurons)):
+            dist = self.distance(self.neurons[i], stimulus)
+            if min_dist is None or dist < min_dist:
+                nearest = i
+                min_dist = dist
+        return nearest
+    
+    def cluster(self, stimuli):
+        """Given a list or array of stimuli, group them into clusters (lists
+        of stimuli) of equal quantization code.
+        
+        Returns an array of cluster-lists such that clusters[i] is a list of
+        stimuli with quantization i. This function is only meaningful after
+        train() has been run.
+        """
+        
+        # initialize an empty array of lists (no better way?)
+        clusters = empty(len(self.neurons), dtype=list)
+        for i in renge(len(clusters)):
+            clusters[i] = []
+        
+        for stimulus in stimuli:
+            clusters[self.quantize(stimulus)].append(stimulus)
+        
+        return clusters

@@ -80,9 +80,12 @@ def clear_scatters(axes=None):
 	del scatters[0:len(scatters)-1]
 
 # The matter at hand.
-def depict(neurons, stimuli):
+def depict(neurons, stimuli, quantize=None):
     """Show, via matplotlib, the current positions of the neurons (red squares)
-    and stimuli (blue circles).
+    and stimuli (blue circles, by default).
+    
+    If quantize is specified, use it as a one-argument function mapping stimuli
+    to color indices.
     """
 
     # matplotlib needs arrays of x-coords and y-coords
@@ -92,7 +95,11 @@ def depict(neurons, stimuli):
     ax = subplot(111)
     clear_scatters(ax)
     ax.scatter(neurons_x, neurons_y, marker='s', c='r')
-    ax.scatter(stimuli_x, stimuli_y, marker='o', c='b')
+    if quantize is None:
+        stimulus_color = 'b'
+    else:
+        stimulus_color = map(quantize, stimuli)
+    ax.scatter(stimuli_x, stimuli_y, marker='o', c=stimulus_color)
 
     draw_certainly()
     sleep(0.2)

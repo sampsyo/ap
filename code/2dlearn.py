@@ -5,6 +5,7 @@
 
 from cl import CompetitiveLearner, euclidean
 from numpy import *
+from time import sleep
 
 num_neurons = 5
 
@@ -22,3 +23,6 @@ euclidean.depict(learner.neurons, stimuli)
 
 # Train on the stimuli for 10 epochs, calling depict after each.
 learner.train(stimuli, 10, debug_afterepoch=euclidean.depict)
+
+euclidean.depict(learner.neurons, stimuli, learner.quantize)
+sleep(5)
