@@ -4,18 +4,77 @@ from numpy import *
 
 length = 5
 
-def new_neuron():
-	out = random.random_integers(65,122,length) # some ASCII chars
-	return map(chr, out)
+class MutableString():
+    """A wrapper around a character array from numpy that implements a very
+    limited mutable string. Attempts to be a little bit efficient.
+    """
+    def __init__(self, val=None):
+        """Initializes a new string.
+        
+        val is an optional parameter. If it is a string, the MutableString is
+        initialized to equal val. If it is an iterable containing ints, it is
+        interpreted as a sequence of character codes with which to fill the
+        new MutableString. If val is, in particular, a numpy array containing
+        ints, it is used as the character array for the MutableString so that
+        val and the MutableString are aliased.
+        """
+        if val is None:
+            self.chars = empty(0,int)
+        else:
+            if type(val) is ndarray and val.dtype is dtype('int'):
+                # O(1) creation from int array with aliasing
+                self.chars = val
+            else:
+                # works for both integer lists and strings but copies
+                self.chars = empty(len(val),int)
+                i = 0
+                for c in val:
+                    self[i] = c
+                    i += 1
+    
+    def __str__(self):
+        return reduce(lambda x,y:x+y, self, '')
+    def __repr__(self):
+        return 'MutableString(' + repr(str(self)) + ')'
+    def __cmp__(self, other):
+        for i in range(min(len(self), len(other))):
+            if self[i] < other[i]:
+                return -1
+            elif self[i] < other[i]:
+                return 1
+            # if character is equal, keep comparing
+        # loop finished => strings are either equal or of unequal length
+        if len(self) < len(other):
+            return -1
+        elif len(self) > len(other):
+            return 1
+        else:
+            return 0
+    def __delitem__(self, i):
+        del self.chars[i]
+    def __getitem__(self, i):
+        return chr(self.chars[i])
+    def __len__(self):
+        return len(self.chars)
+    def __setitem__(self, i, item):
+        if type(item) is str and len(item) == 1: # character (1-length string)
+            self.chars[i] = ord(item)
+        elif type(item) is int:
+            self.chars[i] = item
+        else:
+            raise ValueError, 'can only substitute characters and integers'
 
-def distance(vec1, vec2):
-	# for now just proportion of vectors that differ
+def new_neuron():
+	out = random.random_integers(97,122,length) #fixme more ASCII chars
+	return MutableString(out)
+
+def distance(seq1, seq2):
+	# for now just proportion of sequences that differ
 	num_diffs = 0
 	for i in range(length):
-		if vec1[i] != vec2[i]: num_diffs += 1
-	return (num_diffs + 0.0)/length
+		if seq1[i] != seq2[i]: num_diffs += 1
+	return float(num_diffs)/length
 
-neighborhood = 1
 
 def learn(neuron, stimulus, progress):
 	#fixme should settle with progress
@@ -24,7 +83,7 @@ def learn(neuron, stimulus, progress):
 	for i in range(length):
 		if neuron[i] != stimulus[i]: diffs.append(i)
 	adaptations = 0
-	while (len(diffs) > 0 and adaptations < 2): # at most 2 changes
+	while (len(diffs) > 0 and adaptations < 1): # at most 1 change
 		if len(diffs) == 1: # hacky: randint doesn't like max=min
 			diff_idx = 0
 		else:
@@ -33,20 +92,17 @@ def learn(neuron, stimulus, progress):
 		del diffs[diff_idx]
 		adaptations += 1
 
-num_neurons = 3
+stimuli = array(["peach", "pbach", "ceach", "pecbe", "pelch",
+		   		 "apple", "fpple", "apcle", "appee", "appge",
+				 "grape", "grepe", "grapa", "glape", "graae"])
 
-def strarr(string):
-	out = []
-	for c in string:
-		out.append(c)
-	return array(out)
+learner = CompetitiveLearner(new_neuron, distance, learn, 5)
 
-stimuli = map(strarr,["peach", "pbach", "ceach", "pecbe", "pelch",
-		   			  "apple", "fpple", "apcle", "appee", "appge",
-					  "grape", "grepe", "grapa", "glape", "graae"])
+def show_neurons(neurons, stimuli):
+    out = ''
+    for neuron in learner.neurons:
+        out += str(neuron) + ' '
+    print out
 
-learner = CompetitiveLearner(new_neuron, distance, neighborhood,
-	learn, num_neurons)
-print learner.neurons
-learner.train(stimuli, 20)
-print learner.neurons
+show_neurons(learner.neurons, stimuli)
+learner.train(stimuli, 20, debug_afterepoch=show_neurons)
