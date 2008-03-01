@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Extremely simple demonstration of CompetitiveLearner on 2-D Euclidean space.
+"""Simple demonstration of CompetitiveLearner on 2-D Euclidean space.
 """
 
 from cl import CompetitiveLearner, euclidean
@@ -24,5 +24,7 @@ euclidean.depict(learner.neurons, stimuli)
 # Train on the stimuli for 10 epochs, calling depict after each.
 learner.train(stimuli, 10, debug_afterepoch=euclidean.depict)
 
+# Show the clusters as colors and text.
 euclidean.depict(learner.neurons, stimuli, learner.quantize)
-sleep(5)
+sleep(3)
+print learner.cluster(stimuli)
