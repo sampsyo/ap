@@ -96,7 +96,7 @@ def new_neuron():
     """Return a random MutableString with characters in [low_char,high_char]
     of length length.
     """
-    out = random.random_integers(low_char,high_char+1,length)
+    out = random.random_integers(low_char,high_char,length)
     return MutableString(out)
 
 # use distance and learning functions from generic sequence module
