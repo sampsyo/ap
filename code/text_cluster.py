@@ -26,5 +26,9 @@ def show_neurons(neurons, stimuli):
 # Show the initial, randomized neurons.
 show_neurons(learner.neurons, stimuli)
 
-# Train on the stimuli for 40 epochs, printing out progress with show_neurons.
-learner.train(stimuli, 40, debug_afterepoch=show_neurons)
+# Train on the stimuli for 40 epochs.
+# Add the final parameter to print out progress with show_neurons.
+learner.train(stimuli, 40) #, debug_afterepoch=show_neurons)
+
+# Show final clusters.
+print learner.cluster(stimuli)
