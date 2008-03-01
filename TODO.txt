@@ -1,0 +1,16 @@
+ROBUSTNESS
+ - find ways around neuron-sharing (two clusters compete for one neuron)
+	- smarter initial positioning?
+ - better sequence distance metric (diff?)
+ - annealing in sequence learn()
+
+INTERFACE
+ - make train_single() pay attention to neighborhood
+
+POSSIBLE PERFORMANCE OPTIMIZATION
+ - quantize could be batched and/or computed during training
+ - quantize/cluster could return distances so user doesn't need to recalculate
+   them if needed
+ - don't do a full sort in train_single()
+ - cluster() return array currently can have "gaps" for empty clusters; find a
+   way to efficiently eliminate these?
