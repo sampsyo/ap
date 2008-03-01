@@ -49,7 +49,7 @@ class CompetitiveLearner:
         
         Removes any older neurons that might be present. Calls new_neuron() to
         create neurons. If num_nuerons is ommitted, creates as many neurons as
-        were present initially.
+        were present before setup() was invoked.
 		"""
         
         # if num_neurons is not provided, reinitialize current neuron set
@@ -88,8 +88,9 @@ class CompetitiveLearner:
         for epoch in range(epochs):
             progress = (epoch + 0.0)/epochs
             
-            for stimulus in stimuli: #fixme: train in random order
-                self.train_single(stimulus, progress)
+            # choose a random order for presentation of stimuli
+            for stimulus_idx in random.permutation(len(stimuli)):
+                self.train_single(stimuli[stimulus_idx], progress)
             
             # invoke per-epoch debug callback
             if debug_afterepoch is not None:
