@@ -10,6 +10,11 @@ The plane is in [0,1]x[0,1].
 
 At the expense of a dependency on matplotlib, can draw neurons and stimuli in
 a 2-D plane for debugging purposes.
+
+Users can set the package-global float learning_rate. This value is the
+largest proportion of the difference between neuron and stimulus that a neuron
+can travel per stimulus per epoch. Less motion occurs as training progresses.
+learning_rate defaults to 0.5.
 """
 
 from pylab import *
