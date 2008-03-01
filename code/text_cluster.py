@@ -65,7 +65,7 @@ class MutableString():
             raise ValueError, 'can only substitute characters and integers'
 
 def new_neuron():
-	out = random.random_integers(97,122,length) #fixme more ASCII chars
+	out = random.random_integers(97,122,length)
 	return MutableString(out)
 
 def distance(seq1, seq2):
@@ -77,17 +77,12 @@ def distance(seq1, seq2):
 
 
 def learn(neuron, stimulus, progress):
-	#fixme should settle with progress
-	#fixme slow, probably
 	diffs = []
 	for i in range(length):
 		if neuron[i] != stimulus[i]: diffs.append(i)
 	adaptations = 0
 	while (len(diffs) > 0 and adaptations < 1): # at most 1 change
-		if len(diffs) == 1: # hacky: randint doesn't like max=min
-			diff_idx = 0
-		else:
-			diff_idx = random.randint(0,len(diffs)-1)
+		diff_idx = random.randint(0,len(diffs))
 		neuron[diffs[diff_idx]] = stimulus[diffs[diff_idx]]
 		del diffs[diff_idx]
 		adaptations += 1
@@ -96,7 +91,7 @@ stimuli = array(["peach", "pbach", "ceach", "pecbe", "pelch",
 		   		 "apple", "fpple", "apcle", "appee", "appge",
 				 "grape", "grepe", "grapa", "glape", "graae"])
 
-learner = CompetitiveLearner(new_neuron, distance, learn, 5)
+learner = CompetitiveLearner(new_neuron, distance, learn, 12)
 
 def show_neurons(neurons, stimuli):
     out = ''
@@ -105,4 +100,4 @@ def show_neurons(neurons, stimuli):
     print out
 
 show_neurons(learner.neurons, stimuli)
-learner.train(stimuli, 20, debug_afterepoch=show_neurons)
+learner.train(stimuli, 40, debug_afterepoch=show_neurons)

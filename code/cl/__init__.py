@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 from numpy import *
 
-#fixme clustering code here?
-
 class CompetitiveLearner:
     def __init__(self, new_neuron, distance, learn, num_neurons=0,
                     neighborhood=1):
@@ -66,24 +64,26 @@ class CompetitiveLearner:
         Progress is the proportion in [0.0,1.0) of completion of the training
         epochs (i.e., current_epoch/total_epochs).
 		"""
-        #fixme slow, probably : hardcoded to neigh=1
         neurdist = []
         for neuron in self.neurons:
             neurdist.append((neuron, self.distance(neuron, stimulus)))
-        neurdist.sort(key=(lambda pair: pair[1])) #fixme no need to sort all
+        neurdist.sort(key=(lambda pair: pair[1]))
         self.learn(neurdist[0][0], stimulus, progress)
     
     def train(self, stimuli, epochs, debug_afterepoch=None):
         """Execute the Competitive Learning Algorithm.
         
-		stimuli: a list of stimuli that make up the training set
+        Stimuli are presented in a random order each epoch (invoking
+        train_single() on each stimulus each epoch).
+        
+		    stimuli: a list of stimuli that make up the training set
 		
-		epochs: the number of epochs (iterations over the entire training
-			set) to execute
+		    epochs: the number of epochs (iterations over the entire training
+			    set) to execute
 		
-		debug_afterepoch(neurons, stimuli): an optional callback function
-			invoked after every training epoch with the environment's
-			neurons and the training stimuli
+		    debug_afterepoch(neurons, stimuli): an optional callback function
+			    invoked after every training epoch with the environment's
+			    neurons and the training stimuli
 		"""
         for epoch in range(epochs):
             progress = (epoch + 0.0)/epochs
