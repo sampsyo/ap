@@ -123,7 +123,7 @@ class CompetitiveLearner:
         
         # initialize an empty array of lists (no better way?)
         clusters = empty(len(self.neurons), dtype=list)
-        for i in renge(len(clusters)):
+        for i in range(len(clusters)):
             clusters[i] = []
         
         for stimulus in stimuli:
