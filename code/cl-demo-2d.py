@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-
-"""Simple demonstration of CompetitiveLearner on 2-D Euclidean space.
-"""
-
 from cl import CompetitiveLearner, euclidean
 from numpy import *
 from time import sleep
+
+"""Simple demonstration of CompetitiveLearner on 2-D Euclidean space.
+"""
 
 num_neurons = 5
 

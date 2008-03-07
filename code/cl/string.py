@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from numpy import *
 
 """Provides the necessary functions to use CompetitiveLearner with strings.
 
@@ -16,14 +17,11 @@ Users should probably set the following package globals:
         to 97 and 122 (lowercase alphabet in ASCII)
 """
 
-from numpy import *
-
-
 ####
 # MUTABLE STRING CLASS
 ####
 
-class MutableString():
+class MutableString(object):
     """A wrapper around a character array from numpy that implements a very
     limited mutable string. Attempts to be a little bit efficient.
     """
@@ -81,7 +79,7 @@ class MutableString():
         elif type(item) is int:
             self.chars[i] = item
         else:
-            raise ValueError, 'can only substitute characters and integers'
+            raise ValueError('can only substitute characters and integers')
 
 
 ####
@@ -100,5 +98,5 @@ def new_neuron():
     return MutableString(out)
 
 # use distance and learning functions from generic sequence module
-from sequence import distance_substitutions as distance
-from sequence import learn
+from cl.sequence import distance_substitutions as distance
+from cl.sequence import learn

@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+from pylab import *
+from time import sleep
+from numpy import *
 
 """Provides the necessary functions to use CompetitiveLearner in Euclidean
 space. For now, hard-coded to two dimensions, but this could easily be changed
@@ -16,12 +19,6 @@ largest proportion of the difference between neuron and stimulus that a neuron
 can travel per stimulus per epoch. Less motion occurs as training progresses.
 learning_rate defaults to 0.5.
 """
-
-from pylab import *
-from time import sleep
-from numpy import *
-
-
 
 ####
 # LEARNING PARAMETERS FOR THE EUCLIDEAN PLANE

@@ -1,10 +1,9 @@
 #!/usr/bin/env python
+from cl import CompetitiveLearner, string
+from numpy import *
 
 """Simple demonstration of CompetitiveLearner on strings.
 """
-
-from cl import CompetitiveLearner, string
-from numpy import *
 
 # A clustering problem: discover the names of five-letter fruits.
 stimuli = array(["peach", "pbach", "ceach", "pecbe", "pelch",

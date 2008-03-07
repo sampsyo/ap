@@ -1,7 +1,8 @@
 #!/usr/bin/env python
+from __future__ import division
 from numpy import *
 
-class CompetitiveLearner:
+class CompetitiveLearner(object):
     def __init__(self, new_neuron, distance, learn, num_neurons=0,
                     neighborhood=1):
         """Initialize a competitive learning environment.
@@ -86,7 +87,7 @@ class CompetitiveLearner:
 			    neurons and the training stimuli
 		"""
         for epoch in range(epochs):
-            progress = (epoch + 0.0)/epochs
+            progress = epoch/epochs
             
             # choose a random order for presentation of stimuli
             for stimulus_idx in random.permutation(len(stimuli)):

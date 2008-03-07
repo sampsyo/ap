@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import division
 from numpy import *
 
 """Provides some support for using CompetitiveLearner with sequences (i.e.,
@@ -28,7 +29,7 @@ def distance_substitutions(seq1, seq2):
     num_diffs = 0
     for i in range(length):
         if seq1[i] != seq2[i]: num_diffs += 1
-    return float(num_diffs)/length
+    return num_diffs/length
 
 def learn(neuron, stimulus, progress=None):
     """Changes at most learning_rate items in neuron to match the corresponding
