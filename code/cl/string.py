@@ -98,5 +98,5 @@ def new_neuron():
     return MutableString(out)
 
 # use distance and learning functions from generic sequence module
-from cl.sequence import distance_substitutions as distance
+from cl.sequence import distance_hamming as distance
 from cl.sequence import learn
