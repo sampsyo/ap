@@ -2,7 +2,22 @@
 from __future__ import division
 from numpy import *
 
+"""A module for using the Competitive Learning Algorithm.
+
+All functionality is accessed by initializing a CompetitiveLearner object with
+the algorithm's parameter. One can then train() on datasets.
+"""
+
 class CompetitiveLearner(object):
+    """An environment that keeps track of the parameters to the Competitive
+    Learning Algorithm.
+    
+    To use the algorithm, initialize a CompetitiveLearner with the desired
+    parameters. Use train() to execute the algorithm and obtain trained values
+    for neurons. Then, either read the neurons array directly or use cluster()
+    or quantize() to do VQ.
+    """
+    
     def __init__(self, new_neuron, distance, learn, num_neurons=0,
                     neighborhood=1):
         """Initialize a competitive learning environment.
