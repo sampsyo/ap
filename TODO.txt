@@ -1,11 +1,16 @@
 ROBUSTNESS
- - find ways around neuron-sharing (two clusters compete for one neuron)
-	- smarter initial positioning?
- - better sequence distance metric (diff?)
+ - smarter initial neuron placement (near stimuli)
+ - repel loser neurons
+	- delete consistent-loser neurons?
+ - edit distance for sequences
  - annealing in sequence learn()
+ - metric for evaluating clusters (distance-medians from Kohonen?); could throw out & start over when clusters seem subpar
 
 INTERFACE
  - make train_single() pay attention to neighborhood
+
+TEST CASES
+ - Impro-Visor data
 
 POSSIBLE PERFORMANCE OPTIMIZATION
  - quantize could be batched and/or computed during training

@@ -22,7 +22,7 @@ Users should probably set the following package globals:
 ####
 
 class MutableString(object):
-    """A wrapper around a character array from numpy that implements a very
+    """A wrapper around a byte array from numpy that implements a very
     limited mutable string. Attempts to be a little bit efficient.
     """
     def __init__(self, val=None):
@@ -36,21 +36,23 @@ class MutableString(object):
         val and the MutableString are aliased.
         """
         if val is None:
-            self.chars = empty(0,int)
+            self.chars = empty(0,byte)
         else:
-            if type(val) is ndarray and val.dtype is dtype('int'):
+            if type(val) is ndarray and (val.dtype is dtype('int') or
+                                         val.dtype is dtype('int64') or
+                                         val.dtype is dtype('int8')):
                 # O(1) creation from int array with aliasing
                 self.chars = val
             else:
                 # works for both integer lists and strings but copies
-                self.chars = empty(len(val),int)
+                self.chars = empty(len(val),byte)
                 i = 0
                 for c in val:
                     self[i] = c
                     i += 1
     
     def __str__(self):
-        return reduce(lambda x,y:x+y, self, '')
+        return self.chars.tostring()
     def __repr__(self):
         return 'MutableString(' + repr(str(self)) + ')'
     def __cmp__(self, other):
@@ -76,7 +78,7 @@ class MutableString(object):
     def __setitem__(self, i, item):
         if type(item) is str and len(item) == 1: # character (1-length string)
             self.chars[i] = ord(item)
-        elif type(item) is int:
+        elif type(item) is int or type(item) is byte:
             self.chars[i] = item
         else:
             raise ValueError('can only substitute characters and integers')
