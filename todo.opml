@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>todo</title>
+    <expansionState>0,1,3,8,10</expansionState>
+  </head>
+  <body>
+    <outline text="clustering (CL)">
+      <outline text="robustness">
+        <outline text="smarter initial neuron placement (near stimuli)"/>
+        <outline text="repel loser neurons">
+          <outline text="delete consistent-loser neurons?"/>
+        </outline>
+        <outline text="edit distance for sequences"/>
+        <outline text="annealing in sequence learn()"/>
+        <outline text="metric for evaluating clusters (distance-medians from Kohonen?); could throw out &amp; start over when clusters seem subpar"/>
+      </outline>
+      <outline text="interface">
+        <outline text="make train_single() pay attention to neighborhood"/>
+      </outline>
+      <outline text="performance">
+        <outline text="quantize could be batched and/or computed during training"/>
+        <outline text="quantize/cluster could return distances so user doesn't need to recalculate them if needed"/>
+        <outline text="don't do a full sort in train_single()"/>
+        <outline text="cluster() return array currently can have &quot;gaps&quot; for empty clusters; find a way to efficiently eliminate these?"/>
+        <outline text="profile"/>
+        <outline text="weave (special-case string clustering in C)"/>
+        <outline text="make MutableString a subclass of numpy array"/>
+      </outline>
+    </outline>
+    <outline text="cruft-slicing with Kullback-Liebler entropy">
+      <outline text="www.springerlink.com &lt;http://www.springerlink.com/&gt;—1bq4xtjkqd8cdxll www.springerlink.com—1bq4xtjkqd8cdxll &lt;http://www.springerlink.com/content/1bq4xtjkqd8cdxll/&gt;"/>
+      <outline text="en.wikipedia.org—Kullback en.wikipedia.org—Kullback &lt;http://en.wikipedia.org/wiki/Kullback&gt;–Leibler_divergence"/>
+    </outline>
+    <outline text="test cases">
+      <outline text="Impro-Visor data"/>
+    </outline>
+  </body>
+</opml>
