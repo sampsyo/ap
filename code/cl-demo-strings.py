@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from cl import CompetitiveLearner, string
+import cl, cl.string
 from numpy import *
 
 """Simple demonstration of CompetitiveLearner on strings.
@@ -9,11 +9,12 @@ from numpy import *
 stimuli = array(["peach", "pbach", "ceach", "pecbe", "pelch",
 		   		 "apple", "fpple", "apcle", "appee", "appge",
 				 "grape", "grepe", "grapa", "glape", "graae"])
+stimuli = map(cl.string.MutableString, stimuli)
 num_neurons = 12
 
 # Set up the learning environment.
-learner = CompetitiveLearner(string.new_neuron, string.distance, string.learn,
-    stimuli, num_neurons)
+learner = cl.CompetitiveLearner(cl.new_nearby_neuron, cl.string.distance,
+    cl.string.learn, stimuli, num_neurons)
 
 # A function we'll use to show training progress.
 def show_neurons(learner):

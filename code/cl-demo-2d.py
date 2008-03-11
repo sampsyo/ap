@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from cl import CompetitiveLearner, euclidean
+import cl, cl.euclidean
 from numpy import *
 from time import sleep
 
@@ -14,16 +14,16 @@ stimuli = array([[0.11, 0.11], [0.12, 0.11], [0.09, 0.12], [0.13, 0.08],
                  [0.71, 0.91], [0.73, 0.89], [0.72, 0.88], [0.68, 0.91]])
 
 # Initialize the learning environment.
-learner = CompetitiveLearner(euclidean.new_neuron, euclidean.distance,
-    euclidean.learn, stimuli, num_neurons)
+learner = cl.CompetitiveLearner(cl.new_nearby_neuron, cl.euclidean.distance,
+    cl.euclidean.learn, stimuli, num_neurons)
 
 # Show initial state.
-euclidean.depict(learner)
+cl.euclidean.depict(learner)
 
 # Train on the stimuli for 10 epochs, calling depict after each.
-learner.train(10, stimuli, debug_afterepoch=euclidean.depict)
+learner.train(10, stimuli, debug_afterepoch=cl.euclidean.depict)
 
 # Show the clusters as colors and text.
-euclidean.depict(learner, True)
+cl.euclidean.depict(learner, True)
 sleep(3)
 print learner.cluster(stimuli)

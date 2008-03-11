@@ -8,6 +8,10 @@ All functionality is accessed by initializing a CompetitiveLearner object with
 the algorithm's parameter. One can then train() on datasets.
 """
 
+#####
+# COMPETITIVE LEARNING ENVIRONMENT OBJECT
+#####
+
 class CompetitiveLearner(object):
     """An environment that keeps track of the parameters to the Competitive
     Learning Algorithm.
@@ -169,3 +173,22 @@ class CompetitiveLearner(object):
             clusters[self.quantize(stimulus)].append(stimulus)
         
         return clusters
+
+
+
+#####
+# USEFUL GENERIC PARAMETERS
+#####
+
+def new_nearby_neuron(learner):
+    """A new_neuron() callback that creates neurons equal to random stimuli.
+    
+    Uses learner.stimuli, so this should be set (i.e., passed to the
+    constructor, probably). For large spaces, this can increase the chances
+    that a neuron will be placed in a given cluster. Best used with repulsion.
+    """
+    neuron = learner.stimuli[random.randint(len(learner.stimuli))]
+    if hasattr(neuron, 'copy'):
+        return neuron.copy()
+    else:
+        return neuron

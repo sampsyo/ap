@@ -54,7 +54,7 @@ class MutableString(object):
     def __str__(self):
         return self.chars.tostring()
     def __repr__(self):
-        return 'MutableString(' + repr(str(self)) + ')'
+        return repr(str(self))
     def __cmp__(self, other):
         for i in range(min(len(self), len(other))):
             if self[i] < other[i]:
@@ -82,6 +82,9 @@ class MutableString(object):
             self.chars[i] = item
         else:
             raise ValueError('can only substitute characters and integers')
+
+    def copy(self):
+        return MutableString(self.chars.copy())
 
 
 ####
