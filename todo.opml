@@ -16,7 +16,7 @@
         <outline text="metric for evaluating clusters (distance-medians from Kohonen?); could throw out &amp; start over when clusters seem subpar"/>
       </outline>
       <outline text="interface">
-        <outline text="make train_single() pay attention to neighborhood"/>
+        <outline text="variable neighborhood size?"/>
       </outline>
       <outline text="performance">
         <outline text="quantize could be batched and/or computed during training"/>
@@ -29,8 +29,8 @@
       </outline>
     </outline>
     <outline text="cruft-slicing with Kullback-Liebler entropy">
-      <outline text="www.springerlink.com &lt;http://www.springerlink.com/&gt;—1bq4xtjkqd8cdxll www.springerlink.com—1bq4xtjkqd8cdxll &lt;http://www.springerlink.com/content/1bq4xtjkqd8cdxll/&gt;"/>
-      <outline text="en.wikipedia.org—Kullback en.wikipedia.org—Kullback &lt;http://en.wikipedia.org/wiki/Kullback&gt;–Leibler_divergence"/>
+      <outline text="www.springerlink.com &lt;http://www.springerlink.com/&gt; www.springerlink.com &lt;http://www.springerlink.com/&gt;—1bq4xtjkqd8cdxll www.springerlink.com &lt;http://www.springerlink.com/&gt;—1bq4xtjkqd8cdxll www.springerlink.com—1bq4xtjkqd8cdxll &lt;http://www.springerlink.com/content/1bq4xtjkqd8cdxll/&gt;"/>
+      <outline text="en.wikipedia.org—Kullback en.wikipedia.org—Kullback en.wikipedia.org—Kullback &lt;http://en.wikipedia.org/wiki/Kullback&gt;–Leibler_divergence"/>
     </outline>
     <outline text="test cases">
       <outline text="Impro-Visor data"/>

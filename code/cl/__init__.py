@@ -18,42 +18,37 @@ class CompetitiveLearner(object):
     or quantize() to do VQ.
     """
     
-    def __init__(self, new_neuron, distance, learn, num_neurons=0,
-                    neighborhood=1):
+    def __init__(self, new_neuron, distance, learn, num_neurons=0):
         """Initialize a competitive learning environment.
         
         Takes some arguments, beginning with some functions defining learning
         behavior:
 
             new_neuron(): returns an initialized neuron (an array); called
-            	if num_neurons (below) is nonzero or when setup() is called
-				manually
-				
-			distance(v1, v2): returns the distance, by some metric, between
-				two vectors (i.e., either neurons or stimuli)
-				
-			learn(neuron, stimulus, progress): called when neuron is selected
-				to learn for stimulus, so neuron should be adjusted (in-place)
-				to be "closer" to stimulus; progress is the proportion in
-				[0.0,1.0) of completion of the training epochs
-				
-		Also, a few optional numerical parameters:
-		
-			num_neurons: number of neurons to create during this
-				initialization; defaults to zero, so the user can add more
-				later manually or using setup()
-		
-			neighborhood: the number of neurons to update per stimuls per
-				epoch; defaults to 1
-		
-		After the CompetitiveLearner is initialized with at least one neuron,
-		it is suitable to invoke train() to execute the Competitive Learning
-		Algorithm.
+                if num_neurons (below) is nonzero or when setup() is called
+                manually
+                
+            distance(v1, v2): returns the distance, by some metric, between
+                two vectors (i.e., either neurons or stimuli)
+                
+            learn(neuron, stimulus, progress): called when neuron is selected
+                to learn for stimulus, so neuron should be adjusted (in-place)
+                to be "closer" to stimulus; progress is the proportion in
+                [0.0,1.0) of completion of the training epochs
+                
+        Also, a few optional numerical parameters:
+        
+            num_neurons: number of neurons to create during this
+                initialization; defaults to zero, so the user can add more
+                later manually or using setup()
+        
+        After the CompetitiveLearner is initialized with at least one neuron,
+        it is suitable to invoke train() to execute the Competitive Learning
+        Algorithm.
         """
         
         self.new_neuron = new_neuron
         self.distance = distance
-        self.neighborhood = neighborhood
         self.learn = learn
         
         self.setup(num_neurons)
@@ -64,7 +59,7 @@ class CompetitiveLearner(object):
         Removes any older neurons that might be present. Calls new_neuron() to
         create neurons. If num_nuerons is ommitted, creates as many neurons as
         were present before setup() was invoked.
-		"""
+        """
         
         # if num_neurons is not provided, reinitialize current neuron set
         if num_neurons is None:
@@ -79,12 +74,24 @@ class CompetitiveLearner(object):
         
         Progress is the proportion in [0.0,1.0) of completion of the training
         epochs (i.e., current_epoch/total_epochs).
-		"""
-        neurdist = []
+        
+        If more than one neuron has the minimum distance from the stimulus, a
+        random neuron with this distance learns.
+        """
+        min_dist = None
+        nearest = [] # neurons with minimum distance from stimulus
+        
         for neuron in self.neurons:
-            neurdist.append((neuron, self.distance(neuron, stimulus)))
-        neurdist.sort(key=(lambda pair: pair[1]))
-        self.learn(neurdist[0][0], stimulus, progress)
+            dist = self.distance(neuron, stimulus)
+            if min_dist is None or dist < min_dist: # new minimum
+                min_dist = dist
+                nearest = [neuron]
+            elif dist == min_dist: # a tie for the current minimum distance
+                nearest.append(neuron)
+                
+        # choose a random neuron with minimum distance from stimulus
+        self.learn(nearest[random.randint(len(nearest))],
+                   stimulus, progress)
     
     def train(self, stimuli, epochs, debug_afterepoch=None):
         """Execute the Competitive Learning Algorithm.
@@ -92,15 +99,15 @@ class CompetitiveLearner(object):
         Stimuli are presented in a random order each epoch (invoking
         train_single() on each stimulus each epoch).
         
-		    stimuli: a list of stimuli that make up the training set
-		
-		    epochs: the number of epochs (iterations over the entire training
-			    set) to execute
-		
-		    debug_afterepoch(neurons, stimuli): an optional callback function
-			    invoked after every training epoch with the environment's
-			    neurons and the training stimuli
-		"""
+            stimuli: a list of stimuli that make up the training set
+        
+            epochs: the number of epochs (iterations over the entire training
+                set) to execute
+        
+            debug_afterepoch(neurons, stimuli): an optional callback function
+                invoked after every training epoch with the environment's
+                neurons and the training stimuli
+        """
         for epoch in range(epochs):
             progress = epoch/epochs
             
