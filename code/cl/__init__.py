@@ -18,25 +18,31 @@ class CompetitiveLearner(object):
     or quantize() to do VQ.
     """
     
-    def __init__(self, new_neuron, distance, learn, num_neurons=0):
+    def __init__(self, new_neuron, distance, learn, stimuli=None,
+                    num_neurons=0):
         """Initialize a competitive learning environment.
         
         Takes some arguments, beginning with some functions defining learning
         behavior:
 
-            new_neuron(): returns an initialized neuron (an array); called
-                if num_neurons (below) is nonzero or when setup() is called
-                manually
+            new_neuron(learner): returns an initialized neuron (an array);
+                called if num_neurons (below) is nonzero or when setup() is
+                called manually
                 
-            distance(v1, v2): returns the distance, by some metric, between
-                two vectors (i.e., either neurons or stimuli)
+            distance(learner, v1, v2): returns the distance, by some metric,
+                between two vectors (i.e., either neurons or stimuli)
                 
-            learn(neuron, stimulus, progress): called when neuron is selected
+            learn(learner, neuron, stimulus): called when neuron is selected
                 to learn for stimulus, so neuron should be adjusted (in-place)
-                to be "closer" to stimulus; progress is the proportion in
-                [0.0,1.0) of completion of the training epochs
-                
-        Also, a few optional numerical parameters:
+                to be "closer" to stimulus
+        
+        These callbacks may access the CompetitiveLearner's state via the
+        learner reference. It may be useful, for instance, to use
+        learner.progress, a proportion in [0.0,1.0) of completion of the
+        current set of training epochs.
+        
+            stimuli: a list or array of stimuli to train on; these may be
+                omitted and passed with the first call to train()
         
             num_neurons: number of neurons to create during this
                 initialization; defaults to zero, so the user can add more
@@ -50,7 +56,8 @@ class CompetitiveLearner(object):
         self.new_neuron = new_neuron
         self.distance = distance
         self.learn = learn
-        
+        self.progress = 0.0
+        self.stimuli = stimuli
         self.setup(num_neurons)
     
     def setup(self, num_neurons=None):
@@ -67,9 +74,9 @@ class CompetitiveLearner(object):
         
         self.neurons = [] # remove old neurons
         for i in range(num_neurons):
-            self.neurons.append(self.new_neuron())
+            self.neurons.append(self.new_neuron(self))
     
-    def train_single(self, stimulus, progress):
+    def train_single(self, stimulus):
         """ Train for a single stimulus for a single training epoch.
         
         Progress is the proportion in [0.0,1.0) of completion of the training
@@ -82,7 +89,7 @@ class CompetitiveLearner(object):
         nearest = [] # neurons with minimum distance from stimulus
         
         for neuron in self.neurons:
-            dist = self.distance(neuron, stimulus)
+            dist = self.distance(self, neuron, stimulus)
             if min_dist is None or dist < min_dist: # new minimum
                 min_dist = dist
                 nearest = [neuron]
@@ -90,34 +97,42 @@ class CompetitiveLearner(object):
                 nearest.append(neuron)
                 
         # choose a random neuron with minimum distance from stimulus
-        self.learn(nearest[random.randint(len(nearest))],
-                   stimulus, progress)
+        self.learn(self, nearest[random.randint(len(nearest))], stimulus)
     
-    def train(self, stimuli, epochs, debug_afterepoch=None):
+    def train(self, epochs, stimuli=None, debug_afterepoch=None):
         """Execute the Competitive Learning Algorithm.
         
         Stimuli are presented in a random order each epoch (invoking
         train_single() on each stimulus each epoch).
         
-            stimuli: a list of stimuli that make up the training set
-        
             epochs: the number of epochs (iterations over the entire training
                 set) to execute
+                
+            stimuli: a list of stimuli that make up the training set; if
+                present, overrides the current value of learner.stimuli; if
+                absent, uses the current value of learner.stimuli
         
-            debug_afterepoch(neurons, stimuli): an optional callback function
-                invoked after every training epoch with the environment's
-                neurons and the training stimuli
+            debug_afterepoch(learner): an optional callback function invoked
+                after every training epoch with the environment's neurons and
+                the training stimuli
+        
+        This method sets the learner object's progress field and stimuli field
+        (if passed as a parameter) for use by callbacks.
         """
+        
+        if stimuli is not None:
+            self.stimuli = stimuli
+        
         for epoch in range(epochs):
-            progress = epoch/epochs
+            self.progress = epoch/epochs
             
             # choose a random order for presentation of stimuli
-            for stimulus_idx in random.permutation(len(stimuli)):
-                self.train_single(stimuli[stimulus_idx], progress)
+            for stimulus_idx in random.permutation(len(self.stimuli)):
+                self.train_single(self.stimuli[stimulus_idx])
             
             # invoke per-epoch debug callback
             if debug_afterepoch is not None:
-                debug_afterepoch(self.neurons, stimuli)
+                debug_afterepoch(self)
     
     def quantize(self, stimulus):
         """Return the index of a neuron nearest (by the provided distance
@@ -130,7 +145,7 @@ class CompetitiveLearner(object):
         min_dist = None # i.e., infinity
         nearest = -1
         for i in range(len(self.neurons)):
-            dist = self.distance(self.neurons[i], stimulus)
+            dist = self.distance(self, self.neurons[i], stimulus)
             if min_dist is None or dist < min_dist:
                 nearest = i
                 min_dist = dist

@@ -92,7 +92,7 @@ length = 5
 low_char = 97
 high_char = 122
 
-def new_neuron():
+def new_neuron(learner):
     """Return a random MutableString with characters in [low_char,high_char]
     of length length.
     """

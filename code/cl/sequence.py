@@ -18,7 +18,7 @@ simulated annealing currently occurs. Defaults to 1.
 
 learning_rate = 1 # parameter to learn() bounds number of character subs
 
-def distance_hamming(seq1, seq2):
+def distance_hamming(learner, seq1, seq2):
     """Extremely simple distance metric for sequences; equal to the number of
     positions at which the sequences differ.
     
@@ -31,11 +31,9 @@ def distance_hamming(seq1, seq2):
         if seq1[i] != seq2[i]: num_diffs += 1
     return num_diffs
 
-def learn(neuron, stimulus, progress=None):
+def learn(learner, neuron, stimulus):
     """Changes at most learning_rate items in neuron to match the corresponding
     slots in stimulus.
-    
-    progress is ignored.
     """
     length = min(len(neuron), len(stimulus))
     
