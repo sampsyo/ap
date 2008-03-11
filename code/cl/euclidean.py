@@ -26,19 +26,29 @@ learning_rate defaults to 0.5.
 
 learning_rate = 0.5 # base learning rate; decreases linearly with progress
 
-def new_neuron(learner):
-    # Neurons are randomly placed in the [0,1]x[0,1] plane.
+def new_random_neuron(learner=None):
+    """A new_neuron() callback function that produces neurons in the
+    [0,1]x[0,1] plane.
+    
+    learner is ignored.
+    """
     return random.random(2)
 
 def distance(learner, v1, v2):
-    # Simple Euclidean distance metric.
+    """Distance metric callback yielding Euclidean distance.
+    
+    learner is ignored.
+    """
     return sqrt(sum((v1-v2)**2))
 
 def learn(learner, neuron, stimulus):
-    # Find the line between the neuron and the stimulus and move the neuron
-    # along it toward the stimulus by some proportion. In our case, we begin
-    # by moving the neuron (learning_rate) * (distance between neuron and
-    # stimulus) but decrease this linearly as learning progresses. 
+    """A basic annealing learn() callback for points on the plane.
+    
+    Finds the line between the neuron and the stimulus and moves the neuron
+    along it toward the stimulus. We begin by moving the neuron
+    (learning_rate) * (distance between neuron and stimulus) but decrease this
+    linearly as learning progresses.
+    """
     
     # distance to move the neuron toward the stimulus
     dist = distance(learner, neuron, stimulus) \
