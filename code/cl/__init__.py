@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from __future__ import division
 from numpy import *
+import copy
 
 """A module for using the Competitive Learning Algorithm.
 
@@ -9,36 +10,67 @@ the algorithm's parameter. One can then train() on datasets.
 """
 
 #####
+# USEFUL GENERIC PARAMETERS
+#####
+
+def new_nearby_neuron(learner):
+    """A new_neuron() callback that creates neurons equal to random stimuli.
+    
+    Uses learner.stimuli, so this should be set (i.e., passed to the
+    constructor, probably).
+    
+    For large spaces, this can increase the chances that a neuron will be
+    placed in a given cluster. Best used with repulsion to avoid overfitting.
+    """
+    neuron = learner.stimuli[random.randint(len(learner.stimuli))]
+    if hasattr(neuron, 'copy'):
+        return neuron.copy()
+    else:
+        return copy.deepcopy(neuron)
+
+
+
+#####
 # COMPETITIVE LEARNING ENVIRONMENT OBJECT
 #####
 
 class CompetitiveLearner(object):
-    """An environment that keeps track of the parameters to the Competitive
-    Learning Algorithm.
+    """An environment that keeps track of the parameters to a simple
+    competitive learning algorithm.
     
     To use the algorithm, initialize a CompetitiveLearner with the desired
     parameters. Use train() to execute the algorithm and obtain trained values
     for neurons. Then, either read the neurons array directly or use cluster()
     or quantize() to do VQ.
+    
+    This base class does no simulated annealing, repulsion, density awareness,
+    or anything beyond classic CL. Neurons learn by a constant learning_rate
+    passed to the constructor or set later.
     """
     
-    def __init__(self, new_neuron, distance, learn, stimuli=None,
-                    num_neurons=0):
+    def __init__(self, distance, learn, new_neuron, stimuli=None,
+            num_neurons=0, learning_rate=0.2):
         """Initialize a competitive learning environment.
         
         Takes some arguments, beginning with some functions defining learning
         behavior:
-
-            new_neuron(learner): returns an initialized neuron (an array);
-                called if num_neurons (below) is nonzero or when setup() is
-                called manually
                 
             distance(learner, v1, v2): returns the distance, by some metric,
                 between two vectors (i.e., either neurons or stimuli)
                 
-            learn(learner, neuron, stimulus): called when neuron is selected
-                to learn for stimulus, so neuron should be adjusted (in-place)
-                to be "closer" to stimulus
+            learn(learner, neuron, stimulus, amount): called when neuron is
+                selected to learn for stimulus, so neuron should be adjusted
+                (in-place) to be "closer" to stimulus in proportion to amount,
+                e.g.:
+                    - if amount is 1.0, neuron should equal stimulus after
+                      learning
+                    - if amount is -1.0, the neurons should be adjusted by the
+                      same amount in the opposite direction
+                    - if amount is 0.0, no learning should take place
+
+            new_neuron(learner): returns an initialized neuron; called if
+                num_neurons (below) is nonzero or when setup() is called
+                manually
         
         These callbacks may access the CompetitiveLearner's state via the
         learner reference. It may be useful, for instance, to use
@@ -51,6 +83,9 @@ class CompetitiveLearner(object):
             num_neurons: number of neurons to create during this
                 initialization; defaults to zero, so the user can add more
                 later manually or using setup()
+            
+            learning_rate: a constant passed as "amount" to the learn()
+                function
         
         After the CompetitiveLearner is initialized with at least one neuron,
         it is suitable to invoke train() to execute the Competitive Learning
@@ -62,6 +97,7 @@ class CompetitiveLearner(object):
         self.learn = learn
         self.progress = 0.0
         self.stimuli = stimuli
+        self.learning_rate = learning_rate
         self.setup(num_neurons)
     
     def setup(self, num_neurons=None):
@@ -101,7 +137,8 @@ class CompetitiveLearner(object):
                 nearest.append(neuron)
                 
         # choose a random neuron with minimum distance from stimulus
-        self.learn(self, nearest[random.randint(len(nearest))], stimulus)
+        self.learn(self, nearest[random.randint(len(nearest))],
+                stimulus, self.learning_rate)
     
     def train(self, epochs, stimuli=None, debug_afterepoch=None):
         """Execute the Competitive Learning Algorithm.
@@ -173,22 +210,3 @@ class CompetitiveLearner(object):
             clusters[self.quantize(stimulus)].append(stimulus)
         
         return clusters
-
-
-
-#####
-# USEFUL GENERIC PARAMETERS
-#####
-
-def new_nearby_neuron(learner):
-    """A new_neuron() callback that creates neurons equal to random stimuli.
-    
-    Uses learner.stimuli, so this should be set (i.e., passed to the
-    constructor, probably). For large spaces, this can increase the chances
-    that a neuron will be placed in a given cluster. Best used with repulsion.
-    """
-    neuron = learner.stimuli[random.randint(len(learner.stimuli))]
-    if hasattr(neuron, 'copy'):
-        return neuron.copy()
-    else:
-        return neuron

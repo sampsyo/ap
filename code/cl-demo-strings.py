@@ -13,8 +13,11 @@ stimuli = map(cl.string.MutableString, stimuli)
 num_neurons = 12
 
 # Set up the learning environment.
-learner = cl.CompetitiveLearner(cl.new_nearby_neuron, cl.string.distance,
-    cl.string.learn, stimuli, num_neurons)
+learner = cl.CompetitiveLearner(distance=cl.string.distance,
+                                   learn=cl.string.learn,
+                              new_neuron=cl.string.new_random_neuron,
+                                 stimuli=stimuli,
+                             num_neurons=num_neurons)
 
 # A function we'll use to show training progress.
 def show_neurons(learner):

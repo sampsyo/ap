@@ -41,8 +41,8 @@ def distance(learner, v1, v2):
     """
     return sqrt(sum((v1-v2)**2))
 
-def learn(learner, neuron, stimulus):
-    """A basic annealing learn() callback for points on the plane.
+def learn(learner, neuron, stimulus, amount):
+    """A basic learn() callback for points on the plane.
     
     Finds the line between the neuron and the stimulus and moves the neuron
     along it toward the stimulus. We begin by moving the neuron
@@ -51,9 +51,7 @@ def learn(learner, neuron, stimulus):
     """
     
     # distance to move the neuron toward the stimulus
-    dist = distance(learner, neuron, stimulus) \
-                      * (1 - learner.progress) \
-                               * learning_rate
+    dist = distance(learner, neuron, stimulus) * amount * learning_rate
     
     if dist == 0.0: # abort early if there is no learning to do
         return

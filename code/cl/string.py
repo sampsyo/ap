@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from numpy import *
+import cl.sequence
 
 """Provides the necessary functions to use CompetitiveLearner with strings.
 
@@ -101,9 +102,11 @@ def new_random_neuron(learner=None):
     
     learner is ignored.
     """
-    out = random.random_integers(low_char,high_char,length)
+    out = random.random_integers(low_char, high_char, length)
     return MutableString(out)
 
-# use distance and learning functions from generic sequence module
-from cl.sequence import distance_hamming as distance
-from cl.sequence import learn
+# get distance and learning functions from sequence module
+distance = cl.sequence.distance_hamming
+def random_element():
+    return random.random_integers(low_char, high_char)
+learn = cl.sequence.LearnFunctor(random_element)

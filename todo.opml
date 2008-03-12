@@ -7,8 +7,8 @@
   <body>
     <outline text="clustering (CL)">
       <outline text="robustness">
-        <outline text="smarter initial neuron placement (near stimuli)"/>
-        <outline text="repel loser neurons">
+        <outline text="smarter initial neuron placement (nearby but not on stimuli)" _note="ieeexplore.ieee.org—04303558.pdf &lt;http://ieeexplore.ieee.org/iel5/4303487/4303488/04303558.pdf&gt;"/>
+        <outline text="repel loser neurons" _note="ieeexplore.ieee.org—04303558.pdf &lt;http://ieeexplore.ieee.org/iel5/4303487/4303488/04303558.pdf&gt;">
           <outline text="delete consistent-loser neurons?"/>
         </outline>
         <outline text="edit distance for sequences"/>
