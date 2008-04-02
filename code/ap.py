@@ -123,7 +123,7 @@ def fields(vecs, pops, isrec, txt):
     """Return a list of list representing the fields in the records of the
     text.
     """
-    w = len(v2s(vecs[0]))
+    w = len(vecs[0])
     
     i = recs[0]+1 # first possible field is after first delimiting vector
     cur_record = []
@@ -151,7 +151,7 @@ def fields(vecs, pops, isrec, txt):
 ######## DIAGNOSTICS
 
 def depict_pops(txt, m, pops, isrec=None):
-    w = len(v2s(m[0]))
+    w = len(m[0])
     
     charpops = zeros(len(txt), int)
     for i in range(len(m)):
