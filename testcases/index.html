@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>Adaptive parsing: test cases</title>
+	</head>
+    <link rel = "stylesheet" type = "text/css" href = "http://www.cs.hmc.edu/~asampson/ap/ap.css" />
+	<body class="compactlists">
+		<h1>Adaptive parsing test cases</h1>
+		<ul class="toplevel">
+			<li><i>College course assignment list Web pages.</i> All HTML.
+				<ul>
+					<li><a href="cs81.txt">cs81</a> (HMC CS 81)</li>
+					<li><a href="stems.txt">stems</a> (HMC ENGR 59)
+						<ul>
+							<li><a href="stems-trimmed.txt">stems-trimmed</a> (markup preceding and following the content removed)</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><i>Other HTML lists and tables.</i>
+				<ul>
+					<li><a href="cs-courses.txt">cs-courses</a> (list of <a href="http://www.cs.hmc.edu/">Harvey Mudd College Department of Computer Science</a> courses)</li>
+					<li><a href="keunning.txt">keunning</a> (<a href="http://www.cs.hmc.edu/~geoff/">Geoff Keunning</a>'s <a href="http://www.cs.hmc.edu/~geoff/pubs.html">list of publications</a>)</li>
+					<li><a href="wcstaff.txt">wcstaff</a> (list of <a href="http://www.hmc.edu/academicsclinicresearch/academicresources/learningprograms1/writingcenter.html">Harvey Mudd College Writing Center</a> staff)
+						<ul>
+							<li><a href="wcstaff-trimmed.txt">wcstaff-trimmed</a> (markup preceding and following the content removed)</li>
+						</ul>
+					</li>
+					<li><a href="wikihistory.txt">wikihistory</a> (edit history of a <a href="http://wikipedia.org/">Wikipedia</a> page)</li>
+				</ul>
+			</li>
+			<li><i>Command output.</i> Various formats that are trivially parseable with conventional methods.
+				<ul>
+					<li><a href="dig.txt">dig</a></li>
+					<li><a href="ls.txt">ls</a></li>
+					<li><a href="dtrace.txt">dtrace</a></li>
+				</ul>
+			</li>
+			<li><i>Other files.</i>
+				<ul>
+					<li><a href="sexp.txt">sexp</a> (data from <a href="stems.txt">stems</a> formatted as an S-expression)</li>
+					<li><a href="prefs-plist.txt">prefs-plist</a> (a Mac OS X XML Property List)</li>
+					<li><a href="citations.txt">citations</a> (a BibTeX bibliography)</li>
+					<li><a href="fenotes.txt">fenotes</a> (MATLAB arrays representing the notes to "Fur Elise", from Cha/Molinder)</li>
+					<li><a href="synthstems.txt">synthstems</a> (data from <a href="stems.txt">stems</a> formatted as XML; an early test used to develop the first version of the parser)</li>
+					<li><a href="synthstems-noise.txt">synthstems-noise</a> (the <a href="synthstems.txt">synthstems</a> file with two delimiter characters changed to the letter X)</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

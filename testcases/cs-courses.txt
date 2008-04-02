@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+<head>
+   <title>HMC CS : Spring 2008 Courses </title>
+</head>
+
+<BODY BGCOLOR="#ffffff" LINK="#5a3984" ALINK="#d6ad6b" VLINK="#d6ad6b">
+
+<center>
+         <a href="http://www.hmc.edu">
+	    <img src="http://www.cs.hmc.edu/graphics/whhmc2.gif"
+	         alt="HMC Homepage" border=0></a>
+
+	<img src="/graphics/mon_clearpixel.gif" alt=" ">
+	<img src="/graphics/mon_clearpixel.gif" alt=" ">
+	<img src="/graphics/mon_clearpixel.gif" alt=" ">
+	<img src="/graphics/mon_clearpixel.gif" alt=" ">
+	<img src="/graphics/mon_clearpixel.gif" alt=" ">
+
+
+	 <a href="http://www.cs.hmc.edu">
+            <img src="http://www.cs.hmc.edu/graphics/whcs2.gif"
+	         alt="CS Home" border=0></a>
+</center>
+
+<table width=650 align="center"> 
+   <tr>
+      <td>
+         <br><p>
+
+
+
+<center>
+<a NAME="Spring 2008"></a>
+<br><font face="arial"><font size=+2>Spring 2008 Scheduled Courses</font></font>
+
+<br>(<a href="http://www.cs.hmc.edu/courses/2007/fall">link to previous
+    course offerings</a>)
+
+<br>(<a href="http://www.cs.hmc.edu/courses/2008/fall">link to next
+    semester's course offerings</a>)
+
+
+<br>(<a href="http://www.cs.hmc.edu/courses/2008/spring/week.pdf"> link to Week at a Glance </a>)
+
+</table>
+</center>
+
+<table BORDER=1 CELLSPACING=2 CELLPADDING=2 WIDTH="100%" BGCOLOR="#FFFFFF" >
+
+<tr>
+<td WIDTH="15%" BGCOLOR="#D6AD6B"><b>Course</b></td>
+
+<td WIDTH="35%" BGCOLOR="#D6AD6B">
+<center><b>Title</b></center>
+</td>
+
+<td WIDTH="15%" BGCOLOR="#D6AD6B"><b>Time</b></td>
+
+<td WIDTH="15%" BGCOLOR="#D6AD6B"><b>Location</b></td>
+
+<td WIDTH="15%" BGCOLOR="#D6AD6B"><b>Instructor</b></td>
+</tr>
+
+
+<tr>
+<td VALIGN=CENTER>CSCI 60 HM 1
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs60">Principles of Computer Science</a>
+<td VALIGN=CENTER>MW 2:45
+<td VALIGN=CENTER>Jacobs B134
+<td VALIGN=CENTER>Dodds, Z and Keller, R
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 60 HM 2
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs60">Principles of Computer Science</a>
+<td VALIGN=CENTER>TTh 2:45
+<td VALIGN=CENTER>Jacobs B134
+<td VALIGN=CENTER>Dodds, Z and Keller, R
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 70 
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs70/">Data Structures & Program Develop</a>
+<td VALIGN=CENTER>MW 11-12:15
+<td VALIGN=CENTER>TG 208
+<td VALIGN=CENTER>Stone, C
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 81
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81">Computability and Logic</a>
+<td VALIGN=CENTER>TR 1:15
+<td VALIGN=CENTER>JA B132
+<td VALIGN=CENTER>Sweedyk, E
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 105 
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs105">Computer Systems</a>
+<td VALIGN=CENTER>TTh 2:45
+<td VALIGN=CENTER>Galileo Edwards
+<td VALIGN=CENTER>Kuenning, G.
+</tr>
+
+<td VALIGN=CENTER>CSCI 105 Lab
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs105">Computer Systems, Lab</a>
+<td VALIGN=CENTER>T 6:30
+<td VALIGN=CENTER>BK B105
+<td VALIGN=CENTER>Kuenning, G.
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 121
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs121">Software Development</a>
+<td VALIGN=CENTER>TTh 1:15
+<td VALIGN=CENTER>JA B134
+<td VALIGN=CENTER>Keller, R
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 131
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs131">Programming Languages</a>
+<td VALIGN=CENTER>MW 2:45
+<td VALIGN=CENTER>JA B134
+<td VALIGN=CENTER>Stone, C
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 131 Lab
+<td VALIGN=CENTER> <!-- <a href="http://www.cs.hmc.edu/courses/2008/spring/cs131">Programming Languages</a> -->
+<td VALIGN=CENTER>Th 6:30
+<td VALIGN=CENTER>BK B105
+<td VALIGN=CENTER>Stone, C
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 133 CM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs133">Databases</a>
+<td VALIGN=CENTER>TTh 2:45
+<td VALIGN=CENTER>CM-RN 12
+<td VALIGN=CENTER>Lee, A
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 140 PO
+<td VALIGN=CENTER><a href="http://www.cs.pomona.edu/classes/cs140">Algorithms</a>
+<td VALIGN=CENTER>TTh 2:45
+<td VALIGN=CENTER>PO-ML 134
+<td VALIGN=CENTER>Chen, T
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 151 HM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs151">Artificial Intelligence</a>
+<td VALIGN=CENTER>MW 11:00
+<td VALIGN=CENTER>JA B134
+<td VALIGN=CENTER>Alvarado, C
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 154 HM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs154">Robotics</a>
+<td VALIGN=CENTER>TR 9:35
+<td VALIGN=CENTER>BK B126
+<td VALIGN=CENTER>Dodds, Z
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 181 PO
+<td VALIGN=CENTER><a href="http://www.cs.pomona.edu/classes/cs181NLP">Natural Language Processing</a>
+<td VALIGN=CENTER>TTh 1:15
+<td VALIGN=CENTER>PO-LINC 1135
+<td VALIGN=CENTER>Bruce, K
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 182 HM 1
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs182-fs">File Systems</a>
+<td VALIGN=CENTER>MW 2:45
+<td VALIGN=CENTER>TG 203
+<td VALIGN=CENTER>Kuenning, G
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 182 HM 2
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs182-pbc">Pen-Based Computing</a>
+<td VALIGN=CENTER>MW 1:15
+<td VALIGN=CENTER>LAC Riggs
+<td VALIGN=CENTER>Alvarado, C
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 182 PO 1
+<td VALIGN=CENTER><a href="http://www.cs.pomona.edu/classes/cs182">Computer Security</a>
+<td VALIGN=CENTER>MW 1:15
+<td VALIGN=CENTER>PO-EDMS 217
+<td VALIGN=CENTER>Bull, R
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 184 HM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs184">Computer Science Clinic II</a>
+<td VALIGN=CENTER>T 11 & Arr
+<td VALIGN=CENTER>GA McAlister
+<td VALIGN=CENTER>Keller/Staff
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 186 HM
+<td VALIGN=CENTER>Computer Science Research II
+<td VALIGN=CENTER>Arr
+<td VALIGN=CENTER>Arr
+<td VALIGN=CENTER>Staff
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 189 HM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/ACM">Programming Practicum</a>
+<td VALIGN=CENTER>T 4:15
+<td VALIGN=CENTER>JA B134
+<td VALIGN=CENTER>Dodds, Z
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 192 HM
+<td VALIGN=CENTER>Computer Science Project II
+<td VALIGN=CENTER>Arr
+<td VALIGN=CENTER>Arr
+<td VALIGN=CENTER>Staff
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 194 HM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs194">Computer Science Colloquium (jrs)</a>
+<td VALIGN=CENTER>Th 4:15
+<td VALIGN=CENTER>GA Pryne
+<td VALIGN=CENTER>Sweedyk, E
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 196 HM
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/cs196">Computer Science Colloquium (srs)</a>
+<td VALIGN=CENTER>Th 4:15
+<td VALIGN=CENTER>GA Pryne
+<td VALIGN=CENTER>Sweedyk, E
+</tr>
+
+<tr>
+<td VALIGN=CENTER>CSCI 198 HM 
+<td VALIGN=CENTER>Adv Problems in Computer Science
+<td VALIGN=CENTER>Arr
+<td VALIGN=CENTER>Arr
+<td VALIGN=CENTER>Staff
+</tr>
+
+<tr>
+<td VALIGN=CENTER>Music 84 
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/music84">Jazz Improv</a>
+<td VALIGN=CENTER>W 8:30-10:00
+<td VALIGN=CENTER>Sprague 2nd Floor
+<td VALIGN=CENTER>Keller, R
+</tr>
+
+
+<tr>
+<td VALIGN=CENTER>IE162
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/ie162">Beyond Calculation</a>
+<td VALIGN=CENTER>MW 4:15
+<td VALIGN=CENTER>Jacobs B 134
+<td VALIGN=CENTER>Erlinger, M
+</tr>
+
+<tr>
+<td VALIGN=CENTER>IE179
+<td VALIGN=CENTER><a href="http://www.cs.hmc.edu/courses/2008/spring/ie179">Gender and Computer Games</a>
+<td VALIGN=CENTER>TTh 2:45
+<td VALIGN=CENTER>LAC
+<td VALIGN=CENTER>Sweedyk, Z
+</tr>
+
+</table>
+
+<hr />
+  <div align="center">
+    <b>HMC Computer Science Department</b><br />
+<a href="/contact.html">Contact Information</a>
+</div>
+
+<div align="center"><address>
+Last Modified Tuesday, 22-Jan-2008 13:27:20 PST</address></div>
+
+</td>
+</tr>
+</table>
+
+
+</html>

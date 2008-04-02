@@ -1,0 +1,350 @@
+<HTML>
+<HEAD>
+<TITLE>Publications by Geoff Kuenning</TITLE>
+</HEAD>
+<BODY>
+<!--
+<A HREF="http://www.eff.org/blueribbon.html">
+<IMG ALIGN=RIGHT SRC="rib_wh_brdr.gif" ALT="Join the Blue Ribbon Anti-Censorship Campaign!"></A>
+<A HREF="http://www.cauce.org/">
+<IMG ALIGN=RIGHT SRC="cauce.jpg" ALT="Fight Spam! Join CAUCE."></A>
+-->
+
+<H1>Publications by Geoff Kuenning</H1>
+
+<H2> General Computer Information </H2>
+
+<P>
+<A HREF="interfaces.html"> How to Create a Good UNIX Interface </A>
+
+<H2> Computer Science Research </H2>
+
+<P>
+C. Weddle, M. Oldham, J. Qian, A.-I. Wang, P. Reiher, and G. Kuenning.
+    <CITE>PARAID: A Gear-Shifting Power-Aware RAID.</CITE>
+    ACM Transactions on Storage, 3(3), October 2007.
+    Available in
+    <A HREF="http://www.cs.fsu.edu/~awang/papers/tos2007.pdf">PDF</A> format.
+
+<P>
+A.-I. Wang, G. Kuenning, and P. Reiher
+    <CITE>Using Permuted States and Validated Simulation to Analyze
+      Conflict Rates in Optimistic Replication.</CITE>
+    SCS Simulation: Transactions of the Society for Modeling and
+      Simulation International, 83(8), August 2007, 551--569.
+    Available in
+    <A HREF="https://articleworks.cadmus.com/doc/dSoftcopy?o=651167&i=802499&c=1143143&atDownload=true">PDF</A>
+    format.
+
+<P>
+C. Weddle, M. Oldham, J. Qian, A.-I. Wang, P. Reiher, and G. Kuenning.
+    <CITE>PARAID: A Gear-Shifting Power-Aware RAID.</CITE>
+    Usenix Conference on File and Storage Technologies (FAST), San
+    Jose, CA, February, 2007.
+    Available in
+    <A HREF="http://www.cs.fsu.edu/~awang/papers/fast2007.pdf">PDF</A>
+    format.
+
+<P>
+A. Wang, G. Kuenning, P. Reiher, and G. Popek.
+    <CITE>The Conquest file system: better performance through a
+    disk/persistent-RAM hybrid design.</CITE>
+    ACM Transactions on Storage 2(3): 309-348, 2006.
+    Available in
+    <A HREF="http://www.cs.fsu.edu/~awang/papers/tos2006.pdf">PDF</A>
+    format.
+
+<P>
+A.-I. Wang, G. Kuenning, and P. Reiher.
+    <CITE>Using Permuted States and Validated Simulation to Analyze
+    Conflict Rates in Optimistic Replication.</CITE>
+    2005 International Symposium on Performance Evaluation of Computer and
+    Telecommunication Systems (SPECTS'05), Philadelphia, PA, July, 2005.
+    Available in
+    <A HREF="http://www.cs.fsu.edu/~awang/papers/spects2005.pdf">PDF</A>
+    format.
+
+<P>
+J. Li, T. Ehrenkranz, G. Kuenning, and P. Reiher.
+    <CITE>Simulation and Analysis on the Resiliency and Efficiency of
+    Malnets.</CITE>
+    In <CITE>Proceedings of the IEEE Symposium on Measurement, Modeling, and
+    Simulation of Malware</CITE>, Monterey, CA, June, 2005, pp. 262-269.
+    Available in
+    <A HREF="http://www.cs.hmc.edu/~geoff/ieee_smmsm_2005.pdf">PDF</A>
+    format.
+
+<P>
+N.T. Nguyen, A.-I. Wang, P. Reiher, and G. Kuenning.
+    <CITE>Electric-Field-Based Routing: A Reliable Framework for
+    Routing in MANETs.</CITE>
+    ACM Mobile Computing and Communications Review, <BOLD>8</BOLD>, 2
+    (April 2004).
+
+<P>
+P. Reiher, J. Li, and G. Kuenning.
+    <CITE>Midgard Worms: Sudden Nasty Surprises from a Large Resilient
+    Zombie Army.</CITE>  UCLA Computer Science Department
+    Technical Report UCLA-CSD-040019, April, 2004.
+    Available in
+    <A HREF="ftp://cs.ucla.edu/tech-report/2004-reports/040019.pdf">PDF</A>
+    format.
+
+<P>
+G.Kuenning and Ethan L. Miller.
+    <CITE>Anonymization Techniques for URLs and Filenames.</CITE>
+    Technical Report UCSC-CRL-03-05, Storage Systems Research Center,
+    Jack Baskin School of Engineering, University of California, Santa
+    Cruz, September 2003.
+    Available in
+    <A HREF="http://www.cs.ucsc.edu/~elm/Papers/ucsc-crl-03-05.pdf">PDF</A>
+    format.
+
+<P>
+J. Mirkovic, M. Robinson, P. Reiher, and G. Kuenning.
+    "Alliance Formation for DDoS Defense."  In <CITE>Proceedings of
+    the New Security Paradigms Workshop</CITE>, ACM SIGSAC, August
+    2003.
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/defcom/defcom-nspw.pdf">PDF</A>
+    or
+    <A HREF="http://lasr.cs.ucla.edu/defcom/defcom-nspw.ps">Postscript</A>
+    format.
+
+<P>
+A. Wang, G.H. Kuenning, and P. Reiher.
+    "Multipath Routing in Ad Hoc Networks."  In <CITE>Mobile and
+    Wireless Internet: Protocols, Algorithms and Systems</CITE>, K. Makki,
+    N. Pissinou, K. Makki, and E. Park, editors, Kluwer Academic
+    Publishers, 2003.
+
+<P>
+N. Nguyen, P. Reiher, G.H. Kuenning.
+    <CITE>Detecting Insider Threats by Monitoring System Call Activity</CITE>.
+    IEEE Information Assurance Workshop, United States Military Academy 
+    West Point, New York, June, 2003.
+    Available in <A
+    HREF="http://lasr.cs.ucla.edu/lasr-members/songuku/lever/nam/publication/324_final.pdf">PDF</A> format.
+
+<P>
+A. Wang, G.H. Kuenning, P. Reiher, and G.J. Popek
+    <CITE>The Effects of Memory-Rich Environments on File System
+    Microbenchmarks</CITE>.
+    2003 International Symposium on Performance Evaluation of Computer and
+    Telecommunication Systems (SPECTS'03), Montreal, Canada, July, 2003.
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/awang/papers/spects2003.pdf">PDF</A>
+    format.
+
+<P>
+G.H. Kuenning, W. Ma, P. Reiher, and G.J. Popek
+    <CITE>Simplifying Automated Hoarding Methods</CITE>.
+    5th ACM International Workshop on Modeling, Analysis and
+    Simulation of Wireless and Mobile Systems (MSWiM 2002), Atlanta,
+    GA, September, 2002.
+    Available in
+    <A HREF="http://www.cs.hmc.edu/~geoff/papers/seerlru.ps">Postscript</A>
+    format.
+
+<P>
+A. Wang, P. Reiher, R. Bagrodia, and G.H. Kuenning.
+    <CITE>Understanding the Behavior of the Conflict-Rate Metric in
+    Optimistic Peer Replication</CITE>.
+    5th International Workshop on Mobility in Databases and
+    Distributed Systems, Aix-en-Provence, France, September, 2002.
+    Available in <A HREF="http://lasr.cs.ucla.edu/awang/papers/mdds2002.pdf">PDF</A>
+    or
+    <A HREF="http://lasr.cs.ucla.edu/awang/papers/mdds2002a.html">HTML</A>
+    format.
+
+<P>
+K.M. Evans and G.H. Kuenning.
+    <CITE>A Study of Irregularities in File-Size Distributions</CITE>.
+    2002 International Symposium on Performance Evaluation of Computer
+    and Telecommunication Systems (SPECTS '02), San Diego, California,
+    July, 2002.
+    Available in
+    <A HREF="http://www.cs.hmc.edu/~geoff/papers/filesize02.ps">Postscript</A>
+    format.
+
+<P>
+A. Wang, P. Reiher, G. J. Popek, and G. H. Kuenning.
+    <CITE>Conquest: Better Performance Through a Disk/RAM Hybrid File
+    System.</CITE> Usenix Annual Technical Conference, Monterey, CA,
+    June, 2002.
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/awang/papers/usenix2002.ps">Postscript</A>
+    or
+    <A HREF="http://lasr.cs.ucla.edu/awang/papers/usenix2002a.html">HTML</A>
+    format.
+
+<P>
+J. Li, P. Reiher, G. Popek, M. Yarvis, and G.H. Kuenning
+    <CITE>An Approach to Measuring Large-Scale Distributed Systems.</CITE>
+    TestCom 2002, Berlin, Germany, March, 2002.
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/lijun/pubs/testcom2002_final.pdf">PDF</A>
+    format.
+
+<P>
+A. Wang, P. Reiher, G. J. Popek, and G. H. Kuenning
+    <CITE>Conquest:  Better Performance Through a Disk/RAM Hybrid File
+    System.</CITE> Work-in-progress report presented at Conference on File
+    Systems and Storage Technologies (FAST), Monterey, CA, January, 2002.
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/awang/papers/fastwip2002.ps">Postscript</A>
+    format.
+
+<P>
+D. Ratner, P. Reiher, G. J. Popek, and G. H. Kuenning.
+    <CITE>Replication Requirements in Mobile Environments.</CITE>
+    <CITE>Mobile Networks and Applications</CITE> <BOLD>6</BOLD>, 6
+    (November 2001), 525-534.
+    Available in
+    <A HREF="http://www.cs.hmc.edu/~geoff/papers/replreq.ps">Postscript</A>
+    format.
+
+<P>
+A. Wang, P. Reiher, G. J. Popek, and G. H. Kuenning.
+    <CITE>The Conquest File System---Life after Disks</CITE> (position
+    summary).
+    Proceedings of the 8th IEEE Workshop on Hot Topics in Operating
+    Systems (HotOS VIII), Schloss Elmau,
+    Germany, May 2001.
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/awang/hotos.ps">Postscript</A>
+    or
+    <A HREF="http://lasr.cs.ucla.edu/awang/papers/hotos2001.html">HTML</A>
+    format.
+
+<P>
+G. H. Kuenning.
+    <CITE> A Cron Daemon for Portable Computers. </CITE> UCLA Computer
+    Science Department Technical Report UCLA-CSD-990044, September, 1999.
+    Available in
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/ucla_csd_990044.ps.gz">Postscript</A>
+    format.
+
+<P> A. Rudenko, P. Reiher, G.J. Popek, and
+    G.H. Kuenning.
+    <CITE>The Remote Processing Framework for Portable Computer Power
+    Saving.</CITE> Proceedings of the ACM Symposium on Applied Computing,
+    San Antonio, TX, February 1999.
+    Available in
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/sac99.ps.gz">Postscript</A>
+    format.
+
+<P>
+G. H. Kuenning, R. Bagrodia, R. G. Guy, G. J. Popek, P. Reiher, and
+    A.-I Wang.
+    <CITE>Measuring the Quality of Service of Optimistic Replication.</CITE>
+    Proceedings of the ECOOP Workshop on Mobility and
+    Replication, July, 1998.
+    Available in
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/replqos.ps.gz">Postscript</A>
+    or <A HREF="replqos.html">HTML</A> format.
+
+<P>
+A. Rudenko, P. Reiher, G. J. Popek, and G. H. Kuenning.
+    <CITE>
+    Saving Portable Computer Battery Power through Remote Process Execution.
+    </CITE>
+    ACM Mobile Computing and Communications Review <BOLD>2</BOLD>, 1 (Winter 1998).
+    Available in
+    <A HREF="http://lasr.cs.ucla.edu/arudenko/PUBLICATIONS/power.ps">Postscript</A>
+    or
+    <A HREF="http://lasr.cs.ucla.edu/arudenko/PUBLICATIONS/power.pdf">PDF</A>
+    format.
+    
+
+<P>
+T. W. Page, Jr., R. G.. Guy, J. S. Heidemann, D. H. Ratner,
+    P. L. Reiher, A. Goel, G. H. Kuenning, and G. Popek.
+    <CITE>Perspectives on Optimistically Replicated Peer-to-Peer Filing.</CITE>
+    Software--Practice and Experience <BOLD>28</BOLD>, 2 (February 1998), 155-180.
+
+<P>
+G. H. Kuenning, D. H. Ratner, P. Reiher, G. J. Popek, and R. G. Guy.
+    <CITE> Cooperative Chaos. </CITE> UCLA Computer Science Department
+    Technical Report UCLA-CSD-970041, November, 1997.  Available in
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/ucla_csd_970041.ps.gz">Postscript</A>
+    format.
+
+<P>
+G. H. Kuenning and G. J. Popek.
+    <CITE>Automated Hoarding for Mobile Computers.</CITE>
+    Proceedings of the 16th ACM Symposium on Operating Systems Principles,
+    (<A HREF="http://www.cs.washington.edu/sosp16/">SOSP-16</A>)
+    St. Malo, France, October 5-8, 1997.
+    Available in either
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/sosp97.ps.gz">Postscript</A>
+    or <A HREF="sosp97.html">HTML</A> format.
+
+<P>
+G. H. Kuenning, P. Reiher, and G. J. Popek.
+    <CITE>Experience with an Automated Hoarding System</CITE>
+    Personal Technologies <BOLD>1</BOLD>, 3, September 1997.
+    Available in
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/perstech97.ps.gz">Postscript</A>
+    format.
+    DOI: <a href="http://dx.doi.org/10.1007/BF01299649">10.1007/BF01299649</a>
+
+<P>
+G. H. Kuenning.  <CITE>Seer: Predictive File Hoarding for Disconnected
+    Mobile Operation.</CITE>  Ph.D. dissertation, 1997.
+    The <A HREF="diss_abstract.html">abstract</A> is available in HTML format.
+    The full dissertation is available either in
+    the original
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/kuenning_dissertation.ps.gz">
+    single-sided, double-spaced form</A> (301 pages total) or
+    paper-saving
+    <A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/geoff/ucla_csd_970015.ps.gz">
+    double-sided, single-spaced form</A> (174 pages) as Technical Report
+    UCLA-CSD-970015.
+
+<P>
+G. H. Kuenning, <CITE>Precise
+    Interactive Measurement of Operating Systems Kernels</CITE>,
+    Software--Practice and Experience <BOLD>25</BOLD>, 1 (January 1995), 1-22.
+    Available in
+    <A HREF="http://www.cs.hmc.edu/~geoff/papers/kitrace.ps">Postscript</A>
+    format.
+
+<P>
+G. H. Kuenning,
+<CITE><A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/mcsa94.ps.gz">The
+    Design of the SEER Predictive Caching System</A></CITE>, Proceedings
+    of Mobile Computing Systems and Applications 1994, Santa Cruz, CA,
+    December, 1994.
+
+<P>
+G. H. Kuenning, G. J. Popek, P. Reiher, <CITE><A HREF="ftp://ftp.cs.ucla.edu/pub/ficus/usenix_summer_94_statistics.ps.gz">
+    An Analysis of Trace Data
+    for Predictive File Caching in Mobile Computing</A></CITE>, Proceedings
+    of the 1994 Summer Usenix Conference.
+
+<H2> Computer Science Education </H2>
+
+<P>
+Z. Dodds, C. Alvarado, G. Kuennng, R. Libeskind-Hadas,
+    <CITE>Breadth-First CS 1 for Scientists: Curriculum and
+    Assessment.</CITE>, ITiCSE 2007: Proceedings of the 12th Annual
+    Conference on Technology in Computer Science Education, 2007.
+    Available in
+    <A HREF="http://db.grinnell.edu/sigcse/iticse2007/Program/viewAcceptedProposal.asp?sessionType=paper&sessionNumber=95">PDF</A>
+    format.
+
+<H2> Other Subjects </H2>
+
+<P>
+<A HREF="prognotes/index.html"> Program notes for various works in
+classical music.</A>
+
+<P>
+<HR>
+Back to Geoff Kuenning's <A HREF="geoff.html">home page</A>.
+<P>
+This page maintained by
+<A HREF="mailto:geoff@cs.hmc.edu">Geoff Kuenning</A>.
+</BODY>
+</HTML>

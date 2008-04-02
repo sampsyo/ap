@@ -1,0 +1,32 @@
+; <<>> DiG 9.4.1-P1 <<>> apple.com
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16023
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 6, ADDITIONAL: 6
+
+;; QUESTION SECTION:
+;apple.com.			IN	A
+
+;; ANSWER SECTION:
+apple.com.		12828	IN	A	17.149.160.49
+
+;; AUTHORITY SECTION:
+apple.com.		260790	IN	NS	nserver.asia.apple.com.
+apple.com.		260790	IN	NS	nserver.euro.apple.com.
+apple.com.		260790	IN	NS	nserver.apple.com.
+apple.com.		260790	IN	NS	nserver2.apple.com.
+apple.com.		260790	IN	NS	nserver3.apple.com.
+apple.com.		260790	IN	NS	nserver4.apple.com.
+
+;; ADDITIONAL SECTION:
+nserver.asia.apple.com.	1404	IN	A	17.82.254.3
+nserver.euro.apple.com.	1404	IN	A	17.72.133.64
+nserver.apple.com.	171921	IN	A	17.254.0.50
+nserver2.apple.com.	171921	IN	A	17.254.0.59
+nserver3.apple.com.	171923	IN	A	17.112.144.50
+nserver4.apple.com.	171921	IN	A	17.112.144.59
+
+;; Query time: 26 msec
+;; SERVER: 134.173.254.23#53(134.173.254.23)
+;; WHEN: Tue Feb 12 17:48:28 2008
+;; MSG SIZE  rcvd: 284

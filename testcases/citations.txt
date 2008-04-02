@@ -1,0 +1,127 @@
+@Article{tomasulo,
+  author =       "R. M. Tomasulo",
+  title =        "An efficient algorithm for exploiting multiple
+                 arithmetic units",
+  journal =      "IBM Journal of Research and Development",
+  volume =       "11",
+  pages =        "25--33",
+  month =        "January",
+  year =         "1967",
+}
+
+@article{kwok,
+  author = {Kwok, Yu-Kwong and Ahmad, Ishfaq},
+  title = {Static scheduling algorithms for allocating directed task graphs to multiprocessors},
+  journal = {ACM Comput. Surv.},
+  volume = {31},
+  number = {4},
+  year = {1999},
+  issn = {0360-0300},
+  pages = {406--471},
+  doi = {http://doi.acm.org/10.1145/344588.344618},
+  publisher = {ACM Press},
+  address = {New York, NY, USA},
+  }
+ 
+@INPROCEEDINGS{spmt-eval,
+    title = {Evaluation of a speculative multithreading compiler by characterizing program dependences},
+    author = {Bhowmik, A. and Franklin, M.},
+    booktitle = {Workload Characterization, 2004. {WWC}-7. 2004 {IEEE} International Workshop on},
+    year = {2004},
+    pages = {19--26},
+    month = oct,
+    doi = {10.1109/WWC.2004.1437390},
+  }
+
+@techreport{sieve,
+    title = {The {C}odeplay {S}ieve {C}++ Parallel Programming System},
+    author = {Richards, Andrew},
+    organization = {Codeplay Software Limited},
+    note = {\url{http://www.codeplay.com/downloads_public/sievepaper-2columns-normal.pdf}. Accessed April 11, 2007.}
+}
+
+@inproceedings{kim,
+ author = {Kim, Ho-Seop and Smith, James E.},
+ title = {An instruction set and microarchitecture for instruction level distributed processing},
+ booktitle = {ISCA '02: Proceedings of the 29th annual international symposium on computer architecture},
+ year = {2002},
+ isbn = {0-7695-1605-X},
+ pages = {71--81},
+ location = {Anchorage, Alaska},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ }
+ 
+@ARTICLE{smith,
+  title = {Instruction-level distributed processing},
+  author = {Smith, J. E.},
+  journal = {Computer},
+  year = {2001},
+  volume = {34},
+  number = {4},
+  pages = {59--65},
+  month = apr,
+  doi = {10.1109/2.917541},
+}
+
+@inproceedings{spmt-compiler,
+ author = {Anasua Bhowmik and Manoj Franklin},
+ title = {A general compiler framework for speculative multithreading},
+ booktitle = {SPAA '02: Proceedings of the fourteenth annual ACM symposium on Parallel algorithms and architectures},
+ year = {2002},
+ isbn = {1-58113-529-7},
+ pages = {99--108},
+ location = {Winnipeg, Manitoba, Canada},
+ doi = {http://doi.acm.org/10.1145/564870.564885},
+ publisher = {ACM Press},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{mitosis,
+ author = {Carlos Garc\'ia Qui–ones and Carlos Madriles and Jes\'us S\'anchez and Pedro Marcuello and Antonio Gonz\'alez and Dean M. Tullsen},
+ title = {Mitosis compiler: an infrastructure for speculative threading based on pre-computation slices},
+ booktitle = {PLDI '05: Proceedings of the 2005 ACM SIGPLAN conference on Programming language design and implementation},
+ year = {2005},
+ isbn = {1-59593-056-6},
+ pages = {269--279},
+ location = {Chicago, IL, USA},
+ doi = {http://doi.acm.org/10.1145/1065010.1065043},
+ publisher = {ACM Press},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{earth,
+ author = {L. J. Hendren and Xinan Tang and Yingchun Zhu and G. R. Gao and Xun Xue and Haiying Cai and P. Ouellet},
+ title = {Compiling {C} for the {EARTH} Multithreaded Architecture},
+ booktitle = {PACT '96: Proceedings of the 1996 Conference on Parallel Architectures and Compilation Techniques},
+ year = {1996},
+ pages = {12},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ }
+
+@book{pat,
+	author = {John L. Hennessy and David A. Patterson},
+	title = {Computer Architecture: A Quantitative Approach},
+	publisher = {Morgan Kaufmann Publishers},
+	year = {2007},
+	edition = {4},
+}
+
+@misc{debyer,
+	title = {Debyer: software for calculation of diffraction patterns},
+	author = {Marcin Wojdyr},
+	note = {\url{http://www.unipress.waw.pl/debyer/}. Accessed April 29, 2007.}
+}
+
+@misc{pbd,
+	title = {pbd: C function for solving sets of ODEs},
+	author = {Edward A. Richley},
+	note = {\url{http://www.onion-switch.com/physics/pbd/index.html}. Accessed April 29, 2007.}
+}
+
+@misc{john,
+	title = {John the {R}ipper password cracker},
+	author = {Openwall Project},
+	note = {\url{http://www.openwall.com/john/}. Accessed April 29, 2007.}
+}

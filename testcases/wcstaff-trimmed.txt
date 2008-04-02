@@ -1,0 +1,13 @@
+<p><a href="mailto:sdeford@hmc.edu">Shelley DeFord</a>, Senior, Physics Major</p>
+<p><a href="mailto:ghoople@hmc.edu">Gordon Hoople</a>, Senior, Engineering Major</p>
+<p><a href="mailto:kfleming@hmc.edu">Kevin Fleming</a>, Senior, Math Major</p>
+<p><a href="mailto:aleverentz@hmc.edu">Andy Leverentz</a>, Senior, Math Major</p>
+<p><a href="mailto:maddalena_jackson@hmc.edu">Maddalena Jackson</a>, Senior, Engineering Major</p>
+<p><a href="mailto:apetros-good@hmc.edu">Autumn Petros-Good</a>, Junior, Engineering Major</p>
+<p><a href="mailto:asampson@hmc.edu">Adrian Sampson</a>, Junior, Computer Science Major</p>
+<p><a href="mailto:alyssa_dray@hmc.edu">Alyssa Dray</a>, Sophomore, Undeclared
+Major</p>
+<p><a href="mailto:mark_cyffka@hmc.edu">Mark Cyffka</a>, Sophomore, Chemistry Major</p>
+<p><a href="mailto:alex_randall@hmc.edu">Alex Randall</a>, Sophomore, Engineering Major</p>
+<p><a href="mailto:jciciliano@hmc.edu">Jordan Ciciliano</a>, Sophomore,
+Undeclared Major</p>

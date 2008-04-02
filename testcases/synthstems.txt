@@ -1,0 +1,12 @@
+<hwlist>
+<name>Problem Set #1</name><due>09/11/2007</due>
+<name>Problem Set #2</name><due>09/18/2007</due>
+<name>Problem Set #3</name><due>09/25/2007</due>
+<name>Problem Set #4</name><due>10/02/2007</due>
+<name>Problem Set #5</name><due>10/18/2007</due>
+<name>Problem Set #6</name><due>10/30/2007</due>
+<name>Problem Set #7</name><due>11/06/2007</due>
+<name>Problem Set #8</name><due>11/20/2007</due>
+<name>Problem Set #9</name><due>11/27/2007</due>
+<name>Problem Set #10</name><due>12/04/2007</due>
+</hwlist>

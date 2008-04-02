@@ -1,0 +1,1448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Writing Center Staff</title>
+	<meta content="Contact the HMC Writing Center staff" name="description"/>
+	<meta content="writing center, staff, contact" name="keywords"/>
+	<meta content="Tue, 12 Feb 2008 16:34:03 -0320" name="date"/>
+	
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<link href="../../../../included/global.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../included/print.css" media="print" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript">
+//<!--
+				var bannerSection="about";
+//--></script><script type="text/javascript">
+//<!--
+				var bannerSection="academics";
+//--></script><script type="text/javascript">
+//<!--
+				var bannerSection="learningprograms";
+//--></script>
+	<script type="text/javascript">
+//<!--
+	var allRandomImages=new Array()
+
+		
+				allRandomImages[1]=new Array()
+				allRandomImages[1][0]="colrel";		
+				allRandomImages[1][1]="../../../../graphics/banners/colrel/collegerelations_banner7.jpg";		
+		
+				allRandomImages[2]=new Array()
+				allRandomImages[2][0]="colrel";		
+				allRandomImages[2][1]="../../../../graphics/banners/colrel/collegerelations_banner6.jpg";		
+		
+				allRandomImages[3]=new Array()
+				allRandomImages[3][0]="colrel";		
+				allRandomImages[3][1]="../../../../graphics/banners/colrel/collegerelations_banner5.jpg";		
+		
+				allRandomImages[4]=new Array()
+				allRandomImages[4][0]="colrel";		
+				allRandomImages[4][1]="../../../../graphics/banners/colrel/collegerelations_banner4.jpg";		
+		
+				allRandomImages[5]=new Array()
+				allRandomImages[5][0]="colrel";		
+				allRandomImages[5][1]="../../../../graphics/banners/colrel/collegerelations_banner3.jpg";		
+		
+				allRandomImages[6]=new Array()
+				allRandomImages[6][0]="colrel";		
+				allRandomImages[6][1]="../../../../graphics/banners/colrel/collegerelations_banner2.jpg";		
+		
+				allRandomImages[7]=new Array()
+				allRandomImages[7][0]="colrel";		
+				allRandomImages[7][1]="../../../../graphics/banners/colrel/collegerelations_banner1.jpg";		
+		
+				allRandomImages[8]=new Array()
+				allRandomImages[8][0]="colrelhome";		
+				allRandomImages[8][1]="../../../../graphics/banners/colrelhome/JGBookPrint_056_banner.jpg";		
+		
+				allRandomImages[9]=new Array()
+				allRandomImages[9][0]="learningprograms";		
+				allRandomImages[9][1]="../../../../graphics/banners/learningprograms/ae5.jpg";		
+		
+				allRandomImages[10]=new Array()
+				allRandomImages[10][0]="learningprograms";		
+				allRandomImages[10][1]="../../../../graphics/banners/learningprograms/ae4.jpg";		
+		
+				allRandomImages[11]=new Array()
+				allRandomImages[11][0]="learningprograms";		
+				allRandomImages[11][1]="../../../../graphics/banners/learningprograms/ae3.jpg";		
+		
+				allRandomImages[12]=new Array()
+				allRandomImages[12][0]="learningprograms";		
+				allRandomImages[12][1]="../../../../graphics/banners/learningprograms/ae2.jpg";		
+		
+				allRandomImages[13]=new Array()
+				allRandomImages[13][0]="entrepreneurial";		
+				allRandomImages[13][1]="../../../../graphics/banners/entrepreneurial/en_banner3.jpg";		
+		
+				allRandomImages[14]=new Array()
+				allRandomImages[14][0]="entrepreneurial";		
+				allRandomImages[14][1]="../../../../graphics/banners/entrepreneurial/en_banner2.jpg";		
+		
+				allRandomImages[15]=new Array()
+				allRandomImages[15][0]="entrepreneurial";		
+				allRandomImages[15][1]="../../../../graphics/banners/entrepreneurial/en_banner1.jpg";		
+		
+				allRandomImages[16]=new Array()
+				allRandomImages[16][0]="clinic";		
+				allRandomImages[16][1]="../../../../graphics/banners/clinic/Banner3_VVElem_224.jpg";		
+		
+				allRandomImages[17]=new Array()
+				allRandomImages[17][0]="clinic";		
+				allRandomImages[17][1]="../../../../graphics/banners/clinic/Banner_Projects07_133.jpg";		
+		
+				allRandomImages[18]=new Array()
+				allRandomImages[18][0]="clinic";		
+				allRandomImages[18][1]="../../../../graphics/banners/clinic/Banner_PosterSes07_052.jpg";		
+		
+				allRandomImages[19]=new Array()
+				allRandomImages[19][0]="diningservices";		
+				allRandomImages[19][1]="../../../../graphics/banners/diningservices/diningservicesbanner23.jpg";		
+		
+				allRandomImages[20]=new Array()
+				allRandomImages[20][0]="diningservices";		
+				allRandomImages[20][1]="../../../../graphics/banners/diningservices/diningservicesbanner2.jpg";		
+		
+				allRandomImages[21]=new Array()
+				allRandomImages[21][0]="diningservices";		
+				allRandomImages[21][1]="../../../../graphics/banners/diningservices/diningservicesbanner15.jpg";		
+		
+				allRandomImages[22]=new Array()
+				allRandomImages[22][0]="diningservices";		
+				allRandomImages[22][1]="../../../../graphics/banners/diningservices/diningservicesbanner1.jpg";		
+		
+				allRandomImages[23]=new Array()
+				allRandomImages[23][0]="diningservices";		
+				allRandomImages[23][1]="../../../../graphics/banners/diningservices/diningservicesbanner7.jpg";		
+		
+				allRandomImages[24]=new Array()
+				allRandomImages[24][0]="diningservices";		
+				allRandomImages[24][1]="../../../../graphics/banners/diningservices/diningservicesbanner18.jpg";		
+		
+				allRandomImages[25]=new Array()
+				allRandomImages[25][0]="diningservices";		
+				allRandomImages[25][1]="../../../../graphics/banners/diningservices/diningservicesbanner21.jpg";		
+		
+				allRandomImages[26]=new Array()
+				allRandomImages[26][0]="csclinic";		
+				allRandomImages[26][1]="../../../../graphics/banners/csclinic/CS_banner_AdjustingBlimp.jpg";		
+		
+				allRandomImages[27]=new Array()
+				allRandomImages[27][0]="csclinic";		
+				allRandomImages[27][1]="../../../../graphics/banners/csclinic/CS_banner_22.jpg";		
+		
+				allRandomImages[28]=new Array()
+				allRandomImages[28][0]="csclinic";		
+				allRandomImages[28][1]="../../../../graphics/banners/csclinic/CS_banner_16.jpg";		
+		
+				allRandomImages[29]=new Array()
+				allRandomImages[29][0]="csclinic";		
+				allRandomImages[29][1]="../../../../graphics/banners/csclinic/CS_banner_10.jpg";		
+		
+				allRandomImages[30]=new Array()
+				allRandomImages[30][0]="csclinic";		
+				allRandomImages[30][1]="../../../../graphics/banners/csclinic/CS_banner_1C.jpg";		
+		
+				allRandomImages[31]=new Array()
+				allRandomImages[31][0]="csclinic";		
+				allRandomImages[31][1]="../../../../graphics/banners/csclinic/CS_banner_1B.jpg";		
+		
+				allRandomImages[32]=new Array()
+				allRandomImages[32][0]="careerservices";		
+				allRandomImages[32][1]="../../../../graphics/banners/careerservices/EtiquetteDinner27.jpg";		
+		
+				allRandomImages[33]=new Array()
+				allRandomImages[33][0]="careerservices";		
+				allRandomImages[33][1]="../../../../graphics/banners/careerservices/career11.jpg";		
+		
+				allRandomImages[34]=new Array()
+				allRandomImages[34][0]="careerservices";		
+				allRandomImages[34][1]="../../../../graphics/banners/careerservices/EtiquetteDinner12.jpg";		
+		
+				allRandomImages[35]=new Array()
+				allRandomImages[35][0]="careerservices";		
+				allRandomImages[35][1]="../../../../graphics/banners/careerservices/EtiquetteDinner10.jpg";		
+		
+				allRandomImages[36]=new Array()
+				allRandomImages[36][0]="careerservices";		
+				allRandomImages[36][1]="../../../../graphics/banners/careerservices/EtiquetteDinner9.jpg";		
+		
+				allRandomImages[37]=new Array()
+				allRandomImages[37][0]="careerservices";		
+				allRandomImages[37][1]="../../../../graphics/banners/careerservices/EtiquetteDinner4.jpg";		
+		
+				allRandomImages[38]=new Array()
+				allRandomImages[38][0]="careerservices";		
+				allRandomImages[38][1]="../../../../graphics/banners/careerservices/career1.jpg";		
+		
+				allRandomImages[39]=new Array()
+				allRandomImages[39][0]="about";		
+				allRandomImages[39][1]="../../../../graphics/banners/about/about_Campus.jpg";		
+		
+				allRandomImages[40]=new Array()
+				allRandomImages[40][0]="about";		
+				allRandomImages[40][1]="../../../../graphics/banners/about/about_CampusThree.jpg";		
+		
+				allRandomImages[41]=new Array()
+				allRandomImages[41][0]="about";		
+				allRandomImages[41][1]="../../../../graphics/banners/about/about_CampusTwo.jpg";		
+		
+				allRandomImages[42]=new Array()
+				allRandomImages[42][0]="about";		
+				allRandomImages[42][1]="../../../../graphics/banners/about/about_Chess.jpg";		
+		
+				allRandomImages[43]=new Array()
+				allRandomImages[43][0]="about";		
+				allRandomImages[43][1]="../../../../graphics/banners/about/about_ClassLecture.jpg";		
+		
+				allRandomImages[44]=new Array()
+				allRandomImages[44][0]="about";		
+				allRandomImages[44][1]="../../../../graphics/banners/about/about_header_photo.jpg";		
+		
+				allRandomImages[45]=new Array()
+				allRandomImages[45][0]="about";		
+				allRandomImages[45][1]="../../../../graphics/banners/about/about_JazzClass.jpg";		
+		
+				allRandomImages[46]=new Array()
+				allRandomImages[46][0]="about";		
+				allRandomImages[46][1]="../../../../graphics/banners/about/about_ShopClass.jpg";		
+		
+				allRandomImages[47]=new Array()
+				allRandomImages[47][0]="academics";		
+				allRandomImages[47][1]="../../../../graphics/banners/academics/academics_BioSumRes.jpg";		
+		
+				allRandomImages[48]=new Array()
+				allRandomImages[48][0]="academics";		
+				allRandomImages[48][1]="../../../../graphics/banners/academics/academics_ChemLab.jpg";		
+		
+				allRandomImages[49]=new Array()
+				allRandomImages[49][0]="academics";		
+				allRandomImages[49][1]="../../../../graphics/banners/academics/academics_ChemLabTwo.jpg";		
+		
+				allRandomImages[50]=new Array()
+				allRandomImages[50][0]="academics";		
+				allRandomImages[50][1]="../../../../graphics/banners/academics/academics_CompCluster.jpg";		
+		
+				allRandomImages[51]=new Array()
+				allRandomImages[51][0]="academics";		
+				allRandomImages[51][1]="../../../../graphics/banners/academics/academics_KarukstisCl.jpg";		
+		
+				allRandomImages[52]=new Array()
+				allRandomImages[52][0]="academics";		
+				allRandomImages[52][1]="../../../../graphics/banners/academics/academics_Lizards.jpg";		
+		
+				allRandomImages[53]=new Array()
+				allRandomImages[53][0]="academics";		
+				allRandomImages[53][1]="../../../../graphics/banners/academics/academics_MathDrum.jpg";		
+		
+				allRandomImages[54]=new Array()
+				allRandomImages[54][0]="academics";		
+				allRandomImages[54][1]="../../../../graphics/banners/academics/academics_OrrisonClass.jpg";		
+		
+				allRandomImages[55]=new Array()
+				allRandomImages[55][0]="academics";		
+				allRandomImages[55][1]="../../../../graphics/banners/academics/academics_SumMath.jpg";		
+		
+				allRandomImages[56]=new Array()
+				allRandomImages[56][0]="admission";		
+				allRandomImages[56][1]="../../../../graphics/banners/admission/admissions_Camp.jpg";		
+		
+				allRandomImages[57]=new Array()
+				allRandomImages[57][0]="admission";		
+				allRandomImages[57][1]="../../../../graphics/banners/admission/admissions_CampFour.jpg";		
+		
+				allRandomImages[58]=new Array()
+				allRandomImages[58][0]="admission";		
+				allRandomImages[58][1]="../../../../graphics/banners/admission/admissions_CampThree.jpg";		
+		
+				allRandomImages[59]=new Array()
+				allRandomImages[59][0]="admission";		
+				allRandomImages[59][1]="../../../../graphics/banners/admission/admissions_CampTwo.jpg";		
+		
+				allRandomImages[60]=new Array()
+				allRandomImages[60][0]="admission";		
+				allRandomImages[60][1]="../../../../graphics/banners/admission/admissions_Class.jpg";		
+		
+				allRandomImages[61]=new Array()
+				allRandomImages[61][0]="admission";		
+				allRandomImages[61][1]="../../../../graphics/banners/admission/admissions_LayingDown.jpg";		
+		
+				allRandomImages[62]=new Array()
+				allRandomImages[62][0]="admission";		
+				allRandomImages[62][1]="../../../../graphics/banners/admission/admissions_Mathclass.jpg";		
+		
+				allRandomImages[63]=new Array()
+				allRandomImages[63][0]="admission";		
+				allRandomImages[63][1]="../../../../graphics/banners/admission/admissions_TwoGirls.jpg";		
+		
+				allRandomImages[64]=new Array()
+				allRandomImages[64][0]="biology";		
+				allRandomImages[64][1]="../../../../graphics/banners/biology/biology_Department.jpg";		
+		
+				allRandomImages[65]=new Array()
+				allRandomImages[65][0]="chemistry";		
+				allRandomImages[65][1]="../../../../graphics/banners/chemistry/chemistrybanner_THFtop.jpg";		
+		
+				allRandomImages[66]=new Array()
+				allRandomImages[66][0]="chemistry";		
+				allRandomImages[66][1]="../../../../graphics/banners/chemistry/chemistrybanner_terence.jpg";		
+		
+				allRandomImages[67]=new Array()
+				allRandomImages[67][0]="chemistry";		
+				allRandomImages[67][1]="../../../../graphics/banners/chemistry/chemistrybanner_ivyshot.jpg";		
+		
+				allRandomImages[68]=new Array()
+				allRandomImages[68][0]="chemistry";		
+				allRandomImages[68][1]="../../../../graphics/banners/chemistry/chemistry_Department.jpg";		
+		
+				allRandomImages[69]=new Array()
+				allRandomImages[69][0]="compsci";		
+				allRandomImages[69][1]="../../../../graphics/banners/compsci/compScience_Department.jpg";		
+		
+				allRandomImages[70]=new Array()
+				allRandomImages[70][0]="engineering";		
+				allRandomImages[70][1]="../../../../graphics/banners/engineering/engineering_Department.jpg";		
+		
+				allRandomImages[71]=new Array()
+				allRandomImages[71][0]="giving";		
+				allRandomImages[71][1]="../../../../graphics/banners/giving/giving_campus.jpg";		
+		
+				allRandomImages[72]=new Array()
+				allRandomImages[72][0]="giving";		
+				allRandomImages[72][1]="../../../../graphics/banners/giving/giving_campusAerialView.jpg";		
+		
+				allRandomImages[73]=new Array()
+				allRandomImages[73][0]="giving";		
+				allRandomImages[73][1]="../../../../graphics/banners/giving/giving_campusDetail.jpg";		
+		
+				allRandomImages[74]=new Array()
+				allRandomImages[74][0]="giving";		
+				allRandomImages[74][1]="../../../../graphics/banners/giving/giving_commencement.jpg";		
+		
+				allRandomImages[75]=new Array()
+				allRandomImages[75][0]="giving";		
+				allRandomImages[75][1]="../../../../graphics/banners/giving/giving_globeLibrary.jpg";		
+		
+				allRandomImages[76]=new Array()
+				allRandomImages[76][0]="humanitiessocsci";		
+				allRandomImages[76][1]="../../../../graphics/banners/humanitiessocsci/humanititesSocSci_Departmen.jpg";		
+		
+				allRandomImages[77]=new Array()
+				allRandomImages[77][0]="math";		
+				allRandomImages[77][1]="../../../../graphics/banners/math/academics_MathDrum.jpg";		
+		
+				allRandomImages[78]=new Array()
+				allRandomImages[78][0]="math";		
+				allRandomImages[78][1]="../../../../graphics/banners/math/academics_OrrisonClass.jpg";		
+		
+				allRandomImages[79]=new Array()
+				allRandomImages[79][0]="math";		
+				allRandomImages[79][1]="../../../../graphics/banners/math/academics_SumMath.jpg";		
+		
+				allRandomImages[80]=new Array()
+				allRandomImages[80][0]="math";		
+				allRandomImages[80][1]="../../../../graphics/banners/math/admissions_Mathclass.jpg";		
+		
+				allRandomImages[81]=new Array()
+				allRandomImages[81][0]="math";		
+				allRandomImages[81][1]="../../../../graphics/banners/math/math_Department.jpg";		
+		
+				allRandomImages[82]=new Array()
+				allRandomImages[82][0]="physics";		
+				allRandomImages[82][1]="../../../../graphics/banners/physics/physics_Department.jpg";		
+		
+				allRandomImages[83]=new Array()
+				allRandomImages[83][0]="studentlife";		
+				allRandomImages[83][1]="../../../../graphics/banners/studentlife/studentLife_BikeRack.jpg";		
+		
+				allRandomImages[84]=new Array()
+				allRandomImages[84][0]="studentlife";		
+				allRandomImages[84][1]="../../../../graphics/banners/studentlife/studentLIfe_Camp.jpg";		
+		
+				allRandomImages[85]=new Array()
+				allRandomImages[85][0]="studentlife";		
+				allRandomImages[85][1]="../../../../graphics/banners/studentlife/studentLIfe_CampTwo.jpg";		
+		
+				allRandomImages[86]=new Array()
+				allRandomImages[86][0]="studentlife";		
+				allRandomImages[86][1]="../../../../graphics/banners/studentlife/studentLife_Frisbee.jpg";		
+		
+				allRandomImages[87]=new Array()
+				allRandomImages[87][0]="studentlife";		
+				allRandomImages[87][1]="../../../../graphics/banners/studentlife/studentLIfe_HangingOut.jpg";		
+		
+				allRandomImages[88]=new Array()
+				allRandomImages[88][0]="studentlife";		
+				allRandomImages[88][1]="../../../../graphics/banners/studentlife/studentLIfe_JOverdrive.jpg";		
+		
+				allRandomImages[89]=new Array()
+				allRandomImages[89][0]="studentlife";		
+				allRandomImages[89][1]="../../../../graphics/banners/studentlife/studentLIfe_Jumping.jpg";		
+		
+				allRandomImages[90]=new Array()
+				allRandomImages[90][0]="studentlife";		
+				allRandomImages[90][1]="../../../../graphics/banners/studentlife/studentLIfe_shootingPool.jpg";		
+		
+				allRandomImages[91]=new Array()
+				allRandomImages[91][0]="studentlife";		
+				allRandomImages[91][1]="../../../../graphics/banners/studentlife/studentLIfe_SleepIn.jpg";		
+		
+				allRandomImages[92]=new Array()
+				allRandomImages[92][0]="studentlife";		
+				allRandomImages[92][1]="../../../../graphics/banners/studentlife/studentLIfe_Tennis.jpg";		
+		
+
+
+	var filteredRandomImages=new Array()
+	counter=0;
+	for (i=1;i!=allRandomImages.length;i++){
+		if (allRandomImages[i][0]==bannerSection){
+			filteredRandomImages[counter]=allRandomImages[i];
+			counter++
+		}
+	}
+	var ranNum=Math.floor(Math.random()*filteredRandomImages.length)
+	if (filteredRandomImages.length!=0){
+		document.write("<style>");
+		document.write("#header-background-image { background-image: url\(" + filteredRandomImages[ranNum][1]+ "\); background-repeat: no-repeat; }");
+		document.write("</style>");
+
+    }
+//--></script>
+	<script type="text/javascript">
+//<!-- 
+				var columnSPIFF="None";
+//--></script><script type="text/javascript">
+//<!-- 
+				var bodySPIFF="None";
+//--></script>
+	
+	<link href="../../../../graphics/favicon.ico" rel="shortcut icon"/>
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="http://www.hmc.edu/included/pngfix.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="printLogo"><img alt="Harvey Mudd College" src="../../../../graphics/printlogo1.gif" title="Harvey Mudd College"/></div>
+<div id="header-container">
+	<div id="main-nav" style="padding: 0px; margin: 0px; z-index: 300">
+		 	
+			
+				<a href="../../../../About.html"><img alt="About HMC" onmouseout="this.src='/graphics/navigation/About.gif'" onmouseover="this.src='/graphics/navigation/Aboutover.gif'" src="../../../../graphics/navigation/about.gif" style="float: left; border: 0px; "/></a>
+			
+		 	
+		 	
+			
+				<a href="../../../../academicsclinicresearch1.html"><img alt="Academics, Clinic and Research" onmouseout="this.src='/graphics/navigation/academicsclinicresearch1.gif'" onmouseover="this.src='/graphics/navigation/academicsclinicresearch1over.gif'" src="../../../../graphics/navigation/academicsclinicresearch1.gif" style="float: left; border: 0px; "/></a>
+			
+		 	
+		 	
+			
+				<a href="../../../../admission.html"><img alt="Admission &amp; Financial Aid" onmouseout="this.src='/graphics/navigation/admission.gif'" onmouseover="this.src='/graphics/navigation/admissionover.gif'" src="../../../../graphics/navigation/admission.gif" style="float: left; border: 0px; "/></a>
+			
+		 	
+		 	
+			
+				<a href="../../../../studentlife.html"><img alt="Student Life" onmouseout="this.src='/graphics/navigation/studentlife.gif'" onmouseover="this.src='/graphics/navigation/studentlifeover.gif'" src="../../../../graphics/navigation/studentlife.gif" style="float: left; border: 0px; "/></a>
+			
+		 	
+		 	
+			
+				<a href="../../../../newsandevents1.html"><img alt="News &amp; Events" onmouseout="this.src='/graphics/navigation/newsandevents1.gif'" onmouseover="this.src='/graphics/navigation/newsandevents1over.gif'" src="../../../../graphics/navigation/newsandevents1.gif" style="float: left; border: 0px; "/></a>
+			
+		 	
+		 	
+			
+				<a href="../../../../giving1.html"><img alt="Giving" onmouseout="this.src='/graphics/navigation/giving1.gif'" onmouseover="this.src='/graphics/navigation/giving1over.gif'" src="../../../../graphics/navigation/giving1.gif" style="float: left; border: 0px; "/></a>
+			
+		 	</div><div style="clear:both"></div>
+	<div id="header-background-image"><div class="logo"><a href="../../../../index.html" shape="rect"><img alt="Logo Image" id="Logo" src="../../../../graphics/logo.png"/></a></div><div id="tactical-nav"><a href="../../../../tacticalnav/contactus.html" shape="rect" title="Contact Us">Contact Us</a> | <a href="../../../../tacticalnav/contactus.html#campus" shape="rect" title="Directory">Directory</a> | <a href="../../../../tacticalnav/sitemap.html">Site Map</a>&#160;<!-- Google CSE Search Box Begins --> <form action="http://googlemini.hmc.edu/search" id="searchbox_000335253668703475869:2n7xjj1b-rw" style="display: inline; margin: 0px; padding: 0px"><div style="display: inline"><input class="search-box" name="q" onblur="if (this.value==''){this.value='Search'}" onfocus="if (this.value=='Search'){this.value=''}" size="15"/> <input class="button-search" name="sa" onclick="this.form.submit();" type="button"/> <input name="site" type="hidden"/> <input name="client" type="hidden"/> <input name="proxystylesheet" type="hidden"/> <input name="output" type="hidden"/> </div></form></div></div><script type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nameq="q"
+namesite="site"
+nameclient="client"
+nameproxystylesheet="proxystylesheet"
+nameoutput="output"
+document.getElementsByName(nameq)[0].value="Search";
+document.getElementsByName(namesite)[0].value="default_collection";
+document.getElementsByName(nameclient)[0].value="default_frontend";
+document.getElementsByName(nameproxystylesheet)[0].value="default_frontend";
+document.getElementsByName(nameoutput)[0].value="xml_no_dtd";</script><script src="../../../../included/jumptop.js">
+
+
+
+
+
+
+/***********************************************
+* Jump To Top Link Script- &#169; Dynamic Drive (www.dynamicdrive.com)
+* Last updated Nov 13th, 03'.
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/</script>
+	<div id="gateway-nav"><ul><li class="header">Info for:</li><li><a href="../../../../gateways/students.html" shape="rect">Current Students</a></li><li>/</li><li><a href="../../../../gateways/Faculty.html" shape="rect">Faculty</a></li><li>/</li><li><a href="../../../../gateways/Staff.html" shape="rect">Staff</a></li><li>/</li><li><a href="../../../../gateways/Parents.html" shape="rect">Parents</a></li><li>/</li><li><a href="../../../../gateways/Alumni.html" shape="rect">Alumni</a></li><li>/</li><li><a href="../../../../gateways/Partners.html" shape="rect">Partners</a></li></ul></div>
+</div>
+<div class="center">
+	<!-- CONTENT CONTAINER -->
+	<div id="content-container" style="background-image: url(../../../../graphics/standardbackground.gif);">
+		<div class="clear">
+		</div>
+		<div id="side">
+		
+			<ul id="siblings"><li><a href="writingcenterservices.html">Writing Center Services</a></li><li><a href="onlineresources.html">Resources</a></li><li class="active"><a href="writingcenterstaff.html">Writing Center Staff</a></li></ul>
+			<script type="text/javascript">
+
+	var allSPIFFs=new Array()
+
+		
+				allSPIFFs[1]=new Array()
+				allSPIFFs[1][0]='HMC Emergency';		
+				allSPIFFs[1][1]='<a href="../../../../specialinterestfeatures/emergency/information.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[1][2]='Emergency Information';
+				allSPIFFs[1][3]='This teaser text will give a brief description of the emergency at hand. The "Learn More" button will take readers to the full SPIF page, which will provide full details.';
+				allSPIFFs[1][4]='../../../../graphics/spiffs/left_RedCross.jpg';		
+		
+				allSPIFFs[2]=new Array()
+				allSPIFFs[2][0]='Chemistry Students and Alumni';		
+				allSPIFFs[2][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/anschutz.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[2][2]='Peggy Anschutz';
+				allSPIFFs[2][3]='Following her time at HMC, Peggy Anschulz \'77 went on to become marketing manager for the Asia-Pacific division of Fisher-Rosemount (Singapore), the world\'s leading supplier of high-precision measurement and analytical instrumentation for the process industries.';
+				allSPIFFs[2][4]='../../../../graphics/spiffs/left_Chemistry_fisher.jpg';		
+		
+				allSPIFFs[3]=new Array()
+				allSPIFFs[3][0]='Chemistry Students and Alumni';		
+				allSPIFFs[3][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/babusis.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[3][2]='Benis Babusis';
+				allSPIFFs[3][3]='An avid hiker and mountain climber, alumnus Benis Babusis \'92 earned his medical degree in 1996 from the University of California at Irvine.';
+				allSPIFFs[3][4]='../../../../graphics/spiffs/left_Chemistry_utahmedctr.jpg';		
+		
+				allSPIFFs[4]=new Array()
+				allSPIFFs[4][0]='Chemistry Students and Alumni';		
+				allSPIFFs[4][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/bebout.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[4][2]='Deborah Bebout';
+				allSPIFFs[4][3]='Following HMC, chemistry alumna Deborah Bebout \'85 went on to earn a Ph.D. in chemistry and became a professor at the College of William and Mary.';
+				allSPIFFs[4][4]='../../../../graphics/spiffs/left_Chemistry_williamandmary.jpg';		
+		
+				allSPIFFs[5]=new Array()
+				allSPIFFs[5][0]='Chemistry Students and Alumni';		
+				allSPIFFs[5][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/birkeland.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[5][2]='Kari Birkeland';
+				allSPIFFs[5][3]='Alumna Kari Birkeland \'91 followed the path chemistry all the way. Following her chemistry studies at HMC, she went on to earn a doctoral degree in inorganic chemistry and is now a research chemist at Dow Chemical Company.';
+				allSPIFFs[5][4]='../../../../graphics/spiffs/left_Chemistry_dow.jpg';		
+		
+				allSPIFFs[6]=new Array()
+				allSPIFFs[6][0]='Chemistry Students and Alumni';		
+				allSPIFFs[6][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/bittker.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[6][2]='Rachel Bittker';
+				allSPIFFs[6][3]='Alumna Rachel Bittker\'s chemistry interest in college blossomed into interests in women\'s health, obstetrics, adolescent medicine and pediatrics. She went on to earn a medical degree from the University of Michigan Medical School.';
+				allSPIFFs[6][4]='../../../../graphics/spiffs/left_Chemistry_grossmont.gif';		
+		
+				allSPIFFs[7]=new Array()
+				allSPIFFs[7][0]='Chemistry Students and Alumni';		
+				allSPIFFs[7][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/brander.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[7][2]='Fred Brander';
+				allSPIFFs[7][3]='Whether you\'re looking for a lifelong career in chemistry or just a broad-based foundation that will afford a myriad of future opportunities, a chemistry degree from HMC may be the answer for you. Fred Brander \'73 used his chemistry background to eventually start a winery.';
+				allSPIFFs[7][4]='../../../../graphics/spiffs/left_Chemistry_brander.gif';		
+		
+				allSPIFFs[8]=new Array()
+				allSPIFFs[8][0]='Chemistry Students and Alumni';		
+				allSPIFFs[8][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/brew.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[8][2]='William Brew';
+				allSPIFFs[8][3]='A college degree in chemistry doesn\'t always mean a career in the field. William Brew \'62 went on to become a foreign service officer.';
+				allSPIFFs[8][4]='../../../../graphics/spiffs/left_Chemistry_mexico.gif';		
+		
+				allSPIFFs[9]=new Array()
+				allSPIFFs[9][0]='Chemistry Students and Alumni';		
+				allSPIFFs[9][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/burke.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[9][2]='Paul Burke';
+				allSPIFFs[9][3]='With a Ph.D. in chemistry, Paul Burke \'86 recently received a patent for his invention of a biologically-compatible matrix that helps in the release of a kidney protein that stimulates the production of red blood cells.';
+				allSPIFFs[9][4]='../../../../graphics/spiffs/left_Chemistry_alkermes.jpg';		
+		
+				allSPIFFs[10]=new Array()
+				allSPIFFs[10][0]='Chemistry Students and Alumni';		
+				allSPIFFs[10][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/chang.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[10][2]='Fang-Yuan Chang';
+				allSPIFFs[10][3]='Recipient of the William G. Sly Prize, recent graduate Fang-Yuan Chang \'07 was inspired to grow at HMC not only by the academic rigor and research opportunities, but also through his interactions with fellow students and faculty.';
+				allSPIFFs[10][4]='../../../../graphics/spiffs/left_Chemistry_Chang.jpg';		
+		
+				allSPIFFs[11]=new Array()
+				allSPIFFs[11][0]='Chemistry Students and Alumni';		
+				allSPIFFs[11][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/dienes.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[11][2]='Tas Dienes';
+				allSPIFFs[11][3]='While a student at HMC, Tas Dienes \'93 co-founded I/O Software, which provides software for leading-edge technology companies.';
+				allSPIFFs[11][4]='../../../../graphics/spiffs/left_Chemistry_iosoftware.jpg';		
+		
+				allSPIFFs[12]=new Array()
+				allSPIFFs[12][0]='Chemistry Students and Alumni';		
+				allSPIFFs[12][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/feldman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[12][2]='Ken Feldman';
+				allSPIFFs[12][3]='Alumnus Ken Feldman \'84, a chemistry professor at Penn State, focuses his research on organic synthesis.';
+				allSPIFFs[12][4]='../../../../graphics/spiffs/left_Chemistry_penn.jpg';		
+		
+				allSPIFFs[13]=new Array()
+				allSPIFFs[13][0]='Chemistry Students and Alumni';		
+				allSPIFFs[13][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/gilman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[13][2]='Doug Gilman';
+				allSPIFFs[13][3]='Prior to becoming a chemistry professor at the University of Tennessee at Knoxville, alumnus Doug Gilman \'89 researched in the departments of environmental toxicology and entomology at the University of California at Davis.';
+				allSPIFFs[13][4]='../../../../graphics/spiffs/left_Chemistry_uoft.jpg';		
+		
+				allSPIFFs[14]=new Array()
+				allSPIFFs[14][0]='Chemistry Students and Alumni';		
+				allSPIFFs[14][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/hart.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[14][2]='Elaine Hart';
+				allSPIFFs[14][3]='While she thought she\'d study physics in college, it was only a few months before alumna Elaine Hart \'06 had set her sights on chemistry. In the course of her HMC studies, she spent the two summers working at Lawrence Livermore National Laboratory in the Chemistry and Material Science Division and the Center for Micro and Nanotechnology.';
+				allSPIFFs[14][4]='../../../../graphics/spiffs/left_Chemistry_Hart.jpg';		
+		
+				allSPIFFs[15]=new Array()
+				allSPIFFs[15][0]='Chemistry Students and Alumni';		
+				allSPIFFs[15][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/hickman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[15][2]='Amanda Hickman';
+				allSPIFFs[15][3]='Conducting cutting-edge research was always the highlight of the week for recent graduate Amanda Hickman \'07. After being awarded the Arnold and Mabel Beckman Award, the Chattanooga, Tenn., native began researching electron transfer.';
+				allSPIFFs[15][4]='../../../../graphics/spiffs/left_Chemistry_Hickman.jpg';		
+		
+				allSPIFFs[16]=new Array()
+				allSPIFFs[16][0]='Chemistry Students and Alumni';		
+				allSPIFFs[16][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/kalcic.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[16][2]='Christine Kalcic';
+				allSPIFFs[16][3]='Alumna Christine Kalcic \'06, former chemistry tutor through the Academic Excellence Program, added the Dorothy C. and J. Arthur Campbell Prize to her list of awards before she graduated.';
+				allSPIFFs[16][4]='../../../../graphics/spiffs/left_Chemistry_Kalcic.jpg';		
+		
+				allSPIFFs[17]=new Array()
+				allSPIFFs[17][0]='Chemistry Students and Alumni';		
+				allSPIFFs[17][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/mcdermott.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[17][2]='Ann McDermott';
+				allSPIFFs[17][3]='Ann McDermott \'81, a member of the National Academy of Science, built upon her chemistry experience at HMC to become a professor at Columbia University.';
+				allSPIFFs[17][4]='../../../../graphics/spiffs/left_Chemistry_columbia.gif';		
+		
+				allSPIFFs[18]=new Array()
+				allSPIFFs[18][0]='Chemistry Students and Alumni';		
+				allSPIFFs[18][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/monell.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[18][2]='Craig Monell';
+				allSPIFFs[18][3]='Director of cell biology at BD PharMingen, Craig Monell \'87, built upon his HMC chemistry degree. He went on to earn a Ph.D. in biochemistry and molecular biology.';
+				allSPIFFs[18][4]='../../../../graphics/spiffs/left_Chemistry_pharmingen.jpg';		
+		
+				allSPIFFs[19]=new Array()
+				allSPIFFs[19][0]='Chemistry Students and Alumni';		
+				allSPIFFs[19][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/murphy.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[19][2]='Don Murphy';
+				allSPIFFs[19][3]='Author of more than 125 technical publications and holder of 10 patents, alumnus Don Murphy \'68 was head of the Applied Materials Research Department at Bell Laboratories before becoming a consultant to start-up firms.';
+				allSPIFFs[19][4]='../../../../graphics/spiffs/left_Chemistry_lucent.jpg';		
+		
+				allSPIFFs[20]=new Array()
+				allSPIFFs[20][0]='Chemistry Students and Alumni';		
+				allSPIFFs[20][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/pizzorno.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[20][2]='Joseph Pizzorno';
+				allSPIFFs[20][3]='After earning his doctorate in naturopathic medicine, alumnus Joseph Pizzorno \'69 founded Bastyr University, internationally recognized as a pioneer in the study of natural healing.';
+				allSPIFFs[20][4]='../../../../graphics/spiffs/left_Chemistry_bastyr.jpg';		
+		
+				allSPIFFs[21]=new Array()
+				allSPIFFs[21][0]='Chemistry Students and Alumni';		
+				allSPIFFs[21][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/szuromi.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[21][2]='Phillip Szuromi';
+				allSPIFFs[21][3]='Supervising senior editor at Science Magazine, Phillip Szuromi \'80 earned a doctoral degree in chemistry from Caltech, following HMC.';
+				allSPIFFs[21][4]='../../../../graphics/spiffs/left_Chemistry_science.jpg';		
+		
+				allSPIFFs[22]=new Array()
+				allSPIFFs[22][0]='Chemistry Students and Alumni';		
+				allSPIFFs[22][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/thiessen.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[22][2]='Paul Thiessen';
+				allSPIFFs[22][3]='Software created by chemistry alumnus Paul Thiessen \'92 offers chemical visualization and illustration of molecules. His website has received more than 125,000 viewers since its creation.';
+				allSPIFFs[22][4]='../../../../graphics/spiffs/left_Chemistry_outdoors.gif';		
+		
+				allSPIFFs[23]=new Array()
+				allSPIFFs[23][0]='Chemistry Students and Alumni';		
+				allSPIFFs[23][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/wood.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[23][2]='Edward Wood';
+				allSPIFFs[23][3]='Not all HMC chemistry graduates pursue advanced degress in the same subject. Alumnus Ed Wood \'66 went on to earn a M.B.A. degree.';
+				allSPIFFs[23][4]='../../../../graphics/spiffs/left_Chemistry_cobe.jpg';		
+		
+				allSPIFFs[24]=new Array()
+				allSPIFFs[24][0]='Chemistry Students and Alumni';		
+				allSPIFFs[24][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/zuckerman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[24][2]='Ronald Zuckerman';
+				allSPIFFs[24][3]='Following his chemistry studies at HMC, Ron Zuckerman \'84 went on to earn a doctoral degree in chemistry and become director of bioorganic chemistry at Chiron Corporation.';
+				allSPIFFs[24][4]='../../../../graphics/spiffs/left_Chemistry_chiron.jpg';		
+		
+				allSPIFFs[25]=new Array()
+				allSPIFFs[25][0]='In Memoriam';		
+				allSPIFFs[25][1]='<a href="../../../../specialinterestfeatures/inmemoriam/denton.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[25][2]='Remembering Denice Denton';
+				allSPIFFs[25][3]='This week, we remember and celebrate the achievements of Denice Denton, who died June 24, 2006.';
+				allSPIFFs[25][4]='../../../../graphics/spiffs/left_memorial_denton.jpg';		
+		
+				allSPIFFs[26]=new Array()
+				allSPIFFs[26][0]='Mind Muddlers';		
+				allSPIFFs[26][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/chocolate.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[26][2]='Chocolate Muddler';
+				allSPIFFs[26][3]='At room temperature chocolate is an immiscible mixture of three solids: crystalline sugar, cocoa powder and cocoa butter crystal V.';
+				allSPIFFs[26][4]='';		
+		
+				allSPIFFs[27]=new Array()
+				allSPIFFs[27][0]='Mind Muddlers';		
+				allSPIFFs[27][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/probability.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[27][2]='Probability Muddler';
+				allSPIFFs[27][3]='In the popular game show &#8220;Who Wants To Be a Millionaire?&#8221; contestants are asked trivia questions with four possible answers.';
+				allSPIFFs[27][4]='';		
+		
+				allSPIFFs[28]=new Array()
+				allSPIFFs[28][0]='Mind Muddlers';		
+				allSPIFFs[28][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/boiling.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[28][2]='Boiling Muddler';
+				allSPIFFs[28][3]='A common rule of thumb in the kitchen is that stirring a pot that you\'re trying to heat will make it boil faster. Is it true?';
+				allSPIFFs[28][4]='';		
+		
+				allSPIFFs[29]=new Array()
+				allSPIFFs[29][0]='Mind Muddlers';		
+				allSPIFFs[29][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/hmchistory.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[29][2]='History Muddler';
+				allSPIFFs[29][3]='How well do you know Mudd?';
+				allSPIFFs[29][4]='';		
+		
+				allSPIFFs[30]=new Array()
+				allSPIFFs[30][0]='Envisioning the Future';		
+				allSPIFFs[30][1]='<a href="../../../../specialinterestfeatures/envisioningthefuture/envisioningthefuture1.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[30][2]='A Bold New Vision';
+				allSPIFFs[30][3]='The inauguration of Maria Klawe served as the launch of the strategic plan, "HMC 2020: Envisioning the Future."';
+				allSPIFFs[30][4]='../../../../graphics/spiffs/left_Envision_Klawe.jpg';		
+		
+				allSPIFFs[31]=new Array()
+				allSPIFFs[31][0]='Our Name is Mudd';		
+				allSPIFFs[31][1]='<a href="../../../../specialinterestfeatures/ournameismudd/anthem.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[31][2]='A New Song to Sing';
+				allSPIFFs[31][3]='HMC may not have had an official anthem for a while. But those days are over. Mudders are singing a new tune now.';
+				allSPIFFs[31][4]='../../../../graphics/spiffs/left_OurName_anthem.jpg';		
+		
+				allSPIFFs[32]=new Array()
+				allSPIFFs[32][0]='Our Name is Mudd';		
+				allSPIFFs[32][1]='<a href="../../../../specialinterestfeatures/ournameismudd/poetry.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[32][2]='Mudd Style Poetry';
+				allSPIFFs[32][3]='While others hold poetry readings in dimly lit lounges, Mudders move dessert, lamps and dorm furniture into grassy quads for a true poetic experience.';
+				allSPIFFs[32][4]='../../../../graphics/spiffs/left_ourname_poetry.jpg';		
+		
+				allSPIFFs[33]=new Array()
+				allSPIFFs[33][0]='Our Name is Mudd';		
+				allSPIFFs[33][1]='<a href="../../../../specialinterestfeatures/ournameismudd/strawberry.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[33][2]='Strawberry Wheels Forever';
+				allSPIFFs[33][3]='For more than three decades, Mudders have topped their unicycles and ridden nearly 9 miles&#8212;all in the name of a strawberry donut.';
+				allSPIFFs[33][4]='../../../../graphics/spiffs/left_OurName_Strawberr.jpg';		
+		
+				allSPIFFs[34]=new Array()
+				allSPIFFs[34][0]='Student Body of Knowledge';		
+				allSPIFFs[34][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/backes.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[34][2]='The Lure of India';
+				allSPIFFs[34][3]='One visit to India and mathematics major Tracy Backes \'08 was hooked. She managed to return six months later.';
+				allSPIFFs[34][4]='../../../../graphics/spiffs/left_SBK_brackes.jpg';		
+		
+				allSPIFFs[35]=new Array()
+				allSPIFFs[35][0]='Student Body of Knowledge';		
+				allSPIFFs[35][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/rocketeers.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[35][2]='College Rocketeers on a Mission';
+				allSPIFFs[35][3]='Sophomores in HMC&#8217;s revised Experimental Engineering (E80) course are set to engage in hands-on laboratory work to fly instrumented model rockets.';
+				allSPIFFs[35][4]='../../../../graphics/spiffs/left_SBK_rocketeers.jpg';		
+		
+				allSPIFFs[36]=new Array()
+				allSPIFFs[36][0]='Student Body of Knowledge';		
+				allSPIFFs[36][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/sciencebus.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[36][2]='Inspiring Young Scientists';
+				allSPIFFs[36][3]='Loaded with creative lessons and fun science discussions, HMC Science Bus volunteers are inspiring local elementary students.';
+				allSPIFFs[36][4]='../../../../graphics/spiffs/left_SBK_Sciencebus.jpg';		
+		
+				allSPIFFs[37]=new Array()
+				allSPIFFs[37][0]='Student Body of Knowledge';		
+				allSPIFFs[37][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/soiltest.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[37][2]='Digging Up Dirt on Local Soil';
+				allSPIFFs[37][3]='Identifying potential hazards and inspiring youngsters to aim for college: it&#8217;s all in a day&#8217;s work for these HMC freshmen.';
+				allSPIFFs[37][4]='../../../../graphics/spiffs/left_SBK_SoilTest.jpg';		
+		
+				allSPIFFs[38]=new Array()
+				allSPIFFs[38][0]='Student Body of Knowledge';		
+				allSPIFFs[38][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/mexicotrip.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[38][2]='Who Needs a Hot Shower?';
+				allSPIFFs[38][3]='For one group of HMC students, a trip to Mexico opened up new visions of community&#8212;and of what&#8217;s really important.';
+				allSPIFFs[38][4]='../../../../graphics/spiffs/left_SBK_MexicoTrip.jpg';		
+		
+				allSPIFFs[39]=new Array()
+				allSPIFFs[39][0]='Student Body of Knowledge';		
+				allSPIFFs[39][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/summermath.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[39][2]='Math, Glorious Math';
+				allSPIFFs[39][3]='Despite their rigorous math and science classes during the fall and spring semesters, some Mudders just can&#8217;t get enough.';
+				allSPIFFs[39][4]='../../../../graphics/spiffs/left_SBK_SummerMath.jpg';		
+		
+				allSPIFFs[40]=new Array()
+				allSPIFFs[40][0]='Student Body of Knowledge';		
+				allSPIFFs[40][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/hutchings.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[40][2]='Burn, Baby, Burn';
+				allSPIFFs[40][3]='In addition to her soccer prowess, Allison Hutchings \'07 conducted groundbreaking research by building plywood structures and setting them on fire.';
+				allSPIFFs[40][4]='../../../../graphics/spiffs/left_SBK_Hutchings.jpg';		
+		
+				allSPIFFs[41]=new Array()
+				allSPIFFs[41][0]='Student Body of Knowledge';		
+				allSPIFFs[41][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/esclamado.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[41][2]='Snorkeling to Your Research Project';
+				allSPIFFs[41][3]='Who says everything has to be learned in a classroom? For Nicole Esclamado \'07, lessons learned on an island proved quite helpful in her laboratory setting back on campus.';
+				allSPIFFs[41][4]='../../../../graphics/spiffs/left_SBK_Esclomado.jpg';		
+		
+				allSPIFFs[42]=new Array()
+				allSPIFFs[42][0]='Student Body of Knowledge';		
+				allSPIFFs[42][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/nuclear.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[42][2]='Who Needs Sleep?';
+				allSPIFFs[42][3]='Keep working on nuclear fusion, or get some sleep? For these three Mudd students, the choice was clear.';
+				allSPIFFs[42][4]='../../../../graphics/spiffs/left_SBK_NuclearFusion.jpg';		
+		
+				allSPIFFs[43]=new Array()
+				allSPIFFs[43][0]='Prime Variables';		
+				allSPIFFs[43][1]='<a href="../../../../specialinterestfeatures/primevariables/fernandez.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[43][2]='Balancing Priorities to the Finish Line';
+				allSPIFFs[43][3]='Determination and discipline carried Marco Fernandez to first place in Guatemala\'s hardest, longest and most popular triathlon.';
+				allSPIFFs[43][4]='../../../../graphics/spiffs/left_prime_var_fernandez.jpg';		
+		
+				allSPIFFs[44]=new Array()
+				allSPIFFs[44][0]='Prime Variables';		
+				allSPIFFs[44][1]='<a href="../../../../specialinterestfeatures/primevariables/boatman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[44][2]='Flexing her pipes';
+				allSPIFFs[44][3]='Mudder marches out the same way she came in.';
+				allSPIFFs[44][4]='../../../../graphics/spiffs/left_PrimeVar_Boatman.jpg';		
+		
+				allSPIFFs[45]=new Array()
+				allSPIFFs[45][0]='Prime Variables';		
+				allSPIFFs[45][1]='<a href="../../../../specialinterestfeatures/primevariables/badier.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[45][2]='The Anti-Drone';
+				allSPIFFs[45][3]='Want to learn everything? Then you&#8217;ll fit right in at HMC, says Badier Velji &#8217;07.';
+				allSPIFFs[45][4]='../../../../graphics/spiffs/left_PrimeVar_Badler.jpg';		
+		
+				allSPIFFs[46]=new Array()
+				allSPIFFs[46][0]='Prime Variables';		
+				allSPIFFs[46][1]='<a href="../../../../specialinterestfeatures/primevariables/groves.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[46][2]='Recapturing a Lost Art';
+				allSPIFFs[46][3]='A semester-long printing press project enabled Professor of Literature Jeff Groves to rediscover his artistic side.';
+				allSPIFFs[46][4]='../../../../graphics/spiffs/left_PrimVar_groves.jpg';		
+		
+				allSPIFFs[47]=new Array()
+				allSPIFFs[47][0]='Innovators';		
+				allSPIFFs[47][1]='<a href="../../../../specialinterestfeatures/innovators/trinh.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[47][2]='Gnarly Waves Equal Gnarly Research';
+				allSPIFFs[47][3]='Sunny Trinh &#8217;92/&#8217;93 often does "research" for his surfboard company 9:Fish at Southern California beaches.';
+				allSPIFFs[47][4]='../../../../graphics/spiffs/left_Innovators_trinh.jpg';		
+		
+				allSPIFFs[48]=new Array()
+				allSPIFFs[48][0]='Innovators';		
+				allSPIFFs[48][1]='<a href="../../../../specialinterestfeatures/innovators/auditude.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[48][2]='Capturing Digital Fingerprints';
+				allSPIFFs[48][3]='Three HMC alums are using their expertise to capture and monitor the digital fingerprints of   content on the radio, television and the Internet.';
+				allSPIFFs[48][4]='../../../../graphics/spiffs/left_Innovators_Auditude.jpg';		
+		
+				allSPIFFs[49]=new Array()
+				allSPIFFs[49][0]='Innovators';		
+				allSPIFFs[49][1]='<a href="../../../../specialinterestfeatures/innovators/peacecorps.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[49][2]='Getting to Know the World';
+				allSPIFFs[49][3]='Want to learn about the world and its people? Then hop on a plane and live in another country, say three HMC professors.';
+				allSPIFFs[49][4]='../../../../graphics/spiffs/left_innovators_steinberg.jpg';		
+		
+				allSPIFFs[50]=new Array()
+				allSPIFFs[50][0]='Innovators';		
+				allSPIFFs[50][1]='<a href="../../../../specialinterestfeatures/innovators/pathways.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[50][2]='Pathways';
+				allSPIFFs[50][3]='What does a mathematician look like? HMC faculty are helping K-12 students find out.';
+				allSPIFFs[50][4]='../../../../graphics/spiffs/left_Innovators_Jacobsen.jpg';		
+		
+				allSPIFFs[51]=new Array()
+				allSPIFFs[51][0]='Innovators';		
+				allSPIFFs[51][1]='<a href="../../../../specialinterestfeatures/innovators/orwin.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[51][2]='Research with an Impact';
+				allSPIFFs[51][3]='When you work in the lab with Professor Elizabeth Orwin, prepare to get creative.';
+				allSPIFFs[51][4]='../../../../graphics/spiffs/left_Innovators_Orwin.jpg';		
+		
+				allSPIFFs[52]=new Array()
+				allSPIFFs[52][0]='Innovators';		
+				allSPIFFs[52][1]='<a href="../../../../specialinterestfeatures/innovators/martonosi.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[52][2]='Using Math to Fight Terrorism';
+				allSPIFFs[52][3]='How can mathematical research help prevent a terrorist attack? HMC professor Susan Martonosi can explain.';
+				allSPIFFs[52][4]='../../../../graphics/spiffs/left_Innovators_Martonosi.jpg';		
+		
+				allSPIFFs[53]=new Array()
+				allSPIFFs[53][0]='Innovators';		
+				allSPIFFs[53][1]='<a href="../../../../specialinterestfeatures/innovators/schoene.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[53][2]='Giving Back and Taking It In';
+				allSPIFFs[53][3]='Mudder takes her talents to Guyana and comes home with much more than she left with.';
+				allSPIFFs[53][4]='../../../../graphics/spiffs/left_Innovators_Schoene.jpg';		
+		
+				allSPIFFs[54]=new Array()
+				allSPIFFs[54][0]='Innovators';		
+				allSPIFFs[54][1]='<a href="../../../../specialinterestfeatures/innovators/panish.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[54][2]='Mudder Loses Himself in Space';
+				allSPIFFs[54][3]='This Mudd grad (pictured with astronaut Jim Lovell) is a big believer in the future of space travel.';
+				allSPIFFs[54][4]='../../../../graphics/spiffs/left_Innovators_Panish.jpg';		
+		
+				allSPIFFs[55]=new Array()
+				allSPIFFs[55][0]='Innovators';		
+				allSPIFFs[55][1]='<a href="../../../../specialinterestfeatures/innovators/levy.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[55][2]='At Peace Studying War';
+				allSPIFFs[55][3]='Armed with his physics degree, this alum steered toward political science.';
+				allSPIFFs[55][4]='../../../../graphics/spiffs/left_Innovators_Levy.jpg';		
+		
+				allSPIFFs[56]=new Array()
+				allSPIFFs[56][0]='Innovators';		
+				allSPIFFs[56][1]='<a href="../../../../specialinterestfeatures/innovators/keller.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[56][2]='All That Jazz';
+				allSPIFFs[56][3]='Inspired by a lifelong love of jazz, computer science professor Robert Keller makes seamless connections between computer applications and music.';
+				allSPIFFs[56][4]='../../../../graphics/spiffs/left_Innovators_Keller.jpg';		
+		
+//<!--
+	
+	var filteredSPIFFs=new Array()
+	counter=0;
+	for (i=1;i!=allSPIFFs.length;i++){
+		if (allSPIFFs[i][0]==columnSPIFF){
+			filteredSPIFFs[counter]=allSPIFFs[i];
+			counter++
+		}
+	}
+	var ranNum=Math.floor(Math.random()*filteredSPIFFs.length)
+	if (filteredSPIFFs.length!=0){
+	        document.write('<div id="sidenews-container">');
+	        	document.write('<div id="sidenewsHeader"><img alt="' + filteredSPIFFs[ranNum][0]+ '" src="http://www.hmc.edu/graphics/spiffheaders/horizontal/' + filteredSPIFFs[ranNum][0]+ '.jpg"/></div>');
+            	document.write('<div id="sidenews"><img alt="" src="' + filteredSPIFFs[ranNum][4]+ '"/>');
+                	document.write('<div class="header">' + filteredSPIFFs[ranNum][2]+ '</div>');
+                	document.write('' + filteredSPIFFs[ranNum][3]+ '');
+                	document.write('<br/>');
+                	document.write('<div class="learnmore">' + filteredSPIFFs[ranNum][1]+ '</div>');
+            	document.write('</div>');
+        	document.write('</div>');
+	
+	//-->
+    }
+
+	</script>
+
+		</div>
+		<div id="content">
+			<div id="content-copy"><span style="height: 1px; font-size:1px; color: #ffffff">HMC</span>
+				
+				<div class="breadcrumbs"><a href="../../../../index.html">Home</a> &gt;
+				<a href="../../../../academicsclinicresearch1.html">Academics, Clinic and Research</a> &gt; 
+				<a href="../../../academicresources1.html">Academic Resources</a> &gt; 
+				<a href="../../learningprograms.html">Learning Programs</a> &gt; 
+				<a href="../writingcenter.html">Writing Center</a> &gt; 
+				Writing Center Staff</div>
+				<div class="header">Writing Center Staff</div>
+                <div class="copy">
+					<p><p>The Writing Center staff consists of the director, <a href="mailto:menefee@hmc.edu">Wendy Menefee-Libey</a>, and 11 peer consultants.<br/>
+<br/>
+<strong class="alternatedisplayrow">Fall 2006 Writing Center Consultants:</strong></p>
+<p><a href="mailto:sdeford@hmc.edu">Shelley DeFord</a>, Senior, Physics Major</p>
+<p><a href="mailto:ghoople@hmc.edu">Gordon Hoople</a>, Senior, Engineering Major</p>
+<p><a href="mailto:kfleming@hmc.edu">Kevin Fleming</a>, Senior, Math Major</p>
+<p><a href="mailto:aleverentz@hmc.edu">Andy Leverentz</a>, Senior, Math Major</p>
+<p><a href="mailto:maddalena_jackson@hmc.edu">Maddalena Jackson</a>, Senior, Engineering Major</p>
+<p><a href="mailto:apetros-good@hmc.edu">Autumn Petros-Good</a>, Junior, Engineering Major</p>
+<p><a href="asampson@hmc.edu">Adrian Sampson</a>, Junior, Computer Science Major</p>
+<p><a href="mailto:alyssa_dray@hmc.edu">Alyssa Dray</a>, Sophomore, Undeclared</p>
+<p><a href="mailto:mark_cyffka@hmc.edu">Mark Cyffka</a>, Sophomore, Chemistry Major</p>
+<p><a href="mailto:alex_randall@hmc.edu">Alex Randall</a>, Sophomore, Engineering Major</p>
+<p><a href="mailto:jciciliano@hmc.edu">Jordan Ciciliano</a>, Sophomore, Undeclared</p></p>
+					<br/>
+				</div>
+				<script type="text/javascript">
+
+	var allSPIFFs=new Array()
+
+		
+				allSPIFFs[1]=new Array()
+				allSPIFFs[1][0]='HMC Emergency';	
+				allSPIFFs[1][1]='<a href="../../../../specialinterestfeatures/emergency/information.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[1][2]='Emergency Information';
+				allSPIFFs[1][3]='This teaser text will give a brief description of the emergency at hand. The "Learn More" button will take readers to the full SPIF page, which will provide full details.';
+				allSPIFFs[1][4]='';		
+		
+				allSPIFFs[2]=new Array()
+				allSPIFFs[2][0]='Chemistry Students and Alumni';	
+				allSPIFFs[2][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/anschutz.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[2][2]='Peggy Anschutz';
+				allSPIFFs[2][3]='Following her time at HMC, Peggy Anschulz \'77 went on to become marketing manager for the Asia-Pacific division of Fisher-Rosemount (Singapore), the world\'s leading supplier of high-precision measurement and analytical instrumentation for the process industries.';
+				allSPIFFs[2][4]='';		
+		
+				allSPIFFs[3]=new Array()
+				allSPIFFs[3][0]='Chemistry Students and Alumni';	
+				allSPIFFs[3][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/babusis.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[3][2]='Benis Babusis';
+				allSPIFFs[3][3]='An avid hiker and mountain climber, alumnus Benis Babusis \'92 earned his medical degree in 1996 from the University of California at Irvine.';
+				allSPIFFs[3][4]='';		
+		
+				allSPIFFs[4]=new Array()
+				allSPIFFs[4][0]='Chemistry Students and Alumni';	
+				allSPIFFs[4][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/bebout.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[4][2]='Deborah Bebout';
+				allSPIFFs[4][3]='Following HMC, chemistry alumna Deborah Bebout \'85 went on to earn a Ph.D. in chemistry and became a professor at the College of William and Mary.';
+				allSPIFFs[4][4]='';		
+		
+				allSPIFFs[5]=new Array()
+				allSPIFFs[5][0]='Chemistry Students and Alumni';	
+				allSPIFFs[5][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/birkeland.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[5][2]='Kari Birkeland';
+				allSPIFFs[5][3]='Alumna Kari Birkeland \'91 followed the path chemistry all the way. Following her chemistry studies at HMC, she went on to earn a doctoral degree in inorganic chemistry and is now a research chemist at Dow Chemical Company.';
+				allSPIFFs[5][4]='';		
+		
+				allSPIFFs[6]=new Array()
+				allSPIFFs[6][0]='Chemistry Students and Alumni';	
+				allSPIFFs[6][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/bittker.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[6][2]='Rachel Bittker';
+				allSPIFFs[6][3]='Alumna Rachel Bittker\'s chemistry interest in college blossomed into interests in women\'s health, obstetrics, adolescent medicine and pediatrics. She went on to earn a medical degree from the University of Michigan Medical School.';
+				allSPIFFs[6][4]='';		
+		
+				allSPIFFs[7]=new Array()
+				allSPIFFs[7][0]='Chemistry Students and Alumni';	
+				allSPIFFs[7][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/brander.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[7][2]='Fred Brander';
+				allSPIFFs[7][3]='Whether you\'re looking for a lifelong career in chemistry or just a broad-based foundation that will afford a myriad of future opportunities, a chemistry degree from HMC may be the answer for you. Fred Brander \'73 used his chemistry background to eventually start a winery.';
+				allSPIFFs[7][4]='';		
+		
+				allSPIFFs[8]=new Array()
+				allSPIFFs[8][0]='Chemistry Students and Alumni';	
+				allSPIFFs[8][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/brew.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[8][2]='William Brew';
+				allSPIFFs[8][3]='A college degree in chemistry doesn\'t always mean a career in the field. William Brew \'62 went on to become a foreign service officer.';
+				allSPIFFs[8][4]='';		
+		
+				allSPIFFs[9]=new Array()
+				allSPIFFs[9][0]='Chemistry Students and Alumni';	
+				allSPIFFs[9][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/burke.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[9][2]='Paul Burke';
+				allSPIFFs[9][3]='With a Ph.D. in chemistry, Paul Burke \'86 recently received a patent for his invention of a biologically-compatible matrix that helps in the release of a kidney protein that stimulates the production of red blood cells.';
+				allSPIFFs[9][4]='';		
+		
+				allSPIFFs[10]=new Array()
+				allSPIFFs[10][0]='Chemistry Students and Alumni';	
+				allSPIFFs[10][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/chang.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[10][2]='Fang-Yuan Chang';
+				allSPIFFs[10][3]='Recipient of the William G. Sly Prize, recent graduate Fang-Yuan Chang \'07 was inspired to grow at HMC not only by the academic rigor and research opportunities, but also through his interactions with fellow students and faculty.';
+				allSPIFFs[10][4]='';		
+		
+				allSPIFFs[11]=new Array()
+				allSPIFFs[11][0]='Chemistry Students and Alumni';	
+				allSPIFFs[11][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/dienes.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[11][2]='Tas Dienes';
+				allSPIFFs[11][3]='While a student at HMC, Tas Dienes \'93 co-founded I/O Software, which provides software for leading-edge technology companies.';
+				allSPIFFs[11][4]='';		
+		
+				allSPIFFs[12]=new Array()
+				allSPIFFs[12][0]='Chemistry Students and Alumni';	
+				allSPIFFs[12][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/feldman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[12][2]='Ken Feldman';
+				allSPIFFs[12][3]='Alumnus Ken Feldman \'84, a chemistry professor at Penn State, focuses his research on organic synthesis.';
+				allSPIFFs[12][4]='';		
+		
+				allSPIFFs[13]=new Array()
+				allSPIFFs[13][0]='Chemistry Students and Alumni';	
+				allSPIFFs[13][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/gilman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[13][2]='Doug Gilman';
+				allSPIFFs[13][3]='Prior to becoming a chemistry professor at the University of Tennessee at Knoxville, alumnus Doug Gilman \'89 researched in the departments of environmental toxicology and entomology at the University of California at Davis.';
+				allSPIFFs[13][4]='';		
+		
+				allSPIFFs[14]=new Array()
+				allSPIFFs[14][0]='Chemistry Students and Alumni';	
+				allSPIFFs[14][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/hart.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[14][2]='Elaine Hart';
+				allSPIFFs[14][3]='While she thought she\'d study physics in college, it was only a few months before alumna Elaine Hart \'06 had set her sights on chemistry. In the course of her HMC studies, she spent the two summers working at Lawrence Livermore National Laboratory in the Chemistry and Material Science Division and the Center for Micro and Nanotechnology.';
+				allSPIFFs[14][4]='';		
+		
+				allSPIFFs[15]=new Array()
+				allSPIFFs[15][0]='Chemistry Students and Alumni';	
+				allSPIFFs[15][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/hickman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[15][2]='Amanda Hickman';
+				allSPIFFs[15][3]='Conducting cutting-edge research was always the highlight of the week for recent graduate Amanda Hickman \'07. After being awarded the Arnold and Mabel Beckman Award, the Chattanooga, Tenn., native began researching electron transfer.';
+				allSPIFFs[15][4]='';		
+		
+				allSPIFFs[16]=new Array()
+				allSPIFFs[16][0]='Chemistry Students and Alumni';	
+				allSPIFFs[16][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/kalcic.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[16][2]='Christine Kalcic';
+				allSPIFFs[16][3]='Alumna Christine Kalcic \'06, former chemistry tutor through the Academic Excellence Program, added the Dorothy C. and J. Arthur Campbell Prize to her list of awards before she graduated.';
+				allSPIFFs[16][4]='';		
+		
+				allSPIFFs[17]=new Array()
+				allSPIFFs[17][0]='Chemistry Students and Alumni';	
+				allSPIFFs[17][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/mcdermott.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[17][2]='Ann McDermott';
+				allSPIFFs[17][3]='Ann McDermott \'81, a member of the National Academy of Science, built upon her chemistry experience at HMC to become a professor at Columbia University.';
+				allSPIFFs[17][4]='';		
+		
+				allSPIFFs[18]=new Array()
+				allSPIFFs[18][0]='Chemistry Students and Alumni';	
+				allSPIFFs[18][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/monell.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[18][2]='Craig Monell';
+				allSPIFFs[18][3]='Director of cell biology at BD PharMingen, Craig Monell \'87, built upon his HMC chemistry degree. He went on to earn a Ph.D. in biochemistry and molecular biology.';
+				allSPIFFs[18][4]='';		
+		
+				allSPIFFs[19]=new Array()
+				allSPIFFs[19][0]='Chemistry Students and Alumni';	
+				allSPIFFs[19][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/murphy.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[19][2]='Don Murphy';
+				allSPIFFs[19][3]='Author of more than 125 technical publications and holder of 10 patents, alumnus Don Murphy \'68 was head of the Applied Materials Research Department at Bell Laboratories before becoming a consultant to start-up firms.';
+				allSPIFFs[19][4]='';		
+		
+				allSPIFFs[20]=new Array()
+				allSPIFFs[20][0]='Chemistry Students and Alumni';	
+				allSPIFFs[20][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/pizzorno.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[20][2]='Joseph Pizzorno';
+				allSPIFFs[20][3]='After earning his doctorate in naturopathic medicine, alumnus Joseph Pizzorno \'69 founded Bastyr University, internationally recognized as a pioneer in the study of natural healing.';
+				allSPIFFs[20][4]='';		
+		
+				allSPIFFs[21]=new Array()
+				allSPIFFs[21][0]='Chemistry Students and Alumni';	
+				allSPIFFs[21][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/szuromi.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[21][2]='Phillip Szuromi';
+				allSPIFFs[21][3]='Supervising senior editor at Science Magazine, Phillip Szuromi \'80 earned a doctoral degree in chemistry from Caltech, following HMC.';
+				allSPIFFs[21][4]='';		
+		
+				allSPIFFs[22]=new Array()
+				allSPIFFs[22][0]='Chemistry Students and Alumni';	
+				allSPIFFs[22][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/thiessen.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[22][2]='Paul Thiessen';
+				allSPIFFs[22][3]='Software created by chemistry alumnus Paul Thiessen \'92 offers chemical visualization and illustration of molecules. His website has received more than 125,000 viewers since its creation.';
+				allSPIFFs[22][4]='';		
+		
+				allSPIFFs[23]=new Array()
+				allSPIFFs[23][0]='Chemistry Students and Alumni';	
+				allSPIFFs[23][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/wood.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[23][2]='Edward Wood';
+				allSPIFFs[23][3]='Not all HMC chemistry graduates pursue advanced degress in the same subject. Alumnus Ed Wood \'66 went on to earn a M.B.A. degree.';
+				allSPIFFs[23][4]='';		
+		
+				allSPIFFs[24]=new Array()
+				allSPIFFs[24][0]='Chemistry Students and Alumni';	
+				allSPIFFs[24][1]='<a href="../../../../specialinterestfeatures/chemistrystudentsandalumni/zuckerman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[24][2]='Ronald Zuckerman';
+				allSPIFFs[24][3]='Following his chemistry studies at HMC, Ron Zuckerman \'84 went on to earn a doctoral degree in chemistry and become director of bioorganic chemistry at Chiron Corporation.';
+				allSPIFFs[24][4]='';		
+		
+				allSPIFFs[25]=new Array()
+				allSPIFFs[25][0]='In Memoriam';	
+				allSPIFFs[25][1]='<a href="../../../../specialinterestfeatures/inmemoriam/denton.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[25][2]='Remembering Denice Denton';
+				allSPIFFs[25][3]='This week, we remember and celebrate the achievements of Denice Denton, who died June 24, 2006.';
+				allSPIFFs[25][4]='';		
+		
+				allSPIFFs[26]=new Array()
+				allSPIFFs[26][0]='Mind Muddlers';	
+				allSPIFFs[26][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/chocolate.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[26][2]='Chocolate Muddler';
+				allSPIFFs[26][3]='At room temperature chocolate is an immiscible mixture of three solids: crystalline sugar, cocoa powder and cocoa butter crystal V.';
+				allSPIFFs[26][4]='../../../../graphics/mindmuddlers/mdlr_3.png';		
+		
+				allSPIFFs[27]=new Array()
+				allSPIFFs[27][0]='Mind Muddlers';	
+				allSPIFFs[27][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/probability.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[27][2]='Probability Muddler';
+				allSPIFFs[27][3]='In the popular game show &#8220;Who Wants To Be a Millionaire?&#8221; contestants are asked trivia questions with four possible answers.';
+				allSPIFFs[27][4]='../../../../graphics/mindmuddlers/mdlr_6.png';		
+		
+				allSPIFFs[28]=new Array()
+				allSPIFFs[28][0]='Mind Muddlers';	
+				allSPIFFs[28][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/boiling.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[28][2]='Boiling Muddler';
+				allSPIFFs[28][3]='A common rule of thumb in the kitchen is that stirring a pot that you\'re trying to heat will make it boil faster. Is it true?';
+				allSPIFFs[28][4]='../../../../graphics/mindmuddlers/mdlr_2.png';		
+		
+				allSPIFFs[29]=new Array()
+				allSPIFFs[29][0]='Mind Muddlers';	
+				allSPIFFs[29][1]='<a href="../../../../specialinterestfeatures/mindmuddlers/hmchistory.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[29][2]='History Muddler';
+				allSPIFFs[29][3]='How well do you know Mudd?';
+				allSPIFFs[29][4]='../../../../graphics/mindmuddlers/mdlr_1.png';		
+		
+				allSPIFFs[30]=new Array()
+				allSPIFFs[30][0]='Envisioning the Future';	
+				allSPIFFs[30][1]='<a href="../../../../specialinterestfeatures/envisioningthefuture/envisioningthefuture1.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[30][2]='A Bold New Vision';
+				allSPIFFs[30][3]='The inauguration of Maria Klawe served as the launch of the strategic plan, "HMC 2020: Envisioning the Future."';
+				allSPIFFs[30][4]='../../../../graphics/spiffs/left_Envision_Klawe.jpg';		
+		
+				allSPIFFs[31]=new Array()
+				allSPIFFs[31][0]='Our Name is Mudd';	
+				allSPIFFs[31][1]='<a href="../../../../specialinterestfeatures/ournameismudd/anthem.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[31][2]='A New Song to Sing';
+				allSPIFFs[31][3]='HMC may not have had an official anthem for a while. But those days are over. Mudders are singing a new tune now.';
+				allSPIFFs[31][4]='../../../../graphics/spiffs/bottom_OurName_anthem.jpg';		
+		
+				allSPIFFs[32]=new Array()
+				allSPIFFs[32][0]='Our Name is Mudd';	
+				allSPIFFs[32][1]='<a href="../../../../specialinterestfeatures/ournameismudd/poetry.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[32][2]='Mudd Style Poetry';
+				allSPIFFs[32][3]='While others hold poetry readings in dimly lit lounges, Mudders move dessert, lamps and dorm furniture into grassy quads for a true poetic experience.';
+				allSPIFFs[32][4]='../../../../graphics/spiffs/bottom_ourname_poetry.jpg';		
+		
+				allSPIFFs[33]=new Array()
+				allSPIFFs[33][0]='Our Name is Mudd';	
+				allSPIFFs[33][1]='<a href="../../../../specialinterestfeatures/ournameismudd/strawberry.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[33][2]='Strawberry Wheels Forever';
+				allSPIFFs[33][3]='For more than three decades, Mudders have topped their unicycles and ridden nearly 9 miles&#8212;all in the name of a strawberry donut.';
+				allSPIFFs[33][4]='../../../../graphics/spiffs/bottom_OurName_Strawberr.jpg';		
+		
+				allSPIFFs[34]=new Array()
+				allSPIFFs[34][0]='Student Body of Knowledge';	
+				allSPIFFs[34][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/backes.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[34][2]='The Lure of India';
+				allSPIFFs[34][3]='One visit to India and mathematics major Tracy Backes \'08 was hooked. She managed to return six months later.';
+				allSPIFFs[34][4]='../../../../graphics/spiffs/bottom_SBK_elephant.jpg';		
+		
+				allSPIFFs[35]=new Array()
+				allSPIFFs[35][0]='Student Body of Knowledge';	
+				allSPIFFs[35][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/rocketeers.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[35][2]='College Rocketeers on a Mission';
+				allSPIFFs[35][3]='Sophomores in HMC&#8217;s revised Experimental Engineering (E80) course are set to engage in hands-on laboratory work to fly instrumented model rockets.';
+				allSPIFFs[35][4]='../../../../graphics/spiffs/Bottom_SBK_rocketeers.jpg';		
+		
+				allSPIFFs[36]=new Array()
+				allSPIFFs[36][0]='Student Body of Knowledge';	
+				allSPIFFs[36][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/sciencebus.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[36][2]='Inspiring Young Scientists';
+				allSPIFFs[36][3]='Loaded with creative lessons and fun science discussions, HMC Science Bus volunteers are inspiring local elementary students.';
+				allSPIFFs[36][4]='../../../../graphics/spiffs/Bottom_SBK_Sciencebus.jpg';		
+		
+				allSPIFFs[37]=new Array()
+				allSPIFFs[37][0]='Student Body of Knowledge';	
+				allSPIFFs[37][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/soiltest.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[37][2]='Digging Up Dirt on Local Soil';
+				allSPIFFs[37][3]='Identifying potential hazards and inspiring youngsters to aim for college: it&#8217;s all in a day&#8217;s work for these HMC freshmen.';
+				allSPIFFs[37][4]='../../../../graphics/spiffs/bottom_SBK_SoilTest.jpg';		
+		
+				allSPIFFs[38]=new Array()
+				allSPIFFs[38][0]='Student Body of Knowledge';	
+				allSPIFFs[38][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/mexicotrip.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[38][2]='Who Needs a Hot Shower?';
+				allSPIFFs[38][3]='For one group of HMC students, a trip to Mexico opened up new visions of community&#8212;and of what&#8217;s really important.';
+				allSPIFFs[38][4]='../../../../graphics/spiffs/bottom_SBK_MexicoTrip.jpg';		
+		
+				allSPIFFs[39]=new Array()
+				allSPIFFs[39][0]='Student Body of Knowledge';	
+				allSPIFFs[39][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/summermath.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[39][2]='Math, Glorious Math';
+				allSPIFFs[39][3]='Despite their rigorous math and science classes during the fall and spring semesters, some Mudders just can&#8217;t get enough.';
+				allSPIFFs[39][4]='../../../../graphics/spiffs/bottom_SBK_SummerMath.jpg';		
+		
+				allSPIFFs[40]=new Array()
+				allSPIFFs[40][0]='Student Body of Knowledge';	
+				allSPIFFs[40][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/hutchings.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[40][2]='Burn, Baby, Burn';
+				allSPIFFs[40][3]='In addition to her soccer prowess, Allison Hutchings \'07 conducted groundbreaking research by building plywood structures and setting them on fire.';
+				allSPIFFs[40][4]='../../../../graphics/spiffs/bottom_SBK_Hutchings.jpg';		
+		
+				allSPIFFs[41]=new Array()
+				allSPIFFs[41][0]='Student Body of Knowledge';	
+				allSPIFFs[41][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/esclamado.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[41][2]='Snorkeling to Your Research Project';
+				allSPIFFs[41][3]='Who says everything has to be learned in a classroom? For Nicole Esclamado \'07, lessons learned on an island proved quite helpful in her laboratory setting back on campus.';
+				allSPIFFs[41][4]='../../../../graphics/spiffs/bottom_SBK_Esclomado.jpg';		
+		
+				allSPIFFs[42]=new Array()
+				allSPIFFs[42][0]='Student Body of Knowledge';	
+				allSPIFFs[42][1]='<a href="../../../../specialinterestfeatures/bodyofknowledge/nuclear.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[42][2]='Who Needs Sleep?';
+				allSPIFFs[42][3]='Keep working on nuclear fusion, or get some sleep? For these three Mudd students, the choice was clear.';
+				allSPIFFs[42][4]='../../../../graphics/spiffs/bottom_SBK_NuclearFusion.jpg';		
+		
+				allSPIFFs[43]=new Array()
+				allSPIFFs[43][0]='Prime Variables';	
+				allSPIFFs[43][1]='<a href="../../../../specialinterestfeatures/primevariables/fernandez.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[43][2]='Balancing Priorities to the Finish Line';
+				allSPIFFs[43][3]='Determination and discipline carried Marco Fernandez to first place in Guatemala\'s hardest, longest and most popular triathlon.';
+				allSPIFFs[43][4]='../../../../graphics/spiffs/bottom_prime_var_fernandez.jpg';		
+		
+				allSPIFFs[44]=new Array()
+				allSPIFFs[44][0]='Prime Variables';	
+				allSPIFFs[44][1]='<a href="../../../../specialinterestfeatures/primevariables/boatman.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[44][2]='Flexing her pipes';
+				allSPIFFs[44][3]='Mudder marches out the same way she came in.';
+				allSPIFFs[44][4]='../../../../graphics/spiffs/bottom_PrimeVar_Boatman.jpg';		
+		
+				allSPIFFs[45]=new Array()
+				allSPIFFs[45][0]='Prime Variables';	
+				allSPIFFs[45][1]='<a href="../../../../specialinterestfeatures/primevariables/badier.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[45][2]='The Anti-Drone';
+				allSPIFFs[45][3]='Want to learn everything? Then you&#8217;ll fit right in at HMC, says Badier Velji &#8217;07.';
+				allSPIFFs[45][4]='../../../../graphics/spiffs/bottom_PrimeVar_Badler.jpg';		
+		
+				allSPIFFs[46]=new Array()
+				allSPIFFs[46][0]='Prime Variables';	
+				allSPIFFs[46][1]='<a href="../../../../specialinterestfeatures/primevariables/groves.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[46][2]='Recapturing a Lost Art';
+				allSPIFFs[46][3]='A semester-long printing press project enabled Professor of Literature Jeff Groves to rediscover his artistic side.';
+				allSPIFFs[46][4]='../../../../graphics/spiffs/bottom_PrimVar_groves.jpg';		
+		
+				allSPIFFs[47]=new Array()
+				allSPIFFs[47][0]='Innovators';	
+				allSPIFFs[47][1]='<a href="../../../../specialinterestfeatures/innovators/trinh.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[47][2]='Gnarly Waves Equal Gnarly Research';
+				allSPIFFs[47][3]='Sunny Trinh &#8217;92/&#8217;93 often does "research" for his surfboard company 9:Fish at Southern California beaches.';
+				allSPIFFs[47][4]='../../../../graphics/spiffs/bottom_Innovators_trinh.jpg';		
+		
+				allSPIFFs[48]=new Array()
+				allSPIFFs[48][0]='Innovators';	
+				allSPIFFs[48][1]='<a href="../../../../specialinterestfeatures/innovators/auditude.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[48][2]='Capturing Digital Fingerprints';
+				allSPIFFs[48][3]='Three HMC alums are using their expertise to capture and monitor the digital fingerprints of   content on the radio, television and the Internet.';
+				allSPIFFs[48][4]='../../../../graphics/spiffs/bottom_Innovators_Auditude.jpg';		
+		
+				allSPIFFs[49]=new Array()
+				allSPIFFs[49][0]='Innovators';	
+				allSPIFFs[49][1]='<a href="../../../../specialinterestfeatures/innovators/peacecorps.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[49][2]='Getting to Know the World';
+				allSPIFFs[49][3]='Want to learn about the world and its people? Then hop on a plane and live in another country, say three HMC professors.';
+				allSPIFFs[49][4]='../../../../graphics/spiffs/bottom_innovators_steinberg.jpg';		
+		
+				allSPIFFs[50]=new Array()
+				allSPIFFs[50][0]='Innovators';	
+				allSPIFFs[50][1]='<a href="../../../../specialinterestfeatures/innovators/pathways.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[50][2]='Pathways';
+				allSPIFFs[50][3]='What does a mathematician look like? HMC faculty are helping K-12 students find out.';
+				allSPIFFs[50][4]='../../../../graphics/spiffs/right_Innovators_Jacobsen.jpg';		
+		
+				allSPIFFs[51]=new Array()
+				allSPIFFs[51][0]='Innovators';	
+				allSPIFFs[51][1]='<a href="../../../../specialinterestfeatures/innovators/orwin.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[51][2]='Research with an Impact';
+				allSPIFFs[51][3]='When you work in the lab with Professor Elizabeth Orwin, prepare to get creative.';
+				allSPIFFs[51][4]='../../../../graphics/spiffs/bottom_Innovators_Orwin.jpg';		
+		
+				allSPIFFs[52]=new Array()
+				allSPIFFs[52][0]='Innovators';	
+				allSPIFFs[52][1]='<a href="../../../../specialinterestfeatures/innovators/martonosi.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[52][2]='Using Math to Fight Terrorism';
+				allSPIFFs[52][3]='How can mathematical research help prevent a terrorist attack? HMC professor Susan Martonosi can explain.';
+				allSPIFFs[52][4]='../../../../graphics/spiffs/bottom_Innovators_Martonosi.jpg';		
+		
+				allSPIFFs[53]=new Array()
+				allSPIFFs[53][0]='Innovators';	
+				allSPIFFs[53][1]='<a href="../../../../specialinterestfeatures/innovators/schoene.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[53][2]='Giving Back and Taking It In';
+				allSPIFFs[53][3]='Mudder takes her talents to Guyana and comes home with much more than she left with.';
+				allSPIFFs[53][4]='../../../../graphics/spiffs/bottom_Innovators_Schoene.jpg';		
+		
+				allSPIFFs[54]=new Array()
+				allSPIFFs[54][0]='Innovators';	
+				allSPIFFs[54][1]='<a href="../../../../specialinterestfeatures/innovators/panish.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[54][2]='Mudder Loses Himself in Space';
+				allSPIFFs[54][3]='This Mudd grad (pictured with astronaut Jim Lovell) is a big believer in the future of space travel.';
+				allSPIFFs[54][4]='../../../../graphics/spiffs/bottom_Innovators_RobPanish.jpg';		
+		
+				allSPIFFs[55]=new Array()
+				allSPIFFs[55][0]='Innovators';	
+				allSPIFFs[55][1]='<a href="../../../../specialinterestfeatures/innovators/levy.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[55][2]='At Peace Studying War';
+				allSPIFFs[55][3]='Armed with his physics degree, this alum steered toward political science.';
+				allSPIFFs[55][4]='../../../../graphics/spiffs/bottom_Innovators_Levy.jpg';		
+		
+				allSPIFFs[56]=new Array()
+				allSPIFFs[56][0]='Innovators';	
+				allSPIFFs[56][1]='<a href="../../../../specialinterestfeatures/innovators/keller.html"><img alt="Learn More" border="0" src="../../../../graphics/learnmore.gif" style="padding-top: 8px;"/></a>';
+				allSPIFFs[56][2]='All That Jazz';
+				allSPIFFs[56][3]='Inspired by a lifelong love of jazz, computer science professor Robert Keller makes seamless connections between computer applications and music.';
+				allSPIFFs[56][4]='../../../../graphics/spiffs/bottom_Innovators_Keller.jpg';		
+		
+
+
+	var filteredSPIFFs=new Array()
+	counter=0;
+	for (i=1;i!=allSPIFFs.length;i++){
+		if (allSPIFFs[i][0]==bodySPIFF){
+			filteredSPIFFs[counter]=allSPIFFs[i];
+			counter++
+		}
+	}
+	var ranNum=Math.floor(Math.random()*filteredSPIFFs.length)
+	//<!--
+	
+	if (filteredSPIFFs.length!=0){
+			document.write('<div id="sbok-container" style="background-image: url\(' + filteredSPIFFs[ranNum][4]+ '\)">');
+				document.write('<div class="sidebar" style="background-image: url(\'http://www.hmc.edu/graphics/spiffheaders/vertical/' + filteredSPIFFs[ranNum][0]+ '.jpg\'); width: 24px; height: 180px"></div>');
+				document.write('<div id="sbok-sample-teaser">');
+					document.write('<div class="header">' + filteredSPIFFs[ranNum][2]+ '</div>');
+					document.write('' + filteredSPIFFs[ranNum][3]+ '');
+					document.write('<div class="learnmore">' + filteredSPIFFs[ranNum][1]+ '</div>');
+				document.write('</div>');
+			document.write('</div>');
+		
+	//-->
+    }
+
+	</script>
+			</div>
+			<div style="clear:both"> </div>
+		</div>
+	</div>
+
+	<div id="footer"><div class="copy"><strong><img alt="HMC Seal" src="../../../../graphics/footer_seal.gif" title="HMC Seal"/>Copyright 2007 Harvey Mudd College <br/></strong>Harvey Mudd College is a member of the Claremont Colleges<br/>301 Platt Boulevard, Claremont, CA 91711 &#8226; (909) 621-8000 &#8226; <a href="../../../../about/visitingcampus/mapsanddirections.html">Map + Directions</a></div></div><script type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nameOfSearch="q"
+document.getElementsByName(nameOfSearch)[0].value="Search";</script><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">
+
+
+
+
+
+
+
+
+
+_uacct = "UA-1386497-1";
+urchinTracker();</script>
+</div>
+
+</body>
+
+</html>

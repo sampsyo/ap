@@ -1,0 +1,307 @@
+<html><head><title>CS81 Home Page</title></head><body>
+
+<center>
+<h1>CS81:&nbsp; Computability and Logic</h1>
+<h2>Spring 2008</h2>
+</center>
+
+
+<dl>
+<dt> </dt><h3>Lecture:</h3>
+<dd> T&amp;Th 2:45-4:00 </dd>
+
+
+<dt> </dt><h3>Professor:</h3>
+<dd> Z Sweedyk </dd>
+<dd> 1249 Olin, x78360 </dd>
+<dd> <a href="mailto:z@cs.hmc.edu">z@cs.hmc.edu</a></dd>
+<dd> Office hours: see <a href="http://www.cs.hmc.edu/%7Ez/schedule.html">schedule</a>
+</dd>
+
+<dt> </dt><h3>Course mailing list:</h3>
+<dd>cs-81-l@hmc.edu</dd>
+
+<dt> </dt><h3>Grutors:</h3>
+<dd>Richard Bowen <a href="mailto:rsbowen@gmail.com">rsbowen@gmail.com</a></dd>
+<dd>Andrew Hunter <a href="mailto:ahunter@cs.hmc.edu">ahunter@cs.hmc.edu</a></dd>
+<dd>Will Scott <a href="mailto:wscott@hmc.edu">wscott@hmc.edu</a></dd>
+
+
+
+
+
+<dt> </dt><h3>What is CS81?</h3>
+<dd>
+In CS81, we explore the mathematical foundations of computer science.  In the first
+half of the course
+consider propositional and predicate logic. 
+We'll examine various proof techniques including natural deduction.  We
+conclude this section of the course with Godel's Incompleteness
+Theorems.
+<p>
+During the second half of the course we explore computability theory.  
+We examine a variety of computatonal models in depth,
+including finite automata,
+pushdown autamata, and Turing machines.  We study the methods for proving a
+problem solvable or unsolvable under each model.  We conclude with a review of 
+other computational models including lambda calculus.
+
+
+</p></dd><dt> </dt><h3>Grades</h3>
+<dd>Grades are based on homework (40%), midterm and final exams (50%), and
+class participation (10%).  </dd>
+
+<dt></dt><h3>Late Policy</h3>
+<dd>You have five late days that can be used
+to extend homework assignments across the semester. No other extensions will
+be allowed unless requested by the dean.</dd>
+
+
+<dt></dt><h3>Collaboration</h3>
+<dd>You are highly encouraged to discuss the coursework including homework
+with other students but you must thoroughly understand and author alone
+any work you submit for the course.</dd>
+
+
+
+
+<dt></dt><h3>Course Schedule:</h3>
+<dd>
+<table align="center" border="2" cellpadding="1" cellspacing="1">
+
+ <tbody><tr>
+  <td> Date </td>
+  <td> Topic </td>
+  <td> Assigment </td> 
+  <td> Links </td>
+ </tr>
+ 
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>1/22/07</td>
+<td>Elementary notions and notation</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>1/24/07</td>
+<td>Propositional calculus<br>Refutation trees</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw1.pdf">Assignment 1</a></td>
+<td>&nbsp;</td>
+</tr>
+
+ 
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>1/29/07</td>
+<td>Natural deduction</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>1/31/07</td>
+<td>Intro to predicate logic</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw2.pdf">Assignment 2</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol1.pdf">Solution 1</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>2/5/07</td>
+<td>Equivalences <br> Formal proofs in predicate logic</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>2/7/07</td>
+<td>Formal proofs cont.</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw3.pdf">Assignment 3</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol2.pdf">Solution 2</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>2/12/07</td>
+<td>Refutation trees revisited</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>2/14/07</td>
+<td>Reasoning with equality</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw4.pdf">Assignment 4</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol3.pdf">Solution 3</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>2/19/07</td>
+<td>Computational logic</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>2/21/07</td>
+<td>Computation logic cont. <br>Soundness and completeness</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw5.pdf">Assignment 5</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol4.pdf">Solution 4</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>2/26/07</td>
+<td>Review of logic</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>2/28/07</td>
+<td>Regular expressions and finite automata</td>
+<td>&nbsp;</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol5.pdf">Solution 5</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>3/4/07</td>
+<td>Midterm Exam</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>3/6/07</td>
+<td>Regular language</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw6.pdf">Assignment 6</a></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>3/11/07</td>
+<td>Myhill-Nerode Theorem</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>3/13/07</td>
+<td>Pumping Lemma</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw7.pdf">Assignment 7</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol6.pdf">Solution 6</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>3/18/07</td>
+<td>Spring Break</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>3/20/07</td>
+<td>Spring Break</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>3/25/07</td>
+<td>Context-free languages</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>3/27/07</td>
+<td>Context-free languages cont.</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw8.pdf">Assignment 8</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol7.pdf">Solution 7</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>4/1/07</td>
+<td>Push down automata, pumping lemma</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>4/3/07</td>
+<td>Chomsky Normal Form, proof of pumping lemma</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw9.pdf">Assignment 9</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol8.pdf">Solution 8</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>4/8/07</td>
+<td>Parsing</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>4/10/07</td>
+<td>Parsing cont.</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw10.pdf">Assignment 10</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol9.pdf">Solution 9</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>4/15/07</td>
+<td>Turing machines</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>4/17/07</td>
+<td>Computability, Halting problem</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw11.pdf">Assignment 11</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol10.pdf">Solution 10</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>4/22/07</td>
+<td>Reductions, Rice's Theorem(1)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>4/24/07</td>
+<td>Recursive enumerable sets, Rice's Theorem(2)</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/hw12.pdf">Assignment 12</a></td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol11.pdf">Solution 11</a></td>
+</tr>
+
+<tr bgcolor="#a0fff0">
+<td>Tuesday<br>4/29/07</td>
+<td>Church's thesis, Lambda calculus</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr bgcolor="#c0fff0">
+<td>Thursday<br>5/1/07</td>
+<td>Review</td>
+<td>&nbsp;</td>
+<td><a href="http://www.cs.hmc.edu/courses/2008/spring/cs81/assignments/sol12.pdf">Solution 11</a></td>
+</tr>
+
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dd></dl></body></html>
