@@ -212,13 +212,16 @@ class CompetitiveLearner(object):
                 min_dist = dist
         return nearest
     
-    def cluster(self, stimuli):
+    def cluster(self, stimuli, indices=False):
         """Given a list or array of stimuli, group them into clusters (lists
         of stimuli) of equal quantization code.
         
         Returns an array of cluster-lists such that clusters[i] is a list of
         stimuli with quantization i. This function is only meaningful after
         train() has been run.
+        
+        If indices is True, returns clusters of stimuli's indices rather than
+        stimuli themselves.
         """
         
         # initialize an empty array of lists (no better way?)
@@ -226,7 +229,11 @@ class CompetitiveLearner(object):
         for i in range(len(clusters)):
             clusters[i] = []
         
-        for stimulus in stimuli:
-            clusters[self.quantize(stimulus)].append(stimulus)
+        if indices:
+            for i in range(len(stimuli)):
+                clusters[self.quantize(stimuli[i])].append(i)
+        else:
+            for stimulus in stimuli:
+                clusters[self.quantize(stimulus)].append(stimulus)
         
         return clusters

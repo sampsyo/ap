@@ -44,45 +44,17 @@ def popularities(vecs, k, debug=False, filt=True):
                                num_neurons=k)
     learner.train(100) #fixme param
     
-    clusters = learner.cluster(vecs)
+    clusters = learner.cluster(vecs, True)
 
     pops = zeros(len(vecs), int)
     ids  = zeros(len(vecs), int)
 
-    idx = 0
-    for clust in clusters:
-        dists = array([dist for (obs, dist) in clust])
-        avg = dists.mean()
-        thresh = dists.std() # *parameter?
-    
-        if debug:
-            for (obs,dist) in clust:
-                print v2s(vecs[obs]), dist, (abs(avg-dist) <= thresh)
-    
-        clust = [(obs, dist) for (obs,dist) in clust
-                    if abs(avg-dist) <= thresh]
-        dists = array([dist for (obs, dist) in clust])
-    
-        # drop entire cluster if, even after filtering outliers, stdev is
-        # too high
-        if dists.std() > 0.001: # parameter!
-            if debug:
-                print 'GARBAGE CLUSTER', dists.std()
-            clust = []
-    
-        pop = len(clust)
-        if clust: # non-garbage
-            clust_id = idx
-        else:
-            clust_id = -1
-        for (obs,dist) in clust:
-            pops[obs] = pop
-            ids[obs]  = clust_id
-    
-        if debug:
-            print '-----------'
-    
-        idx += 1
+    clust_idx = 0
+    for cluster in clusters:
+        clust_idx += 1
+        for vec_idx in cluster:
+            pops[vec_idx] = len(cluster)
+            ids[vec_idx] = clust_idx
     
     return (pops, ids)
     
@@ -148,8 +120,7 @@ def records(pops, ids):
     return found
 
 def fields(vecs, pops, isrec, txt):
-    """
-    Return a list of list representing the fields in the records of the
+    """Return a list of list representing the fields in the records of the
     text.
     """
     w = len(v2s(vecs[0]))
@@ -212,6 +183,9 @@ if __name__ == '__main__':
     k = len(instr) # number of vector clusters
     depiction = False # output debug visualization in HTML?
     
+    # Optional arguments:
+    # . w (n-gram size)
+    # . output a depiction (boolean)
     if len(sys.argv) > 1:
         w = int(sys.argv[1])
         if len(sys.argv) > 2:
