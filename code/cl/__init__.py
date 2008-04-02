@@ -101,10 +101,10 @@ class CompetitiveLearner(object):
         self.setup(num_neurons)
     
     def setup(self, num_neurons=None):
-        """Initialize the neuron set with num_neurons nuerons.
+        """Initialize the neuron set with num_neurons neurons.
         
         Removes any older neurons that might be present. Calls new_neuron() to
-        create neurons. If num_nuerons is ommitted, creates as many neurons as
+        create neurons. If num_nuerons is omitted, creates as many neurons as
         were present before setup() was invoked.
         """
         
@@ -117,7 +117,7 @@ class CompetitiveLearner(object):
             self.neurons.append(self.new_neuron(self))
     
     def train_single(self, stimulus):
-        """ Train for a single stimulus for a single training epoch.
+        """Train for a single stimulus for a single training epoch.
         
         Progress is the proportion in [0.0,1.0) of completion of the training
         epochs (i.e., current_epoch/total_epochs).

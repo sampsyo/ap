@@ -24,8 +24,6 @@ learning_rate defaults to 0.5.
 # LEARNING PARAMETERS FOR THE EUCLIDEAN PLANE
 ####
 
-learning_rate = 0.5 # base learning rate; decreases linearly with progress
-
 def new_random_neuron(learner=None):
     """A new_neuron() callback function that produces neurons in the
     [0,1]x[0,1] plane.
@@ -51,7 +49,7 @@ def learn(learner, neuron, stimulus, amount):
     """
     
     # distance to move the neuron toward the stimulus
-    dist = distance(learner, neuron, stimulus) * amount * learning_rate
+    dist = distance(learner, neuron, stimulus) * amount
     
     if dist == 0.0: # abort early if there is no learning to do
         return
@@ -59,7 +57,7 @@ def learn(learner, neuron, stimulus, amount):
     # translate this distance into delta-X and delta-Y to change coords
     slope = (stimulus[1] - neuron[1])/(stimulus[0] - neuron[0])
     dx = sqrt(abs(dist**2/(slope**2 + 1)))
-    if stimulus[0] < neuron[0]: # ensure we travel in the correct direction
+    if (stimulus[0] < neuron[0] and dist > 0) or (stimulus[0] > neuron[0] and dist < 0): # ensure we travel in the correct direction
         dx = -dx
     dy = slope * dx
     
