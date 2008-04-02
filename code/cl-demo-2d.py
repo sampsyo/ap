@@ -7,7 +7,6 @@ import sys
 """Simple demonstration of CompetitiveLearner on 2-D Euclidean space.
 """
 
-num_neurons = 5
 num_epochs = 10
 
 # Learning style can be set on the command line. Defaults to 'cl', plain
@@ -28,19 +27,19 @@ if style == 'cl':
                                        learn=cl.euclidean.learn,
                                   new_neuron=cl.euclidean.new_random_neuron,
                                      stimuli=stimuli,
-                                 num_neurons=num_neurons)
+                                 num_neurons=3)
 elif style == 'fscl':
     learner = cl.fscl.FSCLLearner(distance=cl.euclidean.distance,
                                      learn=cl.euclidean.learn,
                                 new_neuron=cl.euclidean.new_random_neuron,
                                    stimuli=stimuli,
-                               num_neurons=num_neurons)
+                               num_neurons=3)
 elif style == 'rpcl':
     learner = cl.fscl.RPCLLearner(distance=cl.euclidean.distance,
                                      learn=cl.euclidean.learn,
-                                new_neuron=cl.new_nearby_neuron,
+                                new_neuron=cl.euclidean.new_random_neuron,
                                    stimuli=stimuli,
-                               num_neurons=num_neurons)
+                               num_neurons=10)
 
 # Show initial state.
 cl.euclidean.depict(learner)
