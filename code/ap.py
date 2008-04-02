@@ -1,76 +1,21 @@
 #!/usr/bin/env python
 from numpy import *
+import cl, cl.fscl, cl.string
+from cl.string import MutableString
 import sys
 
 
 ######## UTILITIES
 
-def s2v(s):
-    """
-    Convert a string to a binary vector where each eight-bit block corresponds
-    to a single character.
-    """
-    return array(
-                # list of 8-bit lists for each character
-                [ [(ord(c) >> i) & 1 for i in range(7,-1,-1)] for c in s ]
-           ).flatten()
-def v2s(v):
-    """
-    Convert a binary vector to a string.
-    """
-    return ''.join([chr(
-                # the value of the ith 8-bit string in v
-                sum([ v[i*8 + j] * 2**(7-j) for j in range(8) ])
-            ) for i in range(len(v)/8)])
-
-def vectext(txt, w):
-    """
-    Returns a matrix whose rows correspond to the vector encodings of each
-    offset in txt from 0 to len(txt)-w.
+def ngrams(txt, n):
+    """Returns a list of MutableStrings corresponding to txt's n-grams.
     """
     i = 0
-    maxi = len(txt) - w
-    m = []
-    while (i <= maxi):
-        m.append(s2v(txt[i:i+w]))
-        i += 1
-    return array(m)
-
-def myvq(obs, codebook, retClusters=False):
-    """
-    Computes the best entry in the codebook for each observation. The vq
-    methods from scipy seem broken (C version overflows, Python versions fail
-    mysteriously). retClusters causes the function to return a list of lists
-    with containing observation-distortion pairs where each list represents a
-    cluster (rather than the return values yielded by scipy's vq).
-    """
-    if retClusters:
-        clusters = [[] for i in range(len(codebook))]
-        obsnum = 0
-    else:
-        codes = []
-        dists = []
-    for o in obs:
-        mindist = inf
-        bestcode = -1
-        code = 0
-        for c in codebook:
-            d = sqrt(nansum([ (o[i] - c[i])**2 for i in range(len(o)) ]))
-            if d < mindist:
-                mindist = d
-                bestcode = code
-            code += 1
-        if retClusters:
-            clusters[bestcode].append((obsnum, mindist))
-        else:
-            codes.append(bestcode)
-            dists.append(mindist)
-        if retClusters:
-            obsnum += 1
-    if retClusters:
-        return clusters
-    else:
-        return (array(codes), array(dists))
+    maxi = len(txt) - n
+    out = []
+    for i in range(maxi + 1):
+        out.append(MutableString(txt[i:i+n]))
+    return out
 
 def mode(arr):
     """
@@ -91,69 +36,53 @@ def popularities(vecs, k, debug=False, filt=True):
     vectors.
     """
     
-    # identify vectors with clusters
-    from scipy.cluster.vq import whiten, kmeans
-    whitened = whiten(vecs)
-    (book, d) = kmeans(nan_to_num(whitened), k) # kmeans doesn't like NaNs
+    cl.string.length = len(vecs[0])
+    learner = cl.fscl.RPCLLearner(distance=cl.string.distance,
+                                     learn=cl.string.learn,
+                                new_neuron=cl.string.new_random_neuron,
+                                   stimuli=vecs,
+                               num_neurons=k)
+    learner.train(100) #fixme param
     
-    if filt: # filter for items roughly equidistant from neurons
-        clusters = myvq(whitened, book, True)
-    
-        pops = zeros(len(vecs), int)
-        ids  = zeros(len(vecs), int)
-   
-        idx = 0
-        for clust in clusters:
-            dists = array([dist for (obs, dist) in clust])
-            avg = dists.mean()
-            thresh = dists.std() # *parameter?
-            
-            if debug:
-                for (obs,dist) in clust:
-                    print v2s(vecs[obs]), dist, (abs(avg-dist) <= thresh)
-            
-            clust = [(obs, dist) for (obs,dist) in clust
-                        if abs(avg-dist) <= thresh]
-            dists = array([dist for (obs, dist) in clust])
-            
-            # drop entire cluster if, even after filtering outliers, stdev is
-            # too high
-            if dists.std() > 0.001: # parameter!
-                if debug:
-                    print 'GARBAGE CLUSTER', dists.std()
-                clust = []
-            
-            pop = len(clust)
-            if clust: # non-garbage
-                clust_id = idx
-            else:
-                clust_id = -1
-            for (obs,dist) in clust:
-                pops[obs] = pop
-                ids[obs]  = clust_id
-            
-            if debug:
-                print '-----------'
-            
-            idx += 1
-    
-    else: # unfiltered
-        (codes, d) = myvq(whitened, book)
-        
-        freqs = bincount(codes)
-        pops = vectorize(lambda c: freqs[c])(codes)
+    clusters = learner.cluster(vecs)
+
+    pops = zeros(len(vecs), int)
+    ids  = zeros(len(vecs), int)
+
+    idx = 0
+    for clust in clusters:
+        dists = array([dist for (obs, dist) in clust])
+        avg = dists.mean()
+        thresh = dists.std() # *parameter?
     
         if debug:
-           cafs = [(code, freqs[code]) for code in range(len(freqs))]
-           cafs.sort(lambda x,y: -cmp(x[1], y[1]))
-           for caf in cafs:
-               print caf[1]
-               for i in range(len(codes)):
-                   if codes[i] == caf[0]:
-                       print v2s(vecs[i]), d[i]
-               print '-----------'
-        
-        ids = codes
+            for (obs,dist) in clust:
+                print v2s(vecs[obs]), dist, (abs(avg-dist) <= thresh)
+    
+        clust = [(obs, dist) for (obs,dist) in clust
+                    if abs(avg-dist) <= thresh]
+        dists = array([dist for (obs, dist) in clust])
+    
+        # drop entire cluster if, even after filtering outliers, stdev is
+        # too high
+        if dists.std() > 0.001: # parameter!
+            if debug:
+                print 'GARBAGE CLUSTER', dists.std()
+            clust = []
+    
+        pop = len(clust)
+        if clust: # non-garbage
+            clust_id = idx
+        else:
+            clust_id = -1
+        for (obs,dist) in clust:
+            pops[obs] = pop
+            ids[obs]  = clust_id
+    
+        if debug:
+            print '-----------'
+    
+        idx += 1
     
     return (pops, ids)
     
@@ -288,7 +217,7 @@ if __name__ == '__main__':
         if len(sys.argv) > 2:
             depiction = True
     
-    m = vectext(instr, w)
+    m = ngrams(instr, w)
     (pops,ids) = popularities(m, k)
     ups = unipops(pops)
     recs = records(ups, ids)
