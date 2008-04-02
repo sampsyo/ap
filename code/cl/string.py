@@ -79,7 +79,7 @@ class MutableString(object):
     def __setitem__(self, i, item):
         if type(item) is str and len(item) == 1: # character (1-length string)
             self.chars[i] = ord(item)
-        elif type(item) is int or type(item) is byte:
+        elif type(item) is int or type(item) is byte or type(item) is long:
             self.chars[i] = item
         else:
             raise ValueError('can only substitute characters and integers')

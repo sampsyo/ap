@@ -22,13 +22,7 @@ stimuli = array([[0.11, 0.11], [0.12, 0.11], [0.09, 0.12], [0.13, 0.08],
                  [0.71, 0.91], [0.73, 0.89], [0.72, 0.88], [0.68, 0.91]])
 
 # Initialize the learning environment.
-if style == 'cl':
-    learner = cl.CompetitiveLearner(distance=cl.euclidean.distance,
-                                       learn=cl.euclidean.learn,
-                                  new_neuron=cl.euclidean.new_random_neuron,
-                                     stimuli=stimuli,
-                                 num_neurons=3)
-elif style == 'fscl':
+if style == 'fscl':
     learner = cl.fscl.FSCLLearner(distance=cl.euclidean.distance,
                                      learn=cl.euclidean.learn,
                                 new_neuron=cl.euclidean.new_random_neuron,
@@ -40,6 +34,12 @@ elif style == 'rpcl':
                                 new_neuron=cl.euclidean.new_random_neuron,
                                    stimuli=stimuli,
                                num_neurons=10)
+else: # style == 'cl'
+    learner = cl.CompetitiveLearner(distance=cl.euclidean.distance,
+                                       learn=cl.euclidean.learn,
+                                  new_neuron=cl.euclidean.new_random_neuron,
+                                     stimuli=stimuli,
+                                 num_neurons=3)
 
 # Show initial state.
 cl.euclidean.depict(learner)

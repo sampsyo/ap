@@ -57,10 +57,14 @@ class LearnFunctor(object):
         # similarities (to be made different).
         possible_indices = []
         for i in range(length):
-            if neuron[i] != stimulus[i]: possible_indices.append(i)
+            if (amount > 0 and neuron[i] != stimulus[i]) or \
+               (amount < 0 and neuron[i] == stimulus[i]):
+                possible_indices.append(i)
+                
+    
     
         adaptations = 0 # How many adaptations have we completed so far?
-        max_adaptations = abs(int(amount * length))
+        max_adaptations = ceil(abs(amount * length))
         while (len(possible_indices) > 0 and adaptations < max_adaptations):
             # Adapt until we have created the requested adjustment or no more
             # adaptations are possible.
