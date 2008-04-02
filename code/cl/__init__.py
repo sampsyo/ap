@@ -2,6 +2,7 @@
 from __future__ import division
 from numpy import *
 import copy
+import operator
 
 """A module for using the Competitive Learning Algorithm.
 
@@ -116,6 +117,36 @@ class CompetitiveLearner(object):
         for i in range(num_neurons):
             self.neurons.append(self.new_neuron(self))
     
+    def activation(self, neuron, stimulus):
+        """Return the activation of the neuron with respect to stimulus.
+        
+        The stimulus with the minimum activation is used for training in CL. In
+        the simplest form of the algorithm, this is exactly equal to the
+        distance function.
+        """
+        return self.distance(self, neuron, stimulus)
+    
+    def find_winner(self, stimulus, num_winners=None):
+        """Return a list of num_winners neurons with the least activation.
+        
+        If num_winners is omitted, return a single item rather than an array.
+        """
+        
+        # Get an ordered list of the neurons with small activation.
+        idxs_with_dists = []
+        for i in range(len(self.neurons)):
+            idxs_with_dists.append(
+                    (i,
+                     self.activation(self.neurons[i],stimulus)
+                    ) )
+        idxs_with_dists.sort(key=operator.itemgetter(1)) #fixme partialsort
+        
+        if num_winners is None: # single item
+            return self.neurons[idxs_with_dists[0][0]]
+        else: # minimal range
+            return [self.neurons[idxs_with_dists[i][0]]
+                    for i in range(num_winners)]
+    
     def train_single(self, stimulus):
         """Train for a single stimulus for a single training epoch.
         
@@ -125,20 +156,8 @@ class CompetitiveLearner(object):
         If more than one neuron has the minimum distance from the stimulus, a
         random neuron with this distance learns.
         """
-        min_dist = None
-        nearest = [] # neurons with minimum distance from stimulus
-        
-        for neuron in self.neurons:
-            dist = self.distance(self, neuron, stimulus)
-            if min_dist is None or dist < min_dist: # new minimum
-                min_dist = dist
-                nearest = [neuron]
-            elif dist == min_dist: # a tie for the current minimum distance
-                nearest.append(neuron)
-                
-        # choose a random neuron with minimum distance from stimulus
-        self.learn(self, nearest[random.randint(len(nearest))],
-                stimulus, self.learning_rate)
+        winner = self.find_winner(stimulus)
+        self.learn(self, winner, stimulus, self.learning_rate)
     
     def train(self, epochs, stimuli=None, debug_afterepoch=None):
         """Execute the Competitive Learning Algorithm.
@@ -166,6 +185,7 @@ class CompetitiveLearner(object):
         
         for epoch in range(epochs):
             self.progress = epoch/epochs
+            self.epoch = epoch + 1 # one-based count
             
             # choose a random order for presentation of stimuli
             for stimulus_idx in random.permutation(len(self.stimuli)):

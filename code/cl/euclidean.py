@@ -57,8 +57,9 @@ def learn(learner, neuron, stimulus, amount):
     # translate this distance into delta-X and delta-Y to change coords
     slope = (stimulus[1] - neuron[1])/(stimulus[0] - neuron[0])
     dx = sqrt(abs(dist**2/(slope**2 + 1)))
-    if (stimulus[0] < neuron[0] and dist > 0) or (stimulus[0] > neuron[0] and dist < 0): # ensure we travel in the correct direction
-        dx = -dx
+    if (stimulus[0] < neuron[0] and dist > 0) or \
+       (stimulus[0] > neuron[0] and dist < 0):
+        dx = -dx # ensure we travel in the correct direction
     dy = slope * dx
     
     # update neuron position

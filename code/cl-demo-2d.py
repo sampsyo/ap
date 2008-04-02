@@ -29,6 +29,12 @@ if style == 'cl':
                                   new_neuron=cl.euclidean.new_random_neuron,
                                      stimuli=stimuli,
                                  num_neurons=num_neurons)
+elif style == 'fscl':
+    learner = cl.fscl.FSCLLearner(distance=cl.euclidean.distance,
+                                     learn=cl.euclidean.learn,
+                                new_neuron=cl.euclidean.new_random_neuron,
+                                   stimuli=stimuli,
+                               num_neurons=num_neurons)
 elif style == 'rpcl':
     learner = cl.fscl.RPCLLearner(distance=cl.euclidean.distance,
                                      learn=cl.euclidean.learn,
