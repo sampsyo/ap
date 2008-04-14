@@ -23,7 +23,7 @@ Users should probably set the following package globals:
 ####
 
 class MutableString(object):
-    """A wrapper around a byte array from numpy that implements a very
+    """A wrapper around an int array from numpy that implements a very
     limited mutable string. Attempts to be a little bit efficient.
     """
     def __init__(self, val=None):
@@ -37,7 +37,7 @@ class MutableString(object):
         val and the MutableString are aliased.
         """
         if val is None:
-            self.chars = empty(0,byte)
+            self.chars = empty(0,int)
         else:
             if type(val) is ndarray and (val.dtype is dtype('int') or
                                          val.dtype is dtype('int64') or
@@ -46,16 +46,28 @@ class MutableString(object):
                 self.chars = val
             else:
                 # works for both integer lists and strings but copies
-                self.chars = empty(len(val),byte)
+                self.chars = empty(len(val),int)
                 i = 0
                 for c in val:
                     self[i] = c
                     i += 1
     
+    def __unicode__(self):
+        # numpy's tostring() is not Unicode (c'mon, Python 3000)
+        out = u''
+        for code in self.chars:
+            out += unichr(code)
+        return out
     def __str__(self):
-        return self.chars.tostring()
+        out = ''
+        for code in self.chars:
+            if code in range(128):
+                out += chr(code)
+            else:
+                out += '?'
+        return out
     def __repr__(self):
-        return repr(str(self))
+        return repr(unicode(self))
     def __cmp__(self, other):
         for i in range(min(len(self), len(other))):
             if self[i] < other[i]:
@@ -73,11 +85,12 @@ class MutableString(object):
     def __delitem__(self, i):
         del self.chars[i]
     def __getitem__(self, i):
-        return chr(self.chars[i])
+        return unichr(self.chars[i])
     def __len__(self):
         return len(self.chars)
     def __setitem__(self, i, item):
-        if type(item) is str and len(item) == 1: # character (1-length string)
+        if (type(item) is str or type(item) is unicode) and len(item) == 1:
+            # character (1-length string)
             self.chars[i] = ord(item)
         elif type(item) is int or type(item) is byte or type(item) is long:
             self.chars[i] = item
