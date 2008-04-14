@@ -1,11 +1,12 @@
 #!/bin/sh
 
-wparam=10
+wparam=2
 codedir=`dirname $0`/../code #adaptable
-#codedir='~/ap/code' #robust
+# codedir='~/ap/code' #robust
+rundir='~/ap/testing'
 
 for fn
 do
 bn=`basename "$fn"`
-echo "$codedir/ap.py $wparam < \"$fn\""
+echo "cd $rundir; $codedir/ap.py $wparam < \"$fn\""
 done
