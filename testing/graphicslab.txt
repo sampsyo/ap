@@ -1,0 +1,15 @@
+sandstone.cs.hmc.edu
+limestone.cs.hmc.edu
+feldspar.cs.hmc.edu
+dolomite.cs.hmc.edu
+shale.cs.hmc.edu
+chalk.cs.hmc.edu
+slate.cs.hmc.edu
+jasper.cs.hmc.edu
+schist.cs.hmc.edu
+gneiss.cs.hmc.edu
+basalt.cs.hmc.edu
+agate.cs.hmc.edu
+granite.cs.hmc.edu
+marble.cs.hmc.edu
+chert.cs.hmc.edu
