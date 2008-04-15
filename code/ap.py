@@ -19,16 +19,21 @@ def ngrams(txt, n):
     return out
 
 def mode(arr):
-    """
-    Returns a value of arr that has the maximum frequency over all values in
+    """Returns a value of arr that has the maximum frequency over all values in
     arr.
     """
     return bincount(asarray(arr)).argmax()
 
+def dp(txt):
+    """Print debug text to stderr if debug mode is enabled.
+    """
+    if debug:
+        print >>sys.stderr, txt
+
 
 ######## ADAPTIVE PARSING
 
-def popularities(vecs, numclusters, epochs=100):
+def popularities(vecs, numclusters=100, epochs=100):
     """
     Given a matrix whose rows are observations, return a vector of "popularity"
     scores for each observation. Popularity is defined by the size of the
@@ -46,7 +51,15 @@ def popularities(vecs, numclusters, epochs=100):
                                num_neurons=k)
     learner.train(epochs)
     clusters = learner.cluster(vecs, True)
-
+    if debug: # show the clusters
+        out = ''
+        for cluster in clusters:
+            out += '['
+            for idx in cluster:
+                out += str(vecs[idx]) + ','
+            out += "]\n"
+        dp(out)
+    
     # generate pops/ids output
     pops = zeros(len(vecs), int)
     ids  = zeros(len(vecs), int)
@@ -183,14 +196,18 @@ if __name__ == '__main__':
                   ' process instad of results')
     op.add_option('-w', dest='w', default='2', metavar='NUM', type='int',
                   help='split text into NUM-grams (default %default)')
+    op.add_option('-e', dest='epochs', default='100', metavar='NUM', type='int',
+                  help='use NUM epochs when clustering')
     op.add_option('-k', dest='k', default=None, metavar='NUM', type='int',
                   help='try clustering into at most NUM clusters (default'
                   ' length of input)')
     (options, args) = op.parse_args()
+    global debug
     debug = options.debug
     depict = options.depict
     w = options.w
     k = options.k
+    epochs = options.epochs
     
     # make sure we have a file to parse
     if len(args) < 1:
@@ -210,7 +227,7 @@ if __name__ == '__main__':
     
     # parse!
     m = ngrams(instr, w)
-    (pops,ids) = popularities(m, k)
+    (pops,ids) = popularities(m, k, epochs)
     ups = unipops(pops)
     recs = records(ups, ids)
     
