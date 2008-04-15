@@ -3,6 +3,7 @@ from numpy import *
 import cl, cl.fscl, cl.string
 from cl.string import MutableString
 import sys
+from optparse import OptionParser
 
 
 ######## UTILITIES
@@ -27,28 +28,28 @@ def mode(arr):
 
 ######## ADAPTIVE PARSING
 
-def popularities(vecs, k, debug=False, filt=True):
+def popularities(vecs, numclusters, epochs=100):
     """
     Given a matrix whose rows are observations, return a vector of "popularity"
     scores for each observation. Popularity is defined by the size of the
-    cluster in which the vector is found. Attempts to create k clusters total.
-    Also returns an "id" for each vector that is in common with all similar
+    cluster in which the vector is found. Attempts to create numclusters clusters
+    total. Also returns an "id" for each vector that is in common with all similar
     vectors.
     """
     
+    # perform the clustering
     cl.string.length = len(vecs[0])
     learner = cl.fscl.RPCLLearner(distance=cl.string.distance,
                                      learn=cl.string.learn,
                                 new_neuron=cl.string.new_random_neuron,
                                    stimuli=vecs,
                                num_neurons=k)
-    learner.train(100) #fixme param
-    
+    learner.train(epochs)
     clusters = learner.cluster(vecs, True)
 
+    # generate pops/ids output
     pops = zeros(len(vecs), int)
     ids  = zeros(len(vecs), int)
-
     clust_idx = 0
     for cluster in clusters:
         clust_idx += 1
@@ -155,10 +156,7 @@ def depict_pops(txt, m, pops, isrec=None):
     
     charpops = zeros(len(txt), int)
     for i in range(len(m)):
-        #print v2s(m[i]), pops[i]
-        #print charpops
         charpops[i:i+w] += pops[i]
-        #print charpops
     maxcharpop = max(charpops)
     
     out = '<pre>'
@@ -175,33 +173,54 @@ def depict_pops(txt, m, pops, isrec=None):
 ######## MAIN
 
 if __name__ == '__main__':
-    instr = sys.stdin.read()
-    sys.stdin.close()
+    # read options
+    usage = """usage: %prog [options] file"""
+    op = OptionParser(usage=usage)
+    op.add_option('-v', dest='debug', action='store_true', default=False,
+                  help='output debug information to stderr')
+    op.add_option('-d', '--depict', dest='depict', action='store_true',
+                  default=False, help='output an HTML depiction of parsing'
+                  ' process instad of results')
+    op.add_option('-w', dest='w', default='2', metavar='NUM', type='int',
+                  help='split text into NUM-grams (default %default)')
+    op.add_option('-k', dest='k', default=None, metavar='NUM', type='int',
+                  help='try clustering into at most NUM clusters (default'
+                  ' length of input)')
+    (options, args) = op.parse_args()
+    debug = options.debug
+    depict = options.depict
+    w = options.w
+    k = options.k
     
-    # PARAMETERS
-    w = 2 # granularity of vectorization
-    k = len(instr) # number of vector clusters
-    depiction = False # output debug visualization in HTML?
+    # make sure we have a file to parse
+    if len(args) < 1:
+        op.error('no file to parse')
+    elif len(args) > 1:
+        op.error('too many arguments')
+        
+    # read the input file
+    infile = args[0]
+    infh = open(infile)
+    instr = infh.read()
+    infh.close()
     
-    # Optional arguments:
-    # . w (n-gram size)
-    # . output a depiction (boolean)
-    if len(sys.argv) > 1:
-        w = int(sys.argv[1])
-        if len(sys.argv) > 2:
-            depiction = True
+    # if k was not set as option, use the default value
+    if not k:
+        k = len(instr)
     
+    # parse!
     m = ngrams(instr, w)
     (pops,ids) = popularities(m, k)
     ups = unipops(pops)
     recs = records(ups, ids)
     
-    # flatten recs list to be booleans indexed by character
+    # isrec: whether each character begins a record
     isrec = zeros(len(instr), bool)
     for r in recs:
         isrec[r] = True
     
-    if depiction:
+    # output
+    if depict:
         print depict_pops(instr, m, ups, isrec)
     else:
         print fields(m, ups, isrec, instr)
