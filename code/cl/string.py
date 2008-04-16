@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from numpy import *
 import cl.sequence
-from weave import inline
+from scipy.weave import inline
 
 """Provides the necessary functions to use CompetitiveLearner with strings.
 
