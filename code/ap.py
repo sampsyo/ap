@@ -4,6 +4,7 @@ import cl, cl.fscl, cl.string
 from cl.string import MutableString
 import sys
 from optparse import OptionParser
+import hotshot
 
 
 ######## UTILITIES
@@ -97,9 +98,8 @@ def unipops(pops):
         # Make this a lot more intelligent. Handle multiple modes and near-
         # modes.
 
-def records(pops, ids):
-    """
-    Return a list of indices of vectors that seem to be the beginnings of
+def find_records(pops, ids):
+    """Return a list of indices of vectors that seem to be the beginnings of
     records in the text.
     """
     # find first contiguous string of popular vectors (perhaps could require
@@ -133,10 +133,12 @@ def records(pops, ids):
                 
     return found
 
-def fields(vecs, pops, isrec, txt):
+def find_fields(vecs, pops, recs, txt):
     """Return a list of list representing the fields in the records of the
     text.
     """
+    #fixme "i in recs" is a low-hanging optimization fruit
+    
     w = len(vecs[0])
     
     i = recs[0]+1 # first possible field is after first delimiting vector
@@ -148,12 +150,12 @@ def fields(vecs, pops, isrec, txt):
         if not candidate and pops[i] == 0: # param
             candidate = i
         
-        if candidate and (pops[i] != 0 or isrec[i]): # field must end
+        if candidate and (pops[i] != 0 or i in recs): # field must end
             if i - candidate >= w: # candidates succeed only if they were w ago
                 cur_record.append(txt[candidate+w-1:i])
             candidate = False
         
-        if isrec[i]: # start a new record
+        if i in recs: # start a new record
             cur_record = []
             out.append(cur_record)
         
@@ -164,7 +166,7 @@ def fields(vecs, pops, isrec, txt):
 
 ######## DIAGNOSTICS
 
-def depict_pops(txt, m, pops, isrec=None):
+def depict_pops(txt, m, pops, recs):
     w = len(m[0])
     
     charpops = zeros(len(txt), int)
@@ -174,7 +176,7 @@ def depict_pops(txt, m, pops, isrec=None):
     
     out = '<pre>'
     for i in range(len(txt)):
-        if isrec != None and isrec[i]: # record starts here!
+        if i in recs: # record starts here!
             out += '<span style="background:blue;font-weight:bold;">|</span>'
         weight = (1 - float(charpops[i]) / maxcharpop) * 100
         #print txt[i], charpops[i], weight
@@ -185,6 +187,16 @@ def depict_pops(txt, m, pops, isrec=None):
 
 ######## MAIN
 
+def main(instr, w, k, epochs):
+    # perform text analysis
+    m = ngrams(instr, w)
+    (pops,ids) = popularities(m, k, epochs)
+    ups = unipops(pops)
+    recs = find_records(ups, ids)
+    fields = find_fields(m, ups, recs, instr)
+    
+    return (fields, m, ups)
+
 if __name__ == '__main__':
     # read options
     usage = """usage: %prog [options] file"""
@@ -194,6 +206,9 @@ if __name__ == '__main__':
     op.add_option('-d', '--depict', dest='depict', action='store_true',
                   default=False, help='output an HTML depiction of parsing'
                   ' process instad of results')
+    op.add_option('-p', '--profile', dest='prof', action='store_true',
+                  default=False, help='run hotshot, a performance profiler; do'
+                  ' not print parsing results; log profiler data to ap.log')
     op.add_option('-w', dest='w', default='2', metavar='NUM', type='int',
                   help='split text into NUM-grams (default %default)')
     op.add_option('-e', dest='epochs', default='100', metavar='NUM', type='int',
@@ -208,6 +223,7 @@ if __name__ == '__main__':
     w = options.w
     k = options.k
     epochs = options.epochs
+    prof = options.prof
     
     # make sure we have a file to parse
     if len(args) < 1:
@@ -225,19 +241,18 @@ if __name__ == '__main__':
     if not k:
         k = len(instr)
     
-    # parse!
-    m = ngrams(instr, w)
-    (pops,ids) = popularities(m, k, epochs)
-    ups = unipops(pops)
-    recs = records(ups, ids)
+    if prof: # run in hotshot profiler
+        print >>sys.stderr, 'running profiler... ',
+        profile = hotshot.Profile("ap.log")
+        profile.runcall(main, instr, w, k, epochs)
+        profile.close()
+        print >>sys.stderr, 'done'
+        
+    else: # run normally
+        (fields, m, ups) = main(instr, w, k, epochs)
     
-    # isrec: whether each character begins a record
-    isrec = zeros(len(instr), bool)
-    for r in recs:
-        isrec[r] = True
-    
-    # output
-    if depict:
-        print depict_pops(instr, m, ups, isrec)
-    else:
-        print fields(m, ups, isrec, instr)
+        # output
+        if depict:
+            print depict_pops(instr, m, ups, recs)
+        else:
+            print fields
