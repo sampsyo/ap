@@ -98,12 +98,10 @@ def unipops(pops):
         # Make this a lot more intelligent. Handle multiple modes and near-
         # modes.
 
-def find_records(pops, ids):
-    """Return a list of indices of vectors that seem to be the beginnings of
-    records in the text.
+def find_initseq(pops, ids, threshold=1):
+    """Find the first contiguous string of popular vectors.
     """
-    # find first contiguous string of popular vectors (perhaps could require
-    # that the sequence be at least a certain length?)
+    #fixme could require that the sequence have a minimum length
     inseq = False
     initseq = [] # the sequence of cluster ids indicating the start of a record
     for i in range(len(pops)):
@@ -113,6 +111,13 @@ def find_records(pops, ids):
             break
         if inseq:
             initseq.append(ids[i])
+    return initseq
+
+def find_records(pops, ids):
+    """Return a list of indices of vectors that seem to be the beginnings of
+    records in the text.
+    """
+    initseq = find_initseq(pops, ids)
     
     # search for initseq in ids
     found = [] # indices of vectors that begin occurrences of initseq
@@ -162,7 +167,6 @@ def find_fields(vecs, pops, recs, txt):
         i += 1
     
     return out
-
 
 ######## DIAGNOSTICS
 

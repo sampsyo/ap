@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from numpy import *
 import cl.sequence
-from scipy.weave import inline
 
 """Provides the necessary functions to use CompetitiveLearner with strings.
 
@@ -119,23 +118,8 @@ def new_random_neuron(learner=None):
     out = random.random_integers(low_char, high_char, length)
     return MutableString(out)
 
-def distance_hamming(learner, str1, str2):
-    """A hamming-distance function optimized for strings (faster than the
-    function found in cl.sequence)."""
-    code = """
-        int distance = 0;
-        for (int i = 0; i < length; ++i) {
-            if (str1[i] != str2[i])
-                ++distance;
-        }
-        return_val = distance;
-    """
-    length = min(len(str1), len(str2))
-    return inline(code, ['str1', 'str2', 'length'])
-    
-distance = distance_hamming # default distance metric
-
 # get distance and learning functions from sequence module
+distance = cl.sequence.distance_hamming
 def random_element():
     return random.random_integers(low_char, high_char)
 learn = cl.sequence.LearnFunctor(random_element)
