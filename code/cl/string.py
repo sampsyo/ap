@@ -39,9 +39,7 @@ class MutableString(object):
         if val is None:
             self.chars = empty(0,int)
         else:
-            if type(val) is ndarray and (val.dtype is dtype('int') or
-                                         val.dtype is dtype('int64') or
-                                         val.dtype is dtype('int8')):
+            if type(val) is ndarray: # assume int array (numpy092)
                 # O(1) creation from int array with aliasing
                 self.chars = val
             else:

@@ -31,6 +31,16 @@ def dp(txt):
     if debug:
         print >>sys.stderr, txt
 
+def unpack(obj):
+    """The early releases of NumPy did terrible things with object arrays,
+    Indexing object arrays returned array/scalar objects that wrapped their
+    values. This function removes this wrapping.
+    """
+    try:
+        if type(obj) == object_: # NumPy 0.9.2 array/scalar
+            return obj.item()
+    except NameError: # later NumPy version
+        return obj
 
 ######## ADAPTIVE PARSING
 
@@ -67,7 +77,7 @@ def popularities(vecs, numclusters=100, epochs=100):
     clust_idx = 0
     for cluster in clusters:
         clust_idx += 1
-        for vec_idx in cluster:
+        for vec_idx in unpack(cluster):
             pops[vec_idx] = len(cluster)
             ids[vec_idx] = clust_idx
     
